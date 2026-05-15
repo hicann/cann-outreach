@@ -3,15 +3,12 @@
 欢迎来到 CANN 社区！
 
 ## cann-outreach简介
-本仓库用于 CANN 昇腾产业各类会议与峰会的客户体验作品提交和展示。
+本仓库用于 CANN 昇腾产业各类活动与会议的客户体验作品提交和展示。
 
 ## 目录结构
 ```
 2026/
 ├── KADC/
-│   ├── pyPTO/
-│   ├── AscendC/
-│   └── CANNbot/
 └── cuihuo/
     ├── shanghai/
     └── jinan/
