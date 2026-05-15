@@ -8,8 +8,6 @@
 ## 目录结构
 ```
 2026/
-├── HC/
-├── WAIC/
 ├── KADC/
 │   ├── pyPTO/
 │   ├── AscendC/
