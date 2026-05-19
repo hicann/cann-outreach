@@ -283,7 +283,7 @@ def sparse_flash_attention_quant_compute(query_nope, query_rope, key_nope_2d, ke
                             sij = pypto.matmul(qi, kj_view, pypto.DT_FP32, a_trans=False, b_trans=True)
 
                         # ---- Sa_V1: 标准 Softmax（INT8/BF16 路径汇合） ----
-                        # pypto.set_semantic_label("Sa_V1")
+                        pypto.set_semantic_label("Sa_V1")
                         pypto.set_vec_tile_shapes(v1_tile[0], v1_tile[1])  # Vec: 8行 × 2048列 (910B) / 4行 × 2048列 (950)
                         sij_scale = pypto.mul(sij, softmax_scale)                  # S * 1/sqrt(d_q)
                         tilda_mij_reduce = pypto.amax(sij_scale, dim=-1, keepdim=True)  # 行最大值 (防溢出)
@@ -295,7 +295,7 @@ def sparse_flash_attention_quant_compute(query_nope, query_rope, key_nope_2d, ke
                         tilda_pij_f16 = pypto.cast(t_softmax, dtype)                # FP32 → BF16
 
                         # ---- Sa_C2: softmax × V, shape=(group_tile, dn) ----
-                        # pypto.set_semantic_label("Sa_C2")
+                        pypto.set_semantic_label("Sa_C2")
                         pypto.set_cube_tile_shapes([c2_tile[0],
                             c2_tile[1]], [c2_tile[2], c2_tile[3]], [c2_tile[4], c2_tile[5]]) # Cube C2: M=[128,128], K=[128,128], N=[128,128]
 

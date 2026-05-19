@@ -83,6 +83,11 @@ def get_device_id():
 @pypto.frontend.jit(
     runtime_options={
         "run_mode": global_run_mode,
+        "stitch_function_max_num": 128
+    },
+    debug_options={
+        "runtime_debug_mode": 0,
+        "compile_debug_mode": 0
     }
 )
 def matmul_add_kernel(
@@ -128,6 +133,7 @@ def matmul_add_kernel(
         # Boundary: use .min() on symbolic expression (NOT Python's min())
         valid_m = (m_val - m_offset).min(tile_m)
 
+        # TODO: 请在下方添加 PyPTO 实现代码
         # View a/c tiles along the dynamic m-axis
 
         # Set cube tile shapes for matmul

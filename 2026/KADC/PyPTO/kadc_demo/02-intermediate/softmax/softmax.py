@@ -81,17 +81,19 @@ def softmax_core(x: pypto.Tensor) -> pypto.Tensor:
     pypto.tensor
         Softmax normalized tensor
     """
+    # TODO: 请在下方填写 PyPTO 的实现
     # row max(x)
-
+    ...
     # x - max(x)
-
+    ...
     # exp(x - max(x))
-
+    ...
     # sum(exp(x - max(x)))
-
+    ...
     # exp(x - max(x)) / sum(exp(x - max(x)))
-
+    ...
     # return
+    ...
 
 
 @pypto.frontend.jit(

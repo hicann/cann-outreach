@@ -76,7 +76,7 @@ def get_device_id():
 
 @pypto.frontend.jit(
     runtime_options={
-        "run_mode": global_run_mode,
+        "run_mode": global_run_mode
     },
     debug_options={
         "runtime_debug_mode": 0,
@@ -94,9 +94,10 @@ def add_abs_kernel(
         b: Input tensor B of shape [n, d], dtype float32.
         out: Output tensor of shape [n, d], dtype float32.
     """
-    # 请在下方添加算子核心计算逻辑
-    # 设置tiling
+    # TODO: 请在下方添加 PyPTO 实现代码
+    # 设置 tiling
     ...
+
     # y = a + |b|
     ...
 
