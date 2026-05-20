@@ -1,0 +1,5 @@
+# jupyter
+init_env.py
+nohup.out
+**/.ipynb_checkpoints/
+**/*-checkpoint.ipynb
