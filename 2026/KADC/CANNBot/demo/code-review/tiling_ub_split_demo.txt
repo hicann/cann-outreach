@@ -1,0 +1,90 @@
+/**
+ * Copyright (c) 2025 Huawei Technologies Co., Ltd.
+ * Licensed under CANN Open Software License Agreement Version 2.0.
+ */
+
+/*!
+ * \file attention_update_tiling.cpp
+ * \brief UB split and multi-core tiling logic for attention update
+ */
+
+#include "attention_update_tiling.h"
+
+namespace optiling {
+
+constexpr uint64_t DOUBLE_BUFFER_NUM = 2UL;
+constexpr uint64_t TILING_KEY_INIT_VALUE = 20000UL;
+constexpr uint64_t ATTR_SP_MAX = 16;
+
+ge::graphStatus AttentionUpdateTiling::DoOpTiling()
+{
+    perCoreCount_ = Ops::Base::CeilDiv(bshSize_, totalCoreNum_);
+    usedCoreNum_ = Ops::Base::CeilDiv(bshSize_, perCoreCount_);
+    lastCoreCount_ = bshSize_ - usedCoreNum_ * perCoreCount_;
+
+    ubSize_ = ubSize_ - sp_ * ubBlockSize_;
+    uint64_t goBlockNum = ubBlockSize_ / goDtypeSize_;
+    uint64_t dAlign = Ops::Base::CeilAlign(d_, goBlockNum);
+
+    int64_t inputFactor = sp_ * sizeof(float) * DOUBLE_BUFFER_NUM
+                          + sp_ * dAlign * goDtypeSize_ * DOUBLE_BUFFER_NUM;
+
+    int64_t calcFactor = sp_ * sizeof(float);
+
+    int64_t outputFactor = sizeof(float) + dAlign * goDtypeSize_ * DOUBLE_BUFFER_NUM;
+
+    bshInLoop_ = ubSize_ / (inputFactor + calcFactor + outputFactor);
+    uint64_t bshPerLoop =
+        (ubSize_ - sp_ * bshInLoop_ * dAlign * goDtypeSize_ * DOUBLE_BUFFER_NUM
+         - bshInLoop_ * dAlign * goDtypeSize_ * DOUBLE_BUFFER_NUM)
+        / (sp_ * sizeof(float) * DOUBLE_BUFFER_NUM + sp_ * sizeof(float)
+           + sizeof(float) * DOUBLE_BUFFER_NUM);
+
+    bshInLoop_ = std::min(bshInLoop_, bshPerLoop);
+    perCorePerLoopCount_ = bshPerLoop;
+
+    perCoreLoops_ = Ops::Base::CeilDiv(perCoreCount_, bshPerLoop);
+    lastCoreLoops_ = perCoreLoops_;
+    perCoreLastLoopCount_ = perCoreCount_ - (perCoreLoops_ - 1) * bshPerLoop;
+    lastCoreLastLoopCount_ = lastCoreCount_ - (lastCoreLoops_ - 1) * bshPerLoop;
+
+    usedCoreNum_ = std::max(usedCoreNum_, static_cast<uint64_t>(1));
+    return ge::GRAPH_SUCCESS;
+}
+
+uint64_t AttentionUpdateTiling::GetTilingKey() const
+{
+    uint64_t tilingKey = TILING_KEY_INIT_VALUE;
+    if (bshSize_ == 0) {
+        tilingKey = 10000UL;
+    } else {
+        tilingKey = TILING_KEY_INIT_VALUE + updateType_;
+    }
+    return tilingKey;
+}
+
+ge::graphStatus AttentionUpdateTiling::PostTiling()
+{
+    auto workspaces = context_->GetWorkspaceSizes(1);
+    workspaces[0] = workspaceSize_;
+    context_->SetBlockDim(usedCoreNum_);
+
+    tilingData_.set_sp(sp_);
+    tilingData_.set_d(d_);
+    tilingData_.set_usedCoreNum(usedCoreNum_);
+    tilingData_.set_perCoreCount(perCoreCount_);
+    tilingData_.set_lastCoreCount(lastCoreCount_);
+    tilingData_.set_perCoreLoops(perCoreLoops_);
+    tilingData_.set_lastCoreLoops(lastCoreLoops_);
+    tilingData_.set_perCorePerLoopCount(perCorePerLoopCount_);
+    tilingData_.set_perCoreLastLoopCount(perCoreLastLoopCount_);
+    tilingData_.set_lastCoreLastLoopCount(lastCoreLastLoopCount_);
+    tilingData_.set_bshInLoop(bshInLoop_);
+
+    tilingData_.SaveToBuffer(context_->GetRawTilingData()->GetData(),
+                             context_->GetRawTilingData()->GetCapacity());
+    context_->GetRawTilingData()->SetDataSize(tilingData_.GetDataSize());
+    return ge::GRAPH_SUCCESS;
+}
+
+} // namespace optiling

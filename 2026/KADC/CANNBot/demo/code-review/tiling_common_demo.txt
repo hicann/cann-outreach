@@ -1,0 +1,94 @@
+/**
+ * Copyright (c) 2025 Huawei Technologies Co., Ltd.
+ * Licensed under CANN Open Software License Agreement Version 2.0.
+ */
+
+/*!
+ * \file gather_pa_kv_cache_tiling.cpp
+ * \brief core tiling logic for gather_pa_kv_cache
+ */
+
+#include <climits>
+#include "log/log.h"
+#include "platform/platform_info_def.h"
+#include "tiling/tiling_api.h"
+#include "gather_pa_kv_cache_tiling.h"
+
+using namespace Ops::Transformer::OpTiling;
+namespace optiling {
+
+constexpr uint32_t DIM_0 = 0;
+constexpr uint32_t DIM_1 = 1;
+constexpr uint32_t DIM_2 = 2;
+constexpr uint32_t DIM_3 = 3;
+constexpr uint32_t DIM_6 = 6;
+constexpr uint32_t CACHE_MODE_INDEX = 0;
+constexpr uint32_t IS_SEQ_LENS_CUNSUM_INDEX = 1;
+constexpr uint64_t ASCENDC_TOOLS_WORKSPACE = static_cast<uint64_t>(8) * 1024 * 1024;
+static constexpr uint32_t TILING_KEY_NZ = 577;
+static constexpr uint32_t TILING_KEY_ND = 617;
+
+bool CommonGatherPaKvCacheTiling(gert::TilingContext *context)
+{
+    auto kCacheShape = context->GetInputShape(DIM_0);
+    auto blockTablesShape = context->GetInputShape(DIM_2);
+    auto kShape = context->GetOutputShape(DIM_0);
+    auto vShape = context->GetOutputShape(DIM_1);
+    auto attrs = context->GetAttrs();
+    const char *mode = attrs->GetAttrPointer<char>(CACHE_MODE_INDEX);
+
+    int32_t blockSize;
+    int32_t tokenSizeK;
+    int32_t tokenSizeV;
+    auto inDtype = context->GetInputDesc(DIM_0)->GetDataType();
+    uint32_t typeByte = static_cast<uint32_t>(GetTensorElementSizes(inDtype));
+
+    if (strcmp(mode, "PA_NZ") == 0) {
+        blockSize = static_cast<int32_t>(kCacheShape->GetStorageShape().GetDim(DIM_1));
+        tokenSizeK = static_cast<int32_t>(kShape->GetStorageShape().GetDim(DIM_1));
+        tokenSizeV = static_cast<int32_t>(vShape->GetStorageShape().GetDim(DIM_1));
+        context->SetTilingKey(TILING_KEY_NZ);
+    } else if (strcmp(mode, "Norm") == 0) {
+        blockSize = static_cast<int32_t>(kCacheShape->GetStorageShape().GetDim(DIM_1));
+        tokenSizeK = static_cast<int32_t>(
+            kShape->GetStorageShape().GetDim(DIM_1) * kShape->GetStorageShape().GetDim(DIM_2));
+        tokenSizeV = static_cast<int32_t>(
+            vShape->GetStorageShape().GetDim(DIM_1) * vShape->GetStorageShape().GetDim(DIM_2));
+        context->SetTilingKey(TILING_KEY_ND + typeByte);
+    } else {
+        return false;
+    }
+
+    int32_t numTokens = static_cast<int32_t>(blockTablesShape->GetStorageShape().GetDim(DIM_0));
+    int32_t numblkTabCol = static_cast<int32_t>(blockTablesShape->GetStorageShape().GetDim(DIM_1));
+
+    OP_CHECK_IF((blockSize <= 0 || blockSize > INT_MAX),
+                OP_LOGE(context, "blockSize is invalid."), return false);
+    OP_CHECK_IF((numTokens <= 0 && numTokens > INT_MAX),
+                OP_LOGE(context, "numTokens is invalid."), return false);
+
+    GatherPaKvCacheTilingData tilingData;
+
+    int32_t hasSeqStarts;
+    auto seqStartsTensor = context->GetOptionalInputTensor(DIM_6);
+    seqStartsTensor == nullptr ? hasSeqStarts = 0 : hasSeqStarts = 1;
+
+    auto isSeqLensCumsum = attrs->GetAttrPointer<bool>(IS_SEQ_LENS_CUNSUM_INDEX);
+    tilingData.set_blockSize(blockSize);
+    tilingData.set_numTokens(numTokens);
+    tilingData.set_numblkTabCol(numblkTabCol);
+    tilingData.set_tokenSizeK(tokenSizeK);
+    tilingData.set_tokenSizeV(tokenSizeV);
+    tilingData.set_typeByte(typeByte);
+    tilingData.set_hasSeqStarts(hasSeqStarts);
+    tilingData.set_isSeqLensCumsum(*isSeqLensCumsum);
+
+    size_t *workspaceSize = context->GetWorkspaceSizes(1);
+    *workspaceSize = ASCENDC_TOOLS_WORKSPACE;
+
+    tilingData.SaveToBuffer(context->GetRawTilingData()->GetData(),
+                            context->GetRawTilingData()->GetCapacity());
+    return true;
+}
+
+} // namespace optiling

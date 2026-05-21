@@ -1,0 +1,37 @@
+/**
+ * Copyright (c) 2025 Huawei Technologies Co., Ltd.
+ * Licensed under CANN Open Software License Agreement Version 2.0.
+ */
+
+/*!
+ * \file decode_update_kernel.cpp
+ * \brief decode update kernel entry
+ */
+
+#include "decode_update.h"
+
+#define TILING_KEY_GO_FP32_WITHOUT_MAX_OUT 10010
+#define TILING_KEY_GO_FP16_WITHOUT_MAX_OUT 10002
+#define TILING_KEY_GO_BF16_WITHOUT_MAX_OUT 10030
+
+extern "C" __global__ __aicore__ void decode_update(GM_ADDR lse, GM_ADDR in,
+                                                     GM_ADDR out, GM_ADDR lseOut,
+                                                     GM_ADDR workspace, GM_ADDR tiling)
+{
+    GET_TILING_DATA_WITH_STRUCT(DecodeUpdateTilingDataV2, tilingDataIn, tiling);
+    const DecodeUpdateTilingData* tilingData = &tilingDataIn;
+    KERNEL_TASK_TYPE_DEFAULT(KERNEL_TYPE_AIV_ONLY);
+
+    if (TILING_KEY_IS(TILING_KEY_GO_FP32_WITHOUT_MAX_OUT)) {
+        AttentionUpdate::DecodeUpdate<float, float> op;
+        op.Init(lse, in, out, lseOut, tilingData);
+        op.Process();
+    } else if (TILING_KEY_IS(TILING_KEY_GO_FP16_WITHOUT_MAX_OUT)) {
+        AttentionUpdate::DecodeUpdate<float, half> op;
+        op.Init(lse, in, out, lseOut, tilingData);
+        op.Process();
+    } else if (TILING_KEY_IS(TILING_KEY_GO_BF16_WITHOUT_MAX_OUT)) {
+        AttentionUpdate::DecodeUpdate<float, bfloat16_t> op;
+        op.Init(lse, in, out, lseOut, tilingData);
+    }
+}
