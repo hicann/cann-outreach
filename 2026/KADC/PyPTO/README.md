@@ -1,30 +1,12 @@
 # 【体验编程范式新变化，问卷答题赢取奖品】体验PyPTO编程范式赢取2026 KADC 专属纪念品~
 
-## 玩法一：参与答题，并留下您宝贵意见后领取奖品~
+## PyPTO 玩法一：参与答题，并留下您宝贵意见后领取奖品~
 
 | 答题内容 | 扫码区域 |
 | ---- | ---- |
-|**参与 PyPTO 展台讲解，并在本页下方、ISSUE 界面两处评论答题，回答正确的即可领取奖品！**|![pypto_question_issue.png](https://raw.gitcode.com/user-images/assets/9865789/c7d1cc0f-ce2f-4d53-b19e-bef93c6283e3/pypto_question_issue.png 'pypto_question_issue.png')|
+|**参与 PyPTO 展台讲解，并扫码评论答题，回答正确的即可领取奖品！**|![pypto_question_issue.png](https://raw.gitcode.com/user-images/assets/9865789/c7d1cc0f-ce2f-4d53-b19e-bef93c6283e3/pypto_question_issue.png 'pypto_question_issue.png')|
 
-> ***题目 1：PyPTO 采用的编程范式名称是什么？***
->  A. SPTO（Single Program Tensor Operation）
->  B. PTO（Parallel Tensor/Tile Operation）
->  C. MPTO（Multiple Program Tensor Operation）
->  D. TPO（Tensor Parallel Operation）
-
-> ***题目 2：PyPTO 当前版本开放了哪个层次的编程接口？***
->  A. Reg 层次编程
->  B. Block 层次编程
->  C. Tensor 层次编程
->  D. Operation 层次编程
-
-> ***题目 3：PTO-ISA 是什么的缩写？***
-> A. Parallel Tile Operation Instruction Set Architecture
-> B. Programmable Tensor Operator Instruction Set Architecture
-> C. Performance Tuning Optimization Integrated Software Architecture
-> D. Platform Tensor Operation Intermediate Scheduling Architecture
-
-# 玩法二：体验使用 PyPTO 算子开发，赢取大奖~
+## PyPTO 玩法二：体验使用 PyPTO 算子开发，赢取大奖~
 
 | 步骤 | 二维码 |
 | ---- | ---- |
@@ -35,24 +17,31 @@
 
 ![image.png](https://raw.gitcode.com/user-images/assets/9865789/6ad27a8f-3d0a-4bde-8b75-86ab08b89a63/image.png 'image.png')
 
----
-# PTO ISA：跨代兼容、高性能、高易用的开源生态虚拟指令集
+## 关注我们，以码会友~
 
-## 核心优势
+| 微信 | 飞书 |
+| ---- | ---- |
+| ![fafdb16701193717a85138449123111a.jpg](https://raw.gitcode.com/user-images/assets/9915199/4ed1e24c-0225-4bb0-a0f7-97b80c8c74dd/fafdb16701193717a85138449123111a.jpg 'fafdb16701193717a85138449123111a.jpg') | ![飞书20260521-211132.png](https://raw.gitcode.com/user-images/assets/9915199/28863ea8-3758-4aed-b00b-1cd34b4700e3/飞书20260521-211132.png '飞书20260521-211132.png') |
+
+
+---
+## PTO ISA：跨代兼容、高性能、高易用的开源生态虚拟指令集
+
+### 核心优势
 
 <p align="center">
   <img src="https://raw.gitcode.com/wangxin193/pto-isa/files/kadc_introduce/docs/assets/pto-advantages.jpeg">
 </p>
 
-## 线上体验
+### 线上体验
 
 🔗 [PTO ISA 在线编译体验（Demo）](http://115.175.35.144:10240/)
 
 ---
 
-## 快速了解 PTO ISA
+### 快速了解 PTO ISA
 
-### 直击昇腾硬件底层：PTO ISA 为什么能帮你更快上手昇腾950？
+#### 直击昇腾硬件底层：PTO ISA 为什么能帮你更快上手昇腾950？
 
 - 📖 [公众号文章](https://mp.weixin.qq.com/s/a5AbRol8eIWPG4433MN6Tg)
 - ▶️ [B站直播回放](https://www.bilibili.com/video/BV1eLX8BuETT/?share_source=copy_web&vd_source=8e6e6fe33ac4360e0b2735d0f58c2d53)
@@ -78,7 +67,7 @@
 
 ---
 
-## 更多精彩文章
+### 更多精彩文章
 
 📂 [知乎收藏夹：PTO ISA](https://www.zhihu.com/collection/1001337730)
 
@@ -104,13 +93,13 @@
 
 ---
 
-## 加入我们，以码会友
+### 加入我们，以码会友
 
 | 微信 | 飞书 |
 | ---- | ---- |
 | ![image.png](https://raw.gitcode.com/wangxin193/pto-isa/files/kadc_introduce/docs/assets/weixin-group.png 'image.png') | ![image.png](https://raw.gitcode.com/wangxin193/pto-isa/files/kadc_introduce/docs/assets/feishu-group.png 'image.png') |
 
-## 开源仓地址
+### 开源仓地址
 https://gitcode.com/cann/pto-isa
 
 https://github.com/hw-native-sys/PTOAS
