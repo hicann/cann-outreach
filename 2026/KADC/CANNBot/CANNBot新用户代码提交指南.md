@@ -1,5 +1,9 @@
 # CANNBot 新用户代码提交指南
 
+在 CANNBot 赛道中，欢迎新用户提交作品！
+
+提交作品之前, 请 确保已经完成了 [CANNBot新用户快速上手指南](./CANNBot新用户快速上手指南.md)
+
 本指南指引你将作品通过 **Fork 仓提 PR** 的方式提交到 [cann/cann-outreach](https://gitcode.com/cann/cann-outreach)。
 
 ---
@@ -17,12 +21,16 @@
 在 WebIDE 终端中创建 `git_env.bash`，替换 `<...>` 为你的实际信息：
 
 ```bash
-GIT_USER="<你的GitCode用户名>"
-GIT_EMAIL="<你的GitCode邮箱>"
-GITCODE_TOKEN="<你的GitCode访问令牌>"
+# 配置 Gitcode 访问令牌
+GITCODE_TOKEN="你的GitCode访问令牌"
 
-git config --global user.name "${GIT_USER}"
-git config --global user.email "${GIT_EMAIL}"
+# 下面两行从 GitCode 克隆弹窗中直接粘进来
+git config --global user.name xxxxxxx
+git config --global user.email XAXAXA@UUU.com
+
+# 从 git config 中自动解析用户名和邮箱
+GIT_USER=$(git config --global user.name)
+GIT_EMAIL=$(git config --global user.email)
 
 sed -i '/gitcode.com/d' ~/.git-credentials
 echo "https://${GIT_USER}:${GITCODE_TOKEN}@gitcode.com" >> ~/.git-credentials
