@@ -1,0 +1,1 @@
+/home/developer/Ascend/cann-8.5.2/bin/bisheng CMakeFiles/abs.dir/op_host/abs.asc.o -o abs  -ltiling_api -lregister -lplatform -lunified_dlog -ldl -lm -lgraph_base 

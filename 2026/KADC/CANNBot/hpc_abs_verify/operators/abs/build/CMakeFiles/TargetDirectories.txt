@@ -1,0 +1,4 @@
+/mnt/workspace/gitCode/cann/cannbot-skills/plugins-official/ops-direct-invoke/operators/abs/build/CMakeFiles/rebuild_cache.dir
+/mnt/workspace/gitCode/cann/cannbot-skills/plugins-official/ops-direct-invoke/operators/abs/build/CMakeFiles/edit_cache.dir
+/mnt/workspace/gitCode/cann/cannbot-skills/plugins-official/ops-direct-invoke/operators/abs/build/CMakeFiles/abs_ops.dir
+/mnt/workspace/gitCode/cann/cannbot-skills/plugins-official/ops-direct-invoke/operators/abs/build/CMakeFiles/abs.dir
