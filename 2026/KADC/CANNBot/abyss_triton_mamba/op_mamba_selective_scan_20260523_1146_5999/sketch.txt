@@ -1,0 +1,146 @@
+sketch mamba_selective_scan {
+  requirements {
+    function: "Mamba Selective Scan — 选择性状态空间模型的递推扫描核心计算"
+    formula: "h[t] = exp(dt[t] * A) * h[t-1] + dt[t] * B[t] * x[t]; y[t] = sum_j(C[t,j] * h[t,j]) + D * x[t]"
+
+    variables: [
+      {name: "x",      type: "Tensor", shape: "[batch, seqlen, d_inner]", dtype: "f32", constraint: "序列输入"},
+      {name: "dt",     type: "Tensor", shape: "[batch, seqlen, d_inner]", dtype: "f32", constraint: "时间步长（softplus后）"},
+      {name: "B",      type: "Tensor", shape: "[batch, seqlen, d_state]", dtype: "f32", constraint: "输入矩阵（输入依赖）"},
+      {name: "C",      type: "Tensor", shape: "[batch, seqlen, d_state]", dtype: "f32", constraint: "输出矩阵（输入依赖）"},
+      {name: "A_log",  type: "Tensor", shape: "[d_inner, d_state]",        dtype: "f32", constraint: "log(-A) 参数矩阵"},
+      {name: "D",      type: "Tensor", shape: "[d_inner]",                 dtype: "f32", constraint: "skip connection 权重"},
+      {name: "y",      type: "Tensor", shape: "[batch, seqlen, d_inner]", dtype: "f32", constraint: "输出"},
+    ]
+  }
+
+  constraints {
+    input: {
+      shape: "[batch, seqlen, d_inner] / [batch, seqlen, d_state]"
+      dtype: "FLOAT32"
+      format: "ND"
+      alignment: "32B"
+    }
+    output: {
+      shape: "[batch, seqlen, d_inner]"
+      dtype: "FLOAT32"
+    }
+    hardware: {
+      ub_size: 192*1024       // DAV_2201 UB
+      alignment: 32
+      num_aicores: 24         // 910B2
+    }
+    sequence_dependency: "h[t] 依赖 h[t-1] — 时序维度 seqlen 必须串行扫描，batch 和 d_inner 维度可并行"
+  }
+
+  tiling {
+    inter_core {
+      strategy: "batch_d_inner_split"
+      split_dim: "batch * d_inner"
+      compute: """
+        // 每个 core 处理一组 (batch_idx, d_inner_idx) 的完整 seqlen 扫描
+        total_channels = batch * d_inner
+        per_core = ceil(total_channels / num_cores)
+        core_start = core_id * per_core
+        core_end = min((core_id + 1) * per_core, total_channels)
+      """
+      load_balance: "向上取整，最后一个 Core 处理剩余"
+      @llm_hint("parallel", "core_split:batch")
+    }
+
+    intra_core {
+      buffers: [
+        {name: "x_seq",    size: "seqlen * 4",      dtype: "f32", purpose: "x 的 seqlen 切片（单通道）"},
+        {name: "dt_seq",   size: "seqlen * 4",      dtype: "f32", purpose: "dt_softplus 的 seqlen 切片"},
+        {name: "B_seq",    size: "seqlen * d_state * 4", dtype: "f32", purpose: "B 的 seqlen 切片"},
+        {name: "C_seq",    size: "seqlen * d_state * 4", dtype: "f32", purpose: "C 的 seqlen 切片"},
+        {name: "A_row",    size: "d_state * 4",      dtype: "f32", purpose: "A 的一行"},
+        {name: "h_state",  size: "d_state * 4",      dtype: "f32", purpose: "当前 h 状态"},
+        {name: "y_seq",    size: "seqlen * 4",      dtype: "f32", purpose: "输出序列"},
+      ]
+
+      // 总 UB 消耗（单通道扫描）
+      total_buffer_size: "seqlen*4 + seqlen*4 + seqlen*d_state*4 + seqlen*d_state*4 + d_state*4 + d_state*4 + seqlen*4"
+
+      // d_state=8, seqlen=512 时: 512*4*3 + 512*8*2 + 8*2*4 = 6144 + 8192 + 64 ≈ 14.4KB，远低于 192KB
+      batch_per_iteration: "1（时序依赖要求逐时间步推进）"
+
+      @llm_hint("ub_limit:192KB")
+      precision: {
+        storage: "f32"
+        compute: "f32"
+        output: "f32"
+      }
+    }
+  }
+
+  dataflow {
+    nodes: [
+      {id: "gm_x",      type: "GM", dtype: "f32", desc: "输入 x [batch, seqlen, d_inner]"},
+      {id: "gm_dt",     type: "GM", dtype: "f32", desc: "softplus(dt) [batch, seqlen, d_inner]"},
+      {id: "gm_B",      type: "GM", dtype: "f32", desc: "B [batch, seqlen, d_state]"},
+      {id: "gm_C",      type: "GM", dtype: "f32", desc: "C [batch, seqlen, d_state]"},
+      {id: "gm_A",      type: "GM", dtype: "f32", desc: "-exp(A_log) [d_inner, d_state]"},
+      {id: "gm_D",      type: "GM", dtype: "f32", desc: "D [d_inner]"},
+      {id: "ub_h",      type: "UB", dtype: "f32", desc: "隐状态 h [d_state]"},
+      {id: "gm_y",      type: "GM", dtype: "f32", desc: "输出 y [batch, seqlen, d_inner]"},
+    ]
+    edges: [
+      {from: "gm_x",   to: "ub_h",    op: "load_step",  desc: "每步加载 x[t]"},
+      {from: "gm_dt",  to: "ub_h",    op: "load_step",  desc: "每步加载 dt[t]"},
+      {from: "gm_B",   to: "ub_h",    op: "load_step",  desc: "每步加载 B[t]"},
+      {from: "gm_C",   to: "ub_h",    op: "load_step",  desc: "每步加载 C[t]"},
+      {from: "gm_A",   to: "ub_h",    op: "load_row",   desc: "加载 A 的第 d_inner 行"},
+      {from: "ub_h",   to: "ub_h",    op: "scan_step",  desc: "递推更新 h"},
+      {from: "ub_h",   to: "gm_y",    op: "store_step", desc: "每步存储 y[t]"},
+    ]
+  }
+
+  symbols: batch, seqlen, d_inner, d_state;
+  tensors: X[batch, seqlen, d_inner]: f32; DT_softplus[batch, seqlen, d_inner]: f32; B[batch, seqlen, d_state]: f32; C[batch, seqlen, d_state]: f32; A[d_inner, d_state]: f32; D_vec[d_inner]: f32; Y[batch, seqlen, d_inner]: f32;
+
+  // ========== 核心计算逻辑 ==========
+
+  // Kernel 设计：每个 program 处理 (batch_idx, d_inner_idx) 对应的完整 seqlen 扫描
+  // grid = (batch * d_inner) 每个 program 独立扫描一个通道
+
+  @llm_hint("parallel", "core_split:batch")
+  for channel_idx in range(0, batch * d_inner, num_cores):
+    batch_idx = channel_idx // d_inner
+    inner_idx = channel_idx % d_inner
+
+    // 加载 A 行和 D 元素
+    A_row = load(A[inner_idx, 0:d_state])           @llm_hint("gm2ub", "input_cache")
+    D_val = load(D_vec[inner_idx])                   @llm_hint("gm2ub", "fastest")
+
+    // 初始化隐状态
+    h = zeros([d_state], f32)                        @llm_hint("fastest", "accumulator")
+
+    // 串行扫描 seqlen（时序依赖）
+    for t in range(0, seqlen):
+      x_t   = load(X[batch_idx, t, inner_idx])       @llm_hint("gm2ub")
+      dt_t  = load(DT_softplus[batch_idx, t, inner_idx]) @llm_hint("gm2ub")
+      B_t   = load(B[batch_idx, t, 0:d_state])       @llm_hint("gm2ub")
+      C_t   = load(C[batch_idx, t, 0:d_state])       @llm_hint("gm2ub")
+
+      // 递推更新: h = exp(dt * A) * h + dt * B * x
+      dA_t = exp(dt_t * A_row)                       // [d_state]
+      dB_t = dt_t * B_t                               // [d_state]
+      h = dA_t * h + dB_t * x_t                       // [d_state]
+
+      // 输出: y = sum(C * h) + D * x
+      y_t = sum(C_t * h) + D_val * x_t               // scalar
+
+      // 存储结果
+      store(y_t -> Y[batch_idx, t, inner_idx])        @llm_hint("ub2gm")
+
+  // ========== 优化提示 ==========
+
+  // 1. softplus(dt) 需在 kernel 内计算或预先计算后传入
+  //    推荐方案：host 侧预计算 softplus(dt)，直接传入 kernel，减少 kernel 内计算量
+  // 2. 扫描循环 seqlen 步必须串行，无法用 tl.cumsum/tl.cumprod 替代（递推公式不是简单的累积和/积）
+  // 3. d_state 通常较小(8~16)，h 状态完全可驻留 UB，无需反复 load/store
+  // 4. batch * d_inner 并行度较高（如 batch=4, d_inner=32 → 128 channels），能充分利用多核
+  // 5. 每个 channel 的 seqlen 扫描完全独立，无跨通道依赖
+  // 6. 可考虑将 x/dt/B/C 的单步数据与 h 在 UB 中共存，减少 GM 访问延迟
+}
