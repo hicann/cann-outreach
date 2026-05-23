@@ -1,0 +1,67 @@
+{
+  "op_name": "add",
+  "warmup": 5,
+  "repeats": 50,
+  "total_cases": 1,
+  "passed_cases": 1,
+  "failed_cases": 0,
+  "nan_indices": [],
+  "inf_indices": [],
+  "zero_indices": [],
+  "negative_indices": [],
+  "none_indices": [],
+  "framework": {
+    "avg_latency_ms": 0.0034,
+    "peak_memory_mb": 10.0,
+    "operators": {
+      "aclnnAdd": 3.4024,
+      "aten::add": 0.0,
+      "empty_tensor": 0.0
+    }
+  },
+  "implementation": {
+    "avg_latency_ms": 0.0044,
+    "peak_memory_mb": 6.0,
+    "operators": {
+      "add_kernel": 4.4172,
+      "aten::empty_like": 0.0,
+      "empty_tensor": 0.0
+    }
+  },
+  "speedup_vs_torch": 0.7727,
+  "per_shape_results": [
+    {
+      "case_idx": 1,
+      "input_desc": [
+        {
+          "type": "tensor",
+          "shape": [
+            1024,
+            1024
+          ],
+          "dtype": "torch.float16"
+        },
+        {
+          "type": "tensor",
+          "shape": [
+            1024,
+            1024
+          ],
+          "dtype": "torch.float16"
+        }
+      ],
+      "status": "pass",
+      "framework": {
+        "avg_latency_ms": 0.0034,
+        "peak_memory_mb": 10.0
+      },
+      "implementation": {
+        "avg_latency_ms": 0.0044,
+        "peak_memory_mb": 6.0
+      },
+      "speedup_vs_torch": 0.7727,
+      "error_type": null,
+      "error_msg": null
+    }
+  ]
+}
