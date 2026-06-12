@@ -1,0 +1,6 @@
+set(ASCENDC_CUSTOM_OP_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../op_kernel)
+npu_host_driver_glob(${ASCENDC_CUSTOM_OP_DIR} "*.cpp")
+set(ASCENDC_CUSTOM_OP_DIR ${CMAKE_CURRENT_SOURCE_DIR}/..)
+npu_host_driver_glob(${ASCENDC_CUSTOM_OP_DIR} "*.cpp")
+add_library(op_host SHARED "../gcd_tiling.cpp" "../gcd_infershape.cpp" "../gcd_def.cpp")
+npu_set_global_target_properties(op_host)
