@@ -4,4 +4,5 @@ nohup.out
 **/.ipynb_checkpoints/
 **/*-checkpoint.ipynb
 **/output/
-build_out/ 
+**/build_out/
+**/AclNNInvocation/
