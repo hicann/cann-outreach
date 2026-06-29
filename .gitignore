@@ -6,3 +6,7 @@ nohup.out
 **/output/
 **/build_out/
 **/AclNNInvocation/
+
+# macOS
+.DS_Store
+**/.DS_Store
