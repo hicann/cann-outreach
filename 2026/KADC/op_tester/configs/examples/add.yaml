@@ -1,0 +1,25 @@
+op:
+  name: add
+  so: build/libadd_ops.so
+  kind: elementwise
+  num_inputs: 2
+  num_outputs: 1
+  dtype: float32
+  input_init: [random, random]
+  atol: 1e-6
+  rtol: 1e-6
+  golden:
+    module: add_golden
+    func: compute
+
+shape_gen:
+  ndim_min: 1
+  ndim_max: 4
+  dim_min: 1
+  dim_max: 4096
+  num_cases: 12
+  seed: 1
+
+shapes:
+  - [[8, 16], [8, 16]]
+  - [[1024, 1024], [1024, 1024]]

@@ -1,0 +1,25 @@
+op:
+  name: matmul
+  so: build/libmatmul_ops.so
+  kind: matmul
+  num_inputs: 2
+  num_outputs: 1
+  dtype: float16
+  input_init: [random, random]
+  atol: 1e-3
+  rtol: 1e-3
+  golden:
+    module: matmul_golden
+    func: compute
+
+shape_gen:
+  ndim_min: 2
+  ndim_max: 2
+  dim_min: 16
+  dim_max: 2048
+  num_cases: 8
+  seed: 3
+
+shapes:
+  - [[128, 256], [256, 512]]
+  - [[1024, 1024], [1024, 1024]]

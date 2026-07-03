@@ -1,0 +1,28 @@
+op:
+  name: mamba_selective_scan
+  so: build/libmamba_selective_scan_ops.so
+  kind: custom
+  num_inputs: 4
+  num_outputs: 1
+  dtype: float32
+  input_init: [random, random, random, random]
+  atol: 1e-4
+  rtol: 1e-4
+  golden:
+    module: mamba_golden
+    func: compute
+  extra:
+    d_inner: 32
+    d_state: 8
+
+shape_gen:
+  ndim_min: 3
+  ndim_max: 3
+  dim_min: 2
+  dim_max: 256
+  num_cases: 6
+  seed: 7
+
+shapes:
+  - {shapes: [[[2, 128, 32], [2, 128, 32], [2, 128, 8], [2, 128, 8]]], attrs: {}}
+  - {shapes: [[[4, 256, 32], [4, 256, 32], [4, 256, 8], [4, 256, 8]]], attrs: {}}

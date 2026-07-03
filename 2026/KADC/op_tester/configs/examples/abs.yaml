@@ -1,0 +1,24 @@
+op:
+  name: abs
+  so: build/libabs_ops.so
+  kind: elementwise
+  num_inputs: 1
+  num_outputs: 1
+  dtype: float32
+  atol: 1e-6
+  rtol: 1e-6
+  golden:
+    module: abs_golden
+    func: compute
+
+shape_gen:
+  ndim_min: 1
+  ndim_max: 4
+  dim_min: 1
+  dim_max: 8192
+  num_cases: 12
+  seed: 0
+
+shapes:
+  - [[4096]]
+  - [[512, 512]]

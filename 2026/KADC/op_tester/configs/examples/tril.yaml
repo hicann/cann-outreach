@@ -1,0 +1,27 @@
+op:
+  name: tril
+  so: build/libtril_ops.so
+  kind: elementwise
+  num_inputs: 1
+  num_outputs: 1
+  dtype: float32
+  attrs:
+    - {name: diagonal, type: int, gen: random_int, low: -2, high: 2}
+  atol: 0.0
+  rtol: 0.0
+  golden:
+    module: tril_golden
+    func: compute
+
+shape_gen:
+  ndim_min: 2
+  ndim_max: 3
+  dim_min: 4
+  dim_max: 1024
+  num_cases: 10
+  seed: 5
+
+shapes:
+  - {shapes: [[64, 64]], attrs: {diagonal: 0}}
+  - {shapes: [[128, 128]], attrs: {diagonal: -1}}
+  - {shapes: [[4, 32, 32]], attrs: {diagonal: 1}}

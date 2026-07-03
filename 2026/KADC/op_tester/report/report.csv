@@ -1,0 +1,50 @@
+op,kind,pathway,dtype,case_id,shape,result,max_diff,mean_diff,time_ms,note
+abs,elementwise,PyTorch(.so),fp32,C1,[256],PASS,0.000e+00,0.000e+00,0.18,
+abs,elementwise,PyTorch(.so),fp32,C2,[512],PASS,0.000e+00,0.000e+00,0.16,
+abs,elementwise,PyTorch(.so),fp32,C3,[1024],PASS,0.000e+00,0.000e+00,0.17,
+abs,elementwise,PyTorch(.so),fp32,C4,[4096],PASS,0.000e+00,0.000e+00,0.19,
+abs,elementwise,PyTorch(.so),fp32,C5,[32768],PASS,0.000e+00,0.000e+00,0.24,
+abs,elementwise,PyTorch(.so),fp32,C6,[1000],PASS,0.000e+00,0.000e+00,0.17,非对齐
+abs,elementwise,PyTorch(.so),fp32,C7,[13],PASS,0.000e+00,0.000e+00,0.15,极小 shape
+abs,elementwise,PyTorch(.so),fp32,C8,"[512,512]",PASS,0.000e+00,0.000e+00,0.22,
+abs,elementwise,PyTorch(.so),fp32,C9,"[1024,1024]",PASS,0.000e+00,0.000e+00,0.28,
+abs,elementwise,PyTorch(.so),fp32,C10,"[128,128,128]",PASS,0.000e+00,0.000e+00,0.31,
+abs,elementwise,PyTorch(.so),fp32,C11,"[64,32,16,8]",PASS,0.000e+00,0.000e+00,0.20,4D
+abs,elementwise,PyTorch(.so),fp32,C12,[65536],PASS,0.000e+00,0.000e+00,0.35,
+add,elementwise,PyTorch(triton),fp16,C1,"[1024,1024]",PASS,0.000e+00,0.000e+00,0.42,
+add,elementwise,PyTorch(triton),fp16,C2,[8192],PASS,0.000e+00,0.000e+00,0.19,
+add,elementwise,PyTorch(triton),fp16,C3,"[256,256,256]",PASS,0.000e+00,0.000e+00,0.38,3D
+add,elementwise,PyTorch(triton),fp16,C4,"[4096,4096]",PASS,0.000e+00,0.000e+00,1.12,
+add,elementwise,PyTorch(triton),fp16,C5,"[128,128]",PASS,0.000e+00,0.000e+00,0.14,
+add,elementwise,PyTorch(triton),fp16,C6,[65536],PASS,0.000e+00,0.000e+00,0.21,
+add,elementwise,PyTorch(triton),fp16,C7,[10000],FAIL,1.953e-03,4.882e-04,0.18,fp16 非对齐尾部精度
+softmax,reduction,PyTorch(.so),fp32,C1,"[128,128] dim=-1",PASS,1.192e-07,2.980e-08,0.33,
+softmax,reduction,PyTorch(.so),fp32,C2,"[16,256,32] dim=1",PASS,1.490e-07,3.725e-08,0.41,中间维归约
+softmax,reduction,PyTorch(.so),fp32,C3,"[1024,1024] dim=-1",PASS,2.384e-07,5.960e-08,0.88,
+softmax,reduction,PyTorch(.so),fp32,C4,[256] dim=0,PASS,5.960e-08,1.490e-08,0.12,1D
+softmax,reduction,PyTorch(.so),fp32,C5,"[64,64,64] dim=1",PASS,1.788e-07,4.470e-08,0.46,
+softmax,reduction,PyTorch(.so),fp32,C6,"[2048,512] dim=-1",PASS,2.682e-07,6.705e-08,1.34,
+sparse_gemm,matmul(2:4 sparse),Bin(exec),fp32,C1,"[128,128]x[128,128]",PASS,0.000e+00,0.000e+00,0.74,
+sparse_gemm,matmul(2:4 sparse),Bin(exec),fp32,C2,"[2,128,128] batched",PASS,0.000e+00,0.000e+00,1.18,batched
+sparse_gemm,matmul(2:4 sparse),Bin(exec),fp32,C3,"[256,256]x[256,256]",PASS,0.000e+00,0.000e+00,2.06,
+sparse_gemm,matmul(2:4 sparse),Bin(exec),fp32,C4,"[64,64]x[64,64]",PASS,0.000e+00,0.000e+00,0.31,
+sparse_gemm,matmul(2:4 sparse),Bin(exec),fp32,C5,"[512,512]x[512,512]",PASS,0.000e+00,0.000e+00,4.87,
+tril,elementwise,PyTorch(.so),fp32,C1,"[64,64] diag=0",PASS,0.000e+00,0.000e+00,0.11,
+tril,elementwise,PyTorch(.so),fp32,C2,"[128,128] diag=-1",PASS,0.000e+00,0.000e+00,0.16,严格下三角
+tril,elementwise,PyTorch(.so),fp32,C3,"[4,32,32] diag=1",PASS,0.000e+00,0.000e+00,0.14,batched
+tril,elementwise,PyTorch(.so),fp32,C4,"[256,256] diag=0",PASS,0.000e+00,0.000e+00,0.28,
+tril,elementwise,PyTorch(.so),fp32,C5,"[512,512] diag=2",PASS,0.000e+00,0.000e+00,0.52,
+tril,elementwise,PyTorch(.so),fp32,C6,"[1024,1024] diag=0",PASS,0.000e+00,0.000e+00,0.91,
+mamba_selective_scan,scan,PyTorch(.so),fp32,C1,"[2,128,32] d_state=8",PASS,8.545e-05,2.137e-05,3.82,
+mamba_selective_scan,scan,PyTorch(.so),fp32,C2,"[4,256,32] d_state=8",PASS,1.526e-04,3.815e-05,11.46,
+mamba_selective_scan,scan,PyTorch(.so),fp32,C3,"[2,512,32] d_state=8",PASS,2.289e-04,5.722e-05,21.08,长序列
+mamba_selective_scan,scan,PyTorch(.so),fp32,C4,"[1,64,32] d_state=8",PASS,4.768e-05,1.192e-05,1.23,小 batch
+mamba_selective_scan,scan,PyTorch(.so),fp32,C5,"[8,1024,32] d_state=8",FAIL,7.629e-04,1.907e-04,48.71,大 batch+长序列 累积误差超容差
+sum,reduction,PyTorch(.so),fp32,C1,[1024] dim=0,PASS,0.000e+00,0.000e+00,0.09,
+sum,reduction,PyTorch(.so),fp32,C2,"[128,128] dim=1",PASS,1.907e-06,4.768e-07,0.21,
+sum,reduction,PyTorch(.so),fp32,C3,"[16,32,64] dim=1 keepdim",PASS,3.815e-06,9.537e-07,0.34,
+sum,reduction,PyTorch(.so),fp32,C4,"[2048,512] dim=-1",PASS,7.629e-06,1.907e-06,0.95,
+matmul,matmul,PyTorch(.so),fp16,C1,"[128,256]x[256,512]",PASS,3.125e-02,7.812e-03,0.58,fp16
+matmul,matmul,PyTorch(.so),fp16,C2,"[1024,1024]x[1024,1024]",PASS,6.250e-02,1.562e-02,4.12,
+matmul,matmul,PyTorch(.so),fp16,C3,"[512,512]x[512,512]",PASS,4.687e-02,1.172e-02,1.36,
+matmul,matmul,PyTorch(.so),fp16,C4,"[64,64]x[64,64]",PASS,1.562e-02,3.906e-03,0.12,

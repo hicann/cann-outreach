@@ -1,0 +1,26 @@
+op:
+  name: sum
+  so: build/libsum_ops.so
+  kind: reduction
+  num_inputs: 1
+  num_outputs: 1
+  dtype: float32
+  attrs:
+    - {name: dim, type: int, gen: dim}
+    - {name: keepdim, type: bool, gen: choice, choices: [false, true]}
+  atol: 1e-5
+  rtol: 1e-5
+  golden:
+    module: sum_golden
+    func: compute
+
+shape_gen:
+  ndim_min: 2
+  ndim_max: 4
+  dim_min: 2
+  dim_max: 2048
+  num_cases: 10
+  seed: 2
+
+shapes:
+  - {shapes: [[4, 8, 16]], attrs: {dim: 1, keepdim: false}}

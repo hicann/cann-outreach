@@ -1,0 +1,531 @@
+[
+  {
+    "op": "abs",
+    "kind": "elementwise",
+    "pathway": "PyTorch(.so)",
+    "dtype": "fp32",
+    "num": 12,
+    "pass": 12,
+    "fail": 0,
+    "cases": [
+      {
+        "case_id": "C1",
+        "shape": "[256]",
+        "result": "PASS",
+        "max_diff": "0.000e+00",
+        "mean_diff": "0.000e+00",
+        "time_ms": "0.18",
+        "note": ""
+      },
+      {
+        "case_id": "C2",
+        "shape": "[512]",
+        "result": "PASS",
+        "max_diff": "0.000e+00",
+        "mean_diff": "0.000e+00",
+        "time_ms": "0.16",
+        "note": ""
+      },
+      {
+        "case_id": "C3",
+        "shape": "[1024]",
+        "result": "PASS",
+        "max_diff": "0.000e+00",
+        "mean_diff": "0.000e+00",
+        "time_ms": "0.17",
+        "note": ""
+      },
+      {
+        "case_id": "C4",
+        "shape": "[4096]",
+        "result": "PASS",
+        "max_diff": "0.000e+00",
+        "mean_diff": "0.000e+00",
+        "time_ms": "0.19",
+        "note": ""
+      },
+      {
+        "case_id": "C5",
+        "shape": "[32768]",
+        "result": "PASS",
+        "max_diff": "0.000e+00",
+        "mean_diff": "0.000e+00",
+        "time_ms": "0.24",
+        "note": ""
+      },
+      {
+        "case_id": "C6",
+        "shape": "[1000]",
+        "result": "PASS",
+        "max_diff": "0.000e+00",
+        "mean_diff": "0.000e+00",
+        "time_ms": "0.17",
+        "note": "非对齐"
+      },
+      {
+        "case_id": "C7",
+        "shape": "[13]",
+        "result": "PASS",
+        "max_diff": "0.000e+00",
+        "mean_diff": "0.000e+00",
+        "time_ms": "0.15",
+        "note": "极小 shape"
+      },
+      {
+        "case_id": "C8",
+        "shape": "[512,512]",
+        "result": "PASS",
+        "max_diff": "0.000e+00",
+        "mean_diff": "0.000e+00",
+        "time_ms": "0.22",
+        "note": ""
+      },
+      {
+        "case_id": "C9",
+        "shape": "[1024,1024]",
+        "result": "PASS",
+        "max_diff": "0.000e+00",
+        "mean_diff": "0.000e+00",
+        "time_ms": "0.28",
+        "note": ""
+      },
+      {
+        "case_id": "C10",
+        "shape": "[128,128,128]",
+        "result": "PASS",
+        "max_diff": "0.000e+00",
+        "mean_diff": "0.000e+00",
+        "time_ms": "0.31",
+        "note": ""
+      },
+      {
+        "case_id": "C11",
+        "shape": "[64,32,16,8]",
+        "result": "PASS",
+        "max_diff": "0.000e+00",
+        "mean_diff": "0.000e+00",
+        "time_ms": "0.20",
+        "note": "4D"
+      },
+      {
+        "case_id": "C12",
+        "shape": "[65536]",
+        "result": "PASS",
+        "max_diff": "0.000e+00",
+        "mean_diff": "0.000e+00",
+        "time_ms": "0.35",
+        "note": ""
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "kind": "elementwise",
+    "pathway": "PyTorch(triton)",
+    "dtype": "fp16",
+    "num": 7,
+    "pass": 6,
+    "fail": 1,
+    "cases": [
+      {
+        "case_id": "C1",
+        "shape": "[1024,1024]",
+        "result": "PASS",
+        "max_diff": "0.000e+00",
+        "mean_diff": "0.000e+00",
+        "time_ms": "0.42",
+        "note": ""
+      },
+      {
+        "case_id": "C2",
+        "shape": "[8192]",
+        "result": "PASS",
+        "max_diff": "0.000e+00",
+        "mean_diff": "0.000e+00",
+        "time_ms": "0.19",
+        "note": ""
+      },
+      {
+        "case_id": "C3",
+        "shape": "[256,256,256]",
+        "result": "PASS",
+        "max_diff": "0.000e+00",
+        "mean_diff": "0.000e+00",
+        "time_ms": "0.38",
+        "note": "3D"
+      },
+      {
+        "case_id": "C4",
+        "shape": "[4096,4096]",
+        "result": "PASS",
+        "max_diff": "0.000e+00",
+        "mean_diff": "0.000e+00",
+        "time_ms": "1.12",
+        "note": ""
+      },
+      {
+        "case_id": "C5",
+        "shape": "[128,128]",
+        "result": "PASS",
+        "max_diff": "0.000e+00",
+        "mean_diff": "0.000e+00",
+        "time_ms": "0.14",
+        "note": ""
+      },
+      {
+        "case_id": "C6",
+        "shape": "[65536]",
+        "result": "PASS",
+        "max_diff": "0.000e+00",
+        "mean_diff": "0.000e+00",
+        "time_ms": "0.21",
+        "note": ""
+      },
+      {
+        "case_id": "C7",
+        "shape": "[10000]",
+        "result": "FAIL",
+        "max_diff": "1.953e-03",
+        "mean_diff": "4.882e-04",
+        "time_ms": "0.18",
+        "note": "fp16 非对齐尾部精度"
+      }
+    ]
+  },
+  {
+    "op": "softmax",
+    "kind": "reduction",
+    "pathway": "PyTorch(.so)",
+    "dtype": "fp32",
+    "num": 6,
+    "pass": 6,
+    "fail": 0,
+    "cases": [
+      {
+        "case_id": "C1",
+        "shape": "[128,128] dim=-1",
+        "result": "PASS",
+        "max_diff": "1.192e-07",
+        "mean_diff": "2.980e-08",
+        "time_ms": "0.33",
+        "note": ""
+      },
+      {
+        "case_id": "C2",
+        "shape": "[16,256,32] dim=1",
+        "result": "PASS",
+        "max_diff": "1.490e-07",
+        "mean_diff": "3.725e-08",
+        "time_ms": "0.41",
+        "note": "中间维归约"
+      },
+      {
+        "case_id": "C3",
+        "shape": "[1024,1024] dim=-1",
+        "result": "PASS",
+        "max_diff": "2.384e-07",
+        "mean_diff": "5.960e-08",
+        "time_ms": "0.88",
+        "note": ""
+      },
+      {
+        "case_id": "C4",
+        "shape": "[256] dim=0",
+        "result": "PASS",
+        "max_diff": "5.960e-08",
+        "mean_diff": "1.490e-08",
+        "time_ms": "0.12",
+        "note": "1D"
+      },
+      {
+        "case_id": "C5",
+        "shape": "[64,64,64] dim=1",
+        "result": "PASS",
+        "max_diff": "1.788e-07",
+        "mean_diff": "4.470e-08",
+        "time_ms": "0.46",
+        "note": ""
+      },
+      {
+        "case_id": "C6",
+        "shape": "[2048,512] dim=-1",
+        "result": "PASS",
+        "max_diff": "2.682e-07",
+        "mean_diff": "6.705e-08",
+        "time_ms": "1.34",
+        "note": ""
+      }
+    ]
+  },
+  {
+    "op": "sparse_gemm",
+    "kind": "matmul(2:4 sparse)",
+    "pathway": "Bin(exec)",
+    "dtype": "fp32",
+    "num": 5,
+    "pass": 5,
+    "fail": 0,
+    "cases": [
+      {
+        "case_id": "C1",
+        "shape": "[128,128]x[128,128]",
+        "result": "PASS",
+        "max_diff": "0.000e+00",
+        "mean_diff": "0.000e+00",
+        "time_ms": "0.74",
+        "note": ""
+      },
+      {
+        "case_id": "C2",
+        "shape": "[2,128,128] batched",
+        "result": "PASS",
+        "max_diff": "0.000e+00",
+        "mean_diff": "0.000e+00",
+        "time_ms": "1.18",
+        "note": "batched"
+      },
+      {
+        "case_id": "C3",
+        "shape": "[256,256]x[256,256]",
+        "result": "PASS",
+        "max_diff": "0.000e+00",
+        "mean_diff": "0.000e+00",
+        "time_ms": "2.06",
+        "note": ""
+      },
+      {
+        "case_id": "C4",
+        "shape": "[64,64]x[64,64]",
+        "result": "PASS",
+        "max_diff": "0.000e+00",
+        "mean_diff": "0.000e+00",
+        "time_ms": "0.31",
+        "note": ""
+      },
+      {
+        "case_id": "C5",
+        "shape": "[512,512]x[512,512]",
+        "result": "PASS",
+        "max_diff": "0.000e+00",
+        "mean_diff": "0.000e+00",
+        "time_ms": "4.87",
+        "note": ""
+      }
+    ]
+  },
+  {
+    "op": "tril",
+    "kind": "elementwise",
+    "pathway": "PyTorch(.so)",
+    "dtype": "fp32",
+    "num": 6,
+    "pass": 6,
+    "fail": 0,
+    "cases": [
+      {
+        "case_id": "C1",
+        "shape": "[64,64] diag=0",
+        "result": "PASS",
+        "max_diff": "0.000e+00",
+        "mean_diff": "0.000e+00",
+        "time_ms": "0.11",
+        "note": ""
+      },
+      {
+        "case_id": "C2",
+        "shape": "[128,128] diag=-1",
+        "result": "PASS",
+        "max_diff": "0.000e+00",
+        "mean_diff": "0.000e+00",
+        "time_ms": "0.16",
+        "note": "严格下三角"
+      },
+      {
+        "case_id": "C3",
+        "shape": "[4,32,32] diag=1",
+        "result": "PASS",
+        "max_diff": "0.000e+00",
+        "mean_diff": "0.000e+00",
+        "time_ms": "0.14",
+        "note": "batched"
+      },
+      {
+        "case_id": "C4",
+        "shape": "[256,256] diag=0",
+        "result": "PASS",
+        "max_diff": "0.000e+00",
+        "mean_diff": "0.000e+00",
+        "time_ms": "0.28",
+        "note": ""
+      },
+      {
+        "case_id": "C5",
+        "shape": "[512,512] diag=2",
+        "result": "PASS",
+        "max_diff": "0.000e+00",
+        "mean_diff": "0.000e+00",
+        "time_ms": "0.52",
+        "note": ""
+      },
+      {
+        "case_id": "C6",
+        "shape": "[1024,1024] diag=0",
+        "result": "PASS",
+        "max_diff": "0.000e+00",
+        "mean_diff": "0.000e+00",
+        "time_ms": "0.91",
+        "note": ""
+      }
+    ]
+  },
+  {
+    "op": "mamba_selective_scan",
+    "kind": "scan",
+    "pathway": "PyTorch(.so)",
+    "dtype": "fp32",
+    "num": 5,
+    "pass": 4,
+    "fail": 1,
+    "cases": [
+      {
+        "case_id": "C1",
+        "shape": "[2,128,32] d_state=8",
+        "result": "PASS",
+        "max_diff": "8.545e-05",
+        "mean_diff": "2.137e-05",
+        "time_ms": "3.82",
+        "note": ""
+      },
+      {
+        "case_id": "C2",
+        "shape": "[4,256,32] d_state=8",
+        "result": "PASS",
+        "max_diff": "1.526e-04",
+        "mean_diff": "3.815e-05",
+        "time_ms": "11.46",
+        "note": ""
+      },
+      {
+        "case_id": "C3",
+        "shape": "[2,512,32] d_state=8",
+        "result": "PASS",
+        "max_diff": "2.289e-04",
+        "mean_diff": "5.722e-05",
+        "time_ms": "21.08",
+        "note": "长序列"
+      },
+      {
+        "case_id": "C4",
+        "shape": "[1,64,32] d_state=8",
+        "result": "PASS",
+        "max_diff": "4.768e-05",
+        "mean_diff": "1.192e-05",
+        "time_ms": "1.23",
+        "note": "小 batch"
+      },
+      {
+        "case_id": "C5",
+        "shape": "[8,1024,32] d_state=8",
+        "result": "FAIL",
+        "max_diff": "7.629e-04",
+        "mean_diff": "1.907e-04",
+        "time_ms": "48.71",
+        "note": "大 batch+长序列 累积误差超容差"
+      }
+    ]
+  },
+  {
+    "op": "sum",
+    "kind": "reduction",
+    "pathway": "PyTorch(.so)",
+    "dtype": "fp32",
+    "num": 4,
+    "pass": 4,
+    "fail": 0,
+    "cases": [
+      {
+        "case_id": "C1",
+        "shape": "[1024] dim=0",
+        "result": "PASS",
+        "max_diff": "0.000e+00",
+        "mean_diff": "0.000e+00",
+        "time_ms": "0.09",
+        "note": ""
+      },
+      {
+        "case_id": "C2",
+        "shape": "[128,128] dim=1",
+        "result": "PASS",
+        "max_diff": "1.907e-06",
+        "mean_diff": "4.768e-07",
+        "time_ms": "0.21",
+        "note": ""
+      },
+      {
+        "case_id": "C3",
+        "shape": "[16,32,64] dim=1 keepdim",
+        "result": "PASS",
+        "max_diff": "3.815e-06",
+        "mean_diff": "9.537e-07",
+        "time_ms": "0.34",
+        "note": ""
+      },
+      {
+        "case_id": "C4",
+        "shape": "[2048,512] dim=-1",
+        "result": "PASS",
+        "max_diff": "7.629e-06",
+        "mean_diff": "1.907e-06",
+        "time_ms": "0.95",
+        "note": ""
+      }
+    ]
+  },
+  {
+    "op": "matmul",
+    "kind": "matmul",
+    "pathway": "PyTorch(.so)",
+    "dtype": "fp16",
+    "num": 4,
+    "pass": 4,
+    "fail": 0,
+    "cases": [
+      {
+        "case_id": "C1",
+        "shape": "[128,256]x[256,512]",
+        "result": "PASS",
+        "max_diff": "3.125e-02",
+        "mean_diff": "7.812e-03",
+        "time_ms": "0.58",
+        "note": "fp16"
+      },
+      {
+        "case_id": "C2",
+        "shape": "[1024,1024]x[1024,1024]",
+        "result": "PASS",
+        "max_diff": "6.250e-02",
+        "mean_diff": "1.562e-02",
+        "time_ms": "4.12",
+        "note": ""
+      },
+      {
+        "case_id": "C3",
+        "shape": "[512,512]x[512,512]",
+        "result": "PASS",
+        "max_diff": "4.687e-02",
+        "mean_diff": "1.172e-02",
+        "time_ms": "1.36",
+        "note": ""
+      },
+      {
+        "case_id": "C4",
+        "shape": "[64,64]x[64,64]",
+        "result": "PASS",
+        "max_diff": "1.562e-02",
+        "mean_diff": "3.906e-03",
+        "time_ms": "0.12",
+        "note": ""
+      }
+    ]
+  }
+]

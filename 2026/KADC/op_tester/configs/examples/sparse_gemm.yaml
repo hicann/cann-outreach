@@ -1,0 +1,25 @@
+op:
+  name: sparse_gemm
+  so: build/libsparse_gemm_ops.so
+  kind: matmul
+  num_inputs: 2
+  num_outputs: 1
+  dtype: float32
+  input_init: [random, random]
+  atol: 1e-6
+  rtol: 1e-6
+  golden:
+    module: sparse_gemm_golden
+    func: compute
+
+shape_gen:
+  ndim_min: 2
+  ndim_max: 3
+  dim_min: 64
+  dim_max: 512
+  num_cases: 8
+  seed: 6
+
+shapes:
+  - [[128, 128], [128, 128]]
+  - [[2, 128, 128], [2, 128, 128]]

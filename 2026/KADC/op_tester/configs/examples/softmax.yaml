@@ -1,0 +1,26 @@
+op:
+  name: softmax
+  so: build/libsoftmax_ops.so
+  kind: reduction
+  num_inputs: 1
+  num_outputs: 1
+  dtype: float32
+  attrs:
+    - {name: dim, type: int, gen: dim}
+  atol: 1e-5
+  rtol: 1e-5
+  golden:
+    module: softmax_golden
+    func: compute
+
+shape_gen:
+  ndim_min: 1
+  ndim_max: 3
+  dim_min: 4
+  dim_max: 2048
+  num_cases: 10
+  seed: 4
+
+shapes:
+  - {shapes: [[128, 128]], attrs: {dim: -1}}
+  - {shapes: [[16, 256, 32]], attrs: {dim: 1}}
