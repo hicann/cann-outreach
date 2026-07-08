@@ -1,0 +1,3 @@
+/workspace/notebook22/cann-outreach/2026/CANN-Summer-Camps/Xian-Jiaotong-University/yu31343/Lession1/build/CMakeFiles/mul_test.dir
+/workspace/notebook22/cann-outreach/2026/CANN-Summer-Camps/Xian-Jiaotong-University/yu31343/Lession1/build/CMakeFiles/edit_cache.dir
+/workspace/notebook22/cann-outreach/2026/CANN-Summer-Camps/Xian-Jiaotong-University/yu31343/Lession1/build/CMakeFiles/rebuild_cache.dir

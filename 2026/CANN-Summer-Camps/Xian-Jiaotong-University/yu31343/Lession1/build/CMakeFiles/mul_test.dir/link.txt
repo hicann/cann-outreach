@@ -1,0 +1,1 @@
+/opt/conda/Ascend/cann-9.0.0/bin/bisheng CMakeFiles/mul_test.dir/mul_custom.asc.o -o mul_test
