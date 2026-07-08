@@ -10,3 +10,6 @@ nohup.out
 # macOS
 .DS_Store
 **/.DS_Store
+
+# 课程资料
+course-materials/
