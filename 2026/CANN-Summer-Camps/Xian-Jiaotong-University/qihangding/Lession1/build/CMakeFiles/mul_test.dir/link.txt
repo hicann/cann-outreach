@@ -1,0 +1,1 @@
+/usr/local/Ascend/cann-8.5.0/bin/bisheng CMakeFiles/mul_test.dir/mul_custom.asc.o -o mul_test

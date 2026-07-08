@@ -1,0 +1,3 @@
+/opt/atomgit/cann-outreach/2026/CANN-Summer-Camps/Xian-Jiaotong-University/qihangding/Lession1/build/CMakeFiles/mul_test.dir
+/opt/atomgit/cann-outreach/2026/CANN-Summer-Camps/Xian-Jiaotong-University/qihangding/Lession1/build/CMakeFiles/edit_cache.dir
+/opt/atomgit/cann-outreach/2026/CANN-Summer-Camps/Xian-Jiaotong-University/qihangding/Lession1/build/CMakeFiles/rebuild_cache.dir
