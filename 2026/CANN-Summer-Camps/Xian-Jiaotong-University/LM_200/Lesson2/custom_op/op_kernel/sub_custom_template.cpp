@@ -70,16 +70,11 @@ private:
     uint32_t tileLength;
 };
 
-
 extern "C" __global__ __aicore__ void sub_custom_template(GM_ADDR x, GM_ADDR y, GM_ADDR z, GM_ADDR workspace, GM_ADDR tiling)
 {
     REGISTER_TILING_DEFAULT(SubCustomTemplateTilingData);
     GET_TILING_DATA(tiling_data, tiling);
     KernelSub<DTYPE_X, DTYPE_Y, DTYPE_Z> op;
-    uint32_t totalElem = tilingData.size;
-    uint32_t coreNum = AscendC::GetBlockNum();
-    uint32_t coreTotal = totalElem / coreNum;
-    uint32_t tileCnt = 1;
-    op.Init(x, y, z, tiling_data.size, tiling_data.size);
+    op.Init(x, y, z, tiling_data.totalLength, tiling_data.tileNum);
     op.Process();
 }

@@ -3,7 +3,8 @@
 #include <cstdint>
 
 struct SubCustomTemplateTilingData {
-    uint32_t size;
+    uint32_t totalLength;
+    uint32_t tileNum;
 };
 
 #endif

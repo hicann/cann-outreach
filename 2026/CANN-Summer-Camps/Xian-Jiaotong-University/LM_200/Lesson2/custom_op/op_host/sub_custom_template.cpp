@@ -1,24 +1,18 @@
 #include "../op_kernel/sub_custom_template_tiling.h"
 #include "register/op_def_registry.h"
 
-
 namespace optiling {
 static ge::graphStatus TilingFunc(gert::TilingContext* context)
 {
 
-    SubCustomTemplateTilingData *tiling = context->GetTilingData<SubCustomTemplateTilingData>();
-    const gert::StorageShape* x1_shape = context->GetInputShape(0);
-    int32_t data_sz = 1;
-    for (int i = 0; i < x1_shape->GetStorageShape().GetDimNum(); i++)
-    data_sz *= x1_shape->GetStorageShape().GetDim(i);
-    tiling->size = data_sz;
+    uint32_t totalLength = context->GetInputShape(0)->GetOriginShape().GetShapeSize();
     context->SetBlockDim(8);
-    size_t *currentWorkspace = context->GetWorkspaceSizes(1);
-    currentWorkspace[0] = 0;
+    SubCustomTemplateTilingData *tiling = context->GetTilingData<SubCustomTemplateTilingData>();
+    tiling->totalLength = totalLength;
+    tiling->tileNum = 1;
     return ge::GRAPH_SUCCESS;
 }
 }
-
 
 namespace ge {
 static ge::graphStatus InferShape(gert::InferShapeContext* context)
@@ -35,7 +29,6 @@ static ge::graphStatus InferDataType(gert::InferDataTypeContext *context)
     return ge::GRAPH_SUCCESS;
 }
 }
-
 
 namespace ops {
 class SubCustomTemplate : public OpDef {
@@ -62,7 +55,7 @@ public:
 
         this->AICore()
             .SetTiling(optiling::TilingFunc);
-        this->AICore().AddConfig("ascend910");
+        this->AICore().AddConfig("ascend910b");
 
     }
 };
