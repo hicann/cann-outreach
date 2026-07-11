@@ -1,0 +1,28 @@
+#!/bin/bash
+# ============================================================================
+# SubCustomTemplate 算子编译脚本
+# ============================================================================
+if [ -z "$BASE_LIBS_PATH" ]; then
+    if [ -z "$ASCEND_HOME_PATH" ]; then
+        if [ -z "$ASCEND_AICPU_PATH" ]; then
+            echo "please set env."
+            exit 1
+        else
+            export ASCEND_HOME_PATH=$ASCEND_AICPU_PATH
+        fi
+    else
+        export ASCEND_HOME_PATH=$ASCEND_HOME_PATH
+    fi
+else
+    export ASCEND_HOME_PATH=$BASE_LIBS_PATH
+fi
+echo "using ASCEND_HOME_PATH: $ASCEND_HOME_PATH"
+script_path=$(realpath $(dirname $0))
+
+BUILD_DIR="build_out"
+mkdir -p build_out
+rm -rf build_out/*
+
+cmake -S . -B "$BUILD_DIR" --preset=default
+cmake --build "$BUILD_DIR" --target binary -j$(nproc)
+cmake --build "$BUILD_DIR" --target package -j$(nproc)
