@@ -1,32 +1,58 @@
-
 #include "../op_kernel/add_custom_template_tiling.h"
 #include "register/op_def_registry.h"
 
 namespace optiling {
+
+// L1-friendly tile length target per element type.
+// Ascend 910B has ~192KB L1 per AI core; with BUFFER_NUM=2 and 3 queues,
+//   fp16 (2B): 2 * 3 * 2 * tileLength = 12 * tileLength → 8K ~= 96KB  (fits well)
+//   fp32 (4B): 2 * 3 * 4 * tileLength = 24 * tileLength → 8K ~= 192KB (tight but ok)
+static constexpr uint32_t TARGET_TILE_LENGTH = 8192;
+static constexpr uint32_t MIN_TILE_LENGTH = 256;
+static constexpr uint32_t MAX_TILE_NUM = 255;
+static constexpr uint32_t MAX_BLOCK_DIM = 40;
+
 static ge::graphStatus TilingFunc(gert::TilingContext* context)
 {
-  AddCustomTemplateTilingData *tiling = context->GetTilingData<AddCustomTemplateTilingData>();
-  uint32_t totalLength = context->GetInputShape(0)->GetOriginShape().GetShapeSize();
+    AddCustomTemplateTilingData *tiling = context->GetTilingData<AddCustomTemplateTilingData>();
+    uint32_t totalLength = context->GetInputShape(0)->GetOriginShape().GetShapeSize();
 
-  // 40核并行（910B满核）
-  context->SetBlockDim(40);
+    // Adaptive blockDim: scale down for small tensors so each block has enough work
+    uint32_t blockDim = MAX_BLOCK_DIM;
+    while (blockDim > 1 && totalLength / blockDim < TARGET_TILE_LENGTH) {
+        blockDim >>= 1;  // halve the block count
+    }
+    context->SetBlockDim(blockDim);
 
-  tiling->totalLength = totalLength;
+    uint32_t blockLength = totalLength / blockDim;
 
-  // 每个tile处理2048个float
-  // 每核 blockLength = 921600 / 40 = 23040
-  // tileNum = 23040 / 2048 ≈ 11.25 → 向上取整为12
-  // 实际每个tile = 23040 / 12 = 1920
-  constexpr uint32_t tileLength = 2048;
-  uint32_t blockLen = totalLength / 40;
-  uint32_t tileNum = (blockLen + tileLength - 1) / tileLength;
-  tiling->tileNum = tileNum;
+    // Compute tileNum so each tile is roughly TARGET_TILE_LENGTH elements
+    uint32_t tileNum = (blockLength + TARGET_TILE_LENGTH - 1) / TARGET_TILE_LENGTH;
+    if (tileNum < 1) {
+        tileNum = 1;
+    } else if (tileNum > MAX_TILE_NUM) {
+        // Cap to avoid scheduling overhead from too many tiny tiles;
+        // this also bounds the tile length from below to MIN_TILE_LENGTH
+        tileNum = MAX_TILE_NUM;
+    }
 
-  return ge::GRAPH_SUCCESS;
+    // Ensure minimum tile length
+    uint32_t tileLength = blockLength / tileNum;
+    while (tileNum > 1 && tileLength < MIN_TILE_LENGTH) {
+        tileNum >>= 1;
+        tileLength = blockLength / tileNum;
+    }
+
+    tiling->totalLength = totalLength;
+    tiling->tileNum = tileNum;
+
+    return ge::GRAPH_SUCCESS;
 }
-}
+
+}  // namespace optiling
 
 namespace ge {
+
 static ge::graphStatus InferShape(gert::InferShapeContext* context)
 {
     const gert::Shape* x1_shape = context->GetInputShape(0);
@@ -34,15 +60,18 @@ static ge::graphStatus InferShape(gert::InferShapeContext* context)
     *y_shape = *x1_shape;
     return GRAPH_SUCCESS;
 }
+
 static ge::graphStatus InferDataType(gert::InferDataTypeContext *context)
 {
     const auto inputDataType = context->GetInputDataType(0);
     context->SetOutputDataType(0, inputDataType);
     return ge::GRAPH_SUCCESS;
 }
-}
+
+}  // namespace ge
 
 namespace ops {
+
 class AddCustomTemplate : public OpDef {
 public:
     explicit AddCustomTemplate(const char* name) : OpDef(name)
@@ -68,5 +97,7 @@ public:
         this->AICore().AddConfig("ascend910b");
     }
 };
+
 OP_ADD(AddCustomTemplate);
-}
+
+}  // namespace ops
