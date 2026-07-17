@@ -42,7 +42,7 @@ CANN-Code-Detective/
 ## 参与方式
 
 1. **获取题目**：进入对应期数目录（如 `Challenge01-DivCustom`），阅读该目录下的 `README.md` 了解题目要求。
-2. **复制骨架**：将 `Template/DivCustom/` 目录复制一份，并重命名为你的 gitcode 用户名，例如 `cp -r Template/DivCustom <你的用户名>/DivCustom`。请勿直接修改 Template 目录。
+2. **复制骨架**：将题目模板目录复制一份，并将目录重命名为你的 gitcode 用户名，例如 `cp -r Template/DivCustom <你的用户名>/DivCustom`。请勿直接修改 Template 目录。
 3. **补充实现**：在你的目录中，按照注释提示补充算子实现代码。
 4. **本地验证**：参考 README.md 中的运行说明，在NPU 环境编译运行，确保输出 `[Success]` 通过验证。
 5. **提交 PR**：将你的实现通过 Pull Request 提交到本仓库，等待评审。
@@ -50,9 +50,9 @@ CANN-Code-Detective/
 ## 提交与评审
 
 - 每期题目对应一个目录，请在**对应期数目录**下新建一个自己gitcode用户名命名的目录存放你的实现代码，比如第一期的目录为 `2026/CANN-Code-Detective/Challenge01-DivCustom/<你的gitcode用户名>/DivCustom/`。
-- PR 标题建议格式：`[CANN Code Detective][Challenge01] DivCustom 实现`。
-- 评审会关注：功能正确性、代码规范性。
-- 通过评审的 PR 将被合并，优秀实现将作为参考样例展示。
+- PR 标题建议格式：标题前添加类似`【代码侦探Challenge01-DivCustom】`标识，方便代码检视，具体格式以每一次活动发布要求为准。
+- 评审会关注：功能正确性、代码规范性，通过评审的 PR 将被合并，优秀实现将作为参考样例展示。
+- 代码贡献提交PR需要签署CLA，可参考本仓库[README](https://gitcode.com/guest_shao/cann-outreach/blob/master/README.md)获取签署CLA/提交PR的指导说明
 
 ## 环境要求
 
@@ -73,7 +73,7 @@ A: 鼓励以学习为目的合理使用 AI 工具，但请确保你理解每一�
 
 ## 贡献者
 
-感谢每一位参与挑战的开发者。你的每一行代码，都是 Ascend 生态的一份力量。
+感谢每一位参与挑战的开发者。你的每一行代码，都是CANN生态的一份力量。
 
 ---
 

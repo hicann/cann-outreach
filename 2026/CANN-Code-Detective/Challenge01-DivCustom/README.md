@@ -4,7 +4,7 @@
 
 逐元素除法（Element-wise Division）是算子开发中最基础的二元操作之一。给定两个相同长度的输入张量 `x` 和 `y`，计算输出 `z = x / y`。
 
-虽然逻辑简单，但它完整覆盖了 AscendC 算子开发的核心流程：**Tiling 切分 → 数据搬运（CopyIn）→ 计算（Compute）→ 结果搬出（CopyOut）**。
+题目逻辑简单，但它完整覆盖了 AscendC 算子开发的核心流程：**Tiling 切分 → 数据搬运（CopyIn）→ 计算（Compute）→ 结果搬出（CopyOut）**，适合初学者入门学习。
 
 ## 算子描述
 
