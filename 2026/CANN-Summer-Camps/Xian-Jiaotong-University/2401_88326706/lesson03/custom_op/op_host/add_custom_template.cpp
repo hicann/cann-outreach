@@ -9,7 +9,7 @@ static ge::graphStatus TilingFunc(gert::TilingContext* context)
   uint32_t totalLength = context->GetInputShape(0)->GetOriginShape().GetShapeSize();
   context->SetBlockDim(40);
   tiling->totalLength = totalLength;
-  tiling->tileNum = 360;
+  tiling->tileNum = 5;
   return ge::GRAPH_SUCCESS;
 }
 }
