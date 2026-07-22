@@ -1,0 +1,28 @@
+/* -------------------------------------------------------------------------
+ * This file is part of the MindStudio project.
+ * Copyright (c) 2025 Huawei Technologies Co.,Ltd.
+ *
+ * MindStudio is licensed under Mulan PSL v2.
+ * You can use this software according to the terms and conditions of the Mulan PSL v2.
+ * You may obtain a copy of Mulan PSL v2 at:
+ *
+ *          http://license.coscl.org.cn/MulanPSL2
+ *
+ * THIS SOFTWARE IS PROVIDED ON AN "AS IS" BASIS, WITHOUT WARRANTIES OF ANY KIND,
+ * EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT,
+ * MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.
+ * See the Mulan PSL v2 for more details.
+ * ------------------------------------------------------------------------- */
+
+#ifndef TANH_CUSTOM_TILING_H
+#define TANH_CUSTOM_TILING_H
+#include <cstdint>
+
+struct TanhCustomTilingData {
+    // TODO: 考生自行补齐Tiling参数定义，直接定义即可，无需套用宏
+    uint32_t totalLength; // 输入数据的总元素个数 (对应 Host 侧的 totalLength)
+    uint32_t blockLength; // 每个 AI Core 核分到的元素个数 (对应 Host 侧的 blockLength)
+    uint32_t tileNum;     // 每个核内部切分的流水线块数 (对应 Host 侧的 TILE_NUM)
+    uint32_t tileLength;  // 每个流水线块 (Tile) 处理的元素个数 (对应 Host 侧的 tileLength)
+};
+#endif 
