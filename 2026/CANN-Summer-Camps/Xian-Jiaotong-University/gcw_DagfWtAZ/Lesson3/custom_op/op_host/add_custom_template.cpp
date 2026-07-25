@@ -1,24 +1,18 @@
-#include "../op_kernel/sub_custom_template_tiling.h"
-#include "register/op_def_registry.h"
 
+#include "../op_kernel/add_custom_template_tiling.h"
+#include "register/op_def_registry.h"
 
 namespace optiling {
 static ge::graphStatus TilingFunc(gert::TilingContext* context)
 {
-
-  SubCustomTemplateTilingData *tiling = context->GetTilingData<SubCustomTemplateTilingData>();
-  const gert::StorageShape* x1_shape = context->GetInputShape(0);
-  int32_t data_sz = 1;
-  for (int i = 0; i < x1_shape->GetStorageShape().GetDimNum(); i++)
-    data_sz *= x1_shape->GetStorageShape().GetDim(i);
-  tiling->size = data_sz;
-  context->SetBlockDim(8);
-  size_t *currentWorkspace = context->GetWorkspaceSizes(1);
-  currentWorkspace[0] = 0;
+  AddCustomTemplateTilingData *tiling = context->GetTilingData<AddCustomTemplateTilingData>();
+  uint32_t totalLength = context->GetInputShape(0)->GetOriginShape().GetShapeSize();
+  context->SetBlockDim(40);
+  tiling->totalLength = totalLength;
+  tiling->tileNum = 360;
   return ge::GRAPH_SUCCESS;
 }
 }
-
 
 namespace ge {
 static ge::graphStatus InferShape(gert::InferShapeContext* context)
@@ -36,11 +30,10 @@ static ge::graphStatus InferDataType(gert::InferDataTypeContext *context)
 }
 }
 
-
 namespace ops {
-class SubCustomTemplate : public OpDef {
+class AddCustomTemplate : public OpDef {
 public:
-    explicit SubCustomTemplate(const char* name) : OpDef(name)
+    explicit AddCustomTemplate(const char* name) : OpDef(name)
     {
         this->Input("x")
             .ParamType(REQUIRED)
@@ -57,15 +50,11 @@ public:
             .DataType({ge::DT_FLOAT16, ge::DT_FLOAT})
             .Format({ge::FORMAT_ND, ge::FORMAT_ND})
             .UnknownShapeFormat({ge::FORMAT_ND, ge::FORMAT_ND});
-
         this->SetInferShape(ge::InferShape).SetInferDataType(ge::InferDataType);
-
         this->AICore()
             .SetTiling(optiling::TilingFunc);
         this->AICore().AddConfig("ascend910b");
-
     }
 };
-
-OP_ADD(SubCustomTemplate);
+OP_ADD(AddCustomTemplate);
 }
