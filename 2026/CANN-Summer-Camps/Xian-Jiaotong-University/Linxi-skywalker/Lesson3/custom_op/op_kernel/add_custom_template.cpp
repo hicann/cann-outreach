@@ -1,0 +1,104 @@
+#include "kernel_operator.h"
+#include "add_custom_template_tiling.h"
+
+constexpr int32_t BUFFER_NUM = 2; 
+
+template <class dtypeX, class dtypeY, class dtypeZ>
+class KernelAdd {
+public:
+    __aicore__ inline KernelAdd() {}
+    __aicore__ inline void Init(GM_ADDR x, GM_ADDR y, GM_ADDR z,
+                                uint32_t totalLength, uint32_t tileNum)
+    {
+        uint32_t coreNum = AscendC::GetBlockNum();
+        uint32_t coreId = AscendC::GetBlockIdx();
+        this->blockLength = totalLength / coreNum;
+        xGm.SetGlobalBuffer((__gm__ dtypeX *)x + coreId * this->blockLength, this->blockLength);
+        yGm.SetGlobalBuffer((__gm__ dtypeY *)y + coreId * this->blockLength, this->blockLength);
+        zGm.SetGlobalBuffer((__gm__ dtypeZ *)z + coreId * this->blockLength, this->blockLength);
+
+        constexpr uint32_t maxTileLen = 8192;
+        this->tileLength = (this->blockLength > maxTileLen) ? maxTileLen : this->blockLength;
+        this->loopCount = (this->blockLength + this->tileLength - 1) / this->tileLength;
+
+        pipe.InitBuffer(inQueueX, BUFFER_NUM, this->tileLength * sizeof(dtypeX));
+        pipe.InitBuffer(inQueueY, BUFFER_NUM, this->tileLength * sizeof(dtypeY));
+        pipe.InitBuffer(outQueueZ, BUFFER_NUM, this->tileLength * sizeof(dtypeZ));
+    }
+
+    __aicore__ inline void Process() {
+        for (int32_t i = 0; i < this->loopCount; i++) {
+            CopyIn(i);
+            Compute(i);
+            CopyOut(i);
+        }
+    }
+
+private:
+    __aicore__ inline void CopyIn(int32_t step) {
+        uint32_t offset = step * this->tileLength;
+        uint32_t length = this->tileLength;
+        
+        if (offset + length > this->blockLength) {
+            length = this->blockLength - offset;
+        }
+
+        AscendC::LocalTensor<dtypeX> xLocal = inQueueX.AllocTensor<dtypeX>();
+        AscendC::LocalTensor<dtypeY> yLocal = inQueueY.AllocTensor<dtypeY>();
+        AscendC::DataCopy(xLocal, xGm[offset], length);
+        AscendC::DataCopy(yLocal, yGm[offset], length);
+        inQueueX.EnQue(xLocal);
+        inQueueY.EnQue(yLocal);
+    }
+
+    __aicore__ inline void Compute(int32_t step) {
+        uint32_t offset = step * this->tileLength;
+        uint32_t length = this->tileLength;
+        if (offset + length > this->blockLength) {
+            length = this->blockLength - offset;
+        }
+
+        AscendC::LocalTensor<dtypeX> xLocal = inQueueX.DeQue<dtypeX>();
+        AscendC::LocalTensor<dtypeY> yLocal = inQueueY.DeQue<dtypeY>();
+        AscendC::LocalTensor<dtypeZ> zLocal = outQueueZ.AllocTensor<dtypeZ>();
+        AscendC::Add(zLocal, xLocal, yLocal, length);
+        outQueueZ.EnQue<dtypeZ>(zLocal);
+        inQueueX.FreeTensor(xLocal);
+        inQueueY.FreeTensor(yLocal);
+    }
+
+    __aicore__ inline void CopyOut(int32_t step) {
+        uint32_t offset = step * this->tileLength;
+        uint32_t length = this->tileLength;
+        if (offset + length > this->blockLength) {
+            length = this->blockLength - offset;
+        }
+
+        AscendC::LocalTensor<dtypeZ> zLocal = outQueueZ.DeQue<dtypeZ>();
+        AscendC::DataCopy(zGm[offset], zLocal, length);
+        outQueueZ.FreeTensor(zLocal);
+    }
+
+private:
+    AscendC::TPipe pipe;
+    AscendC::TQue<AscendC::QuePosition::VECIN, BUFFER_NUM> inQueueX;
+    AscendC::TQue<AscendC::QuePosition::VECIN, BUFFER_NUM> inQueueY;
+    AscendC::TQue<AscendC::QuePosition::VECOUT, BUFFER_NUM> outQueueZ;
+    AscendC::GlobalTensor<dtypeX> xGm;
+    AscendC::GlobalTensor<dtypeY> yGm;
+    AscendC::GlobalTensor<dtypeZ> zGm;
+    uint32_t blockLength;
+    uint32_t tileLength;
+    int32_t loopCount;
+};
+
+__global__ __aicore__ void add_custom_template(
+    GM_ADDR x, GM_ADDR y, GM_ADDR z, GM_ADDR workspace, GM_ADDR tiling) {
+
+    REGISTER_TILING_DEFAULT(AddCustomTemplateTilingData);
+    GET_TILING_DATA_WITH_STRUCT(AddCustomTemplateTilingData, tiling_data, tiling);
+
+    KernelAdd<DTYPE_X, DTYPE_Y, DTYPE_Z> op;
+    op.Init(x, y, z, tiling_data.totalLength, tiling_data.tileNum);
+    op.Process();
+}
