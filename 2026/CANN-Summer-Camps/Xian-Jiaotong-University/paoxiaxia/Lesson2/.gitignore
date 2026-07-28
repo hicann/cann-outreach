@@ -1,0 +1,8 @@
+build_out/
+build/
+execute_sub_op
+*.o
+*.so
+*.bin
+*.run
+build_out/
