@@ -8,6 +8,9 @@
 # See LICENSE in the root of the software repository for the full text of the License.
 # ----------------------------------------------------------------------------------------------------------
 
+if ("${CMAKE_BUILD_TYPE}x" STREQUAL "Debugx")
+    npu_op_kernel_options(ascendc_kernels ALL OPTIONS -g -O0)
+endif()
 
 npu_op_kernel_sources(ascendc_kernels
     KERNEL_DIR ./

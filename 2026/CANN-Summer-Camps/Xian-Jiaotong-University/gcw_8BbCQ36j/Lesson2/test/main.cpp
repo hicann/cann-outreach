@@ -1,10 +1,19 @@
+/**
+ * @file main.cpp
+ *
+ * Copyright (C) 2024. Huawei Technologies Co., Ltd. All rights reserved.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ */
 #include <algorithm>
 #include <cstdint>
 #include <iostream>
 #include <vector>
 
 #include "acl/acl.h"
-#include "aclnn_add_custom_template.h"
+#include "aclnn_sub_custom_template.h"
 
 #define SUCCESS 0
 #define FAILED 1
@@ -93,41 +102,41 @@ int main(int argc, char **argv)
     CHECK_RET(ret == 0, LOG_PRINT("Init acl failed. ERROR: %d\n", ret); return FAILED);
 
     // 2. Create input and output, need to customize according to the interface of the API
-    std::vector<int64_t> inputXShape = {45, 20480};
-    std::vector<int64_t> inputYShape = {45, 20480};
-    std::vector<int64_t> outputZShape = {45, 20480};
+    std::vector<int64_t> inputXShape = {8, 2048};
+    std::vector<int64_t> inputYShape = {8, 2048};
+    std::vector<int64_t> outputZShape = {8, 2048};
     void *inputXDeviceAddr = nullptr;
     void *inputYDeviceAddr = nullptr;
     void *outputZDeviceAddr = nullptr;
     aclTensor *inputX = nullptr;
     aclTensor *inputY = nullptr;
     aclTensor *outputZ = nullptr;
-    std::vector<float> inputXHostData(inputXShape[0] * inputXShape[1]);
-    std::vector<float> inputYHostData(inputYShape[0] * inputYShape[1]);
-    std::vector<float> outputZHostData(outputZShape[0] * outputZShape[1]);
+    std::vector<aclFloat16> inputXHostData(inputXShape[0] * inputXShape[1]);
+    std::vector<aclFloat16> inputYHostData(inputYShape[0] * inputYShape[1]);
+    std::vector<aclFloat16> outputZHostData(outputZShape[0] * outputZShape[1]);
     for (int i = 0; i < inputXShape[0] * inputXShape[1]; ++i) {
-        inputXHostData[i] = 1.0;
-        inputYHostData[i] = 2.0;
-        outputZHostData[i] = 0.0;
+        inputXHostData[i] = aclFloatToFloat16(1.0);
+        inputYHostData[i] = aclFloatToFloat16(2.0);
+        outputZHostData[i] = aclFloatToFloat16(0.0);
     }
     std::vector<void *> tensors = {inputX, inputY, outputZ};
     std::vector<void *> deviceAddrs = {inputXDeviceAddr, inputYDeviceAddr, outputZDeviceAddr};
     // Create inputX aclTensor
-    ret = CreateAclTensor(inputXHostData, inputXShape, &inputXDeviceAddr, aclDataType::ACL_FLOAT, &inputX);
+    ret = CreateAclTensor(inputXHostData, inputXShape, &inputXDeviceAddr, aclDataType::ACL_FLOAT16, &inputX);
     CHECK_RET(ret == ACL_SUCCESS, DestroyResources(tensors, deviceAddrs, stream, deviceId); return FAILED);
     // Create inputY aclTensor
-    ret = CreateAclTensor(inputYHostData, inputYShape, &inputYDeviceAddr, aclDataType::ACL_FLOAT, &inputY);
+    ret = CreateAclTensor(inputYHostData, inputYShape, &inputYDeviceAddr, aclDataType::ACL_FLOAT16, &inputY);
     CHECK_RET(ret == ACL_SUCCESS, DestroyResources(tensors, deviceAddrs, stream, deviceId); return FAILED);
     // Create outputZ aclTensor
-    ret = CreateAclTensor(outputZHostData, outputZShape, &outputZDeviceAddr, aclDataType::ACL_FLOAT, &outputZ);
+    ret = CreateAclTensor(outputZHostData, outputZShape, &outputZDeviceAddr, aclDataType::ACL_FLOAT16, &outputZ);
     CHECK_RET(ret == ACL_SUCCESS, DestroyResources(tensors, deviceAddrs, stream, deviceId); return FAILED);
 
     // 3. Call the API of the custom operator library
     uint64_t workspaceSize = 0;
     aclOpExecutor *executor;
     // Calculate the workspace size and allocate memory for it
-    ret = aclnnAddCustomTemplateGetWorkspaceSize(inputX, inputY, outputZ, &workspaceSize, &executor);
-    CHECK_RET(ret == ACL_SUCCESS, LOG_PRINT("aclnnAddCustomTemplateGetWorkspaceSize failed. ERROR: %d\n", ret);
+    ret = aclnnSubCustomTemplateGetWorkspaceSize(inputX, inputY, outputZ, &workspaceSize, &executor);
+    CHECK_RET(ret == ACL_SUCCESS, LOG_PRINT("aclnnSubCustomTemplateGetWorkspaceSize failed. ERROR: %d\n", ret);
               DestroyResources(tensors, deviceAddrs, stream, deviceId); return FAILED);
 
     void *workspaceAddr = nullptr;
@@ -137,8 +146,8 @@ int main(int argc, char **argv)
                   DestroyResources(tensors, deviceAddrs, stream, deviceId, workspaceAddr); return FAILED);
     }
     // Execute the custom operator
-    ret = aclnnAddCustomTemplate(workspaceAddr, workspaceSize, executor, stream);
-    CHECK_RET(ret == ACL_SUCCESS, LOG_PRINT("aclnnAdd failed. ERROR: %d\n", ret);
+    ret = aclnnSubCustomTemplate(workspaceAddr, workspaceSize, executor, stream);
+    CHECK_RET(ret == ACL_SUCCESS, LOG_PRINT("aclnnSubCustomTemplate failed. ERROR: %d\n", ret);
               DestroyResources(tensors, deviceAddrs, stream, deviceId, workspaceAddr); return FAILED);
 
     // 4. (Fixed code) Synchronize and wait for the task to complete
@@ -149,9 +158,9 @@ int main(int argc, char **argv)
     // 5. Get the output value, copy the result from device memory to host memory, need to modify according to the
     // interface of the API
     auto size = GetShapeSize(outputZShape);
-    std::vector<float> resultData(size, 0);
+    std::vector<aclFloat16> resultData(size, 0);
     ret = aclrtMemcpy(resultData.data(), resultData.size() * sizeof(resultData[0]), outputZDeviceAddr,
-                      size * sizeof(float), ACL_MEMCPY_DEVICE_TO_HOST);
+                      size * sizeof(aclFloat16), ACL_MEMCPY_DEVICE_TO_HOST);
     CHECK_RET(ret == ACL_SUCCESS, LOG_PRINT("copy result from device to host failed. ERROR: %d\n", ret);
               DestroyResources(tensors, deviceAddrs, stream, deviceId, workspaceAddr); return FAILED);
 
@@ -159,11 +168,11 @@ int main(int argc, char **argv)
     DestroyResources(tensors, deviceAddrs, stream, deviceId, workspaceAddr);
 
     // print the output result
-    std::vector<float> goldenData(size, 3.0);
+    std::vector<aclFloat16> goldenData(size, aclFloatToFloat16(-1.0));
 
     LOG_PRINT("result is:\n");
     for (int64_t i = 0; i < 10; i++) {
-        LOG_PRINT("%.1f ", resultData[i]);
+        LOG_PRINT("%.1f ", aclFloat16ToFloat(resultData[i]));
     }
     LOG_PRINT("\n");
     if (std::equal(resultData.begin(), resultData.end(), goldenData.begin())) {

@@ -14,6 +14,7 @@ npu_op_code_gen(
     SRC ${ops_srcs}
     PACKAGE ${package_name}
     OUT_DIR ${ASCEND_AUTOGEN_PATH}
+    JOIN_OP_DEF True
 )
 
 file(GLOB autogen_aclnn_src ${ASCEND_AUTOGEN_PATH}/aclnn_*.cpp)
@@ -45,7 +46,7 @@ npu_op_library(cust_optiling TILING
     ${ops_srcs}
     ${fallback_src}
 )
-target_compile_options(cust_op_proto PRIVATE
+target_compile_options(cust_optiling PRIVATE
     -fvisibility=hidden
 )
 
