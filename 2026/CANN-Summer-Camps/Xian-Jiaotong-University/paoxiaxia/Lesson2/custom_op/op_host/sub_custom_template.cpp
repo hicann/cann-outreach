@@ -8,7 +8,7 @@ static ge::graphStatus TilingFunc(gert::TilingContext* context)
 
   SubCustomTemplateTilingData *tiling = context->GetTilingData<SubCustomTemplateTilingData>();
   const gert::StorageShape* x1_shape = context->GetInputShape(0);
-  int32_t data_sz = 1;
+  int64_t data_sz = 1;
   for (int i = 0; i < x1_shape->GetStorageShape().GetDimNum(); i++)
     data_sz *= x1_shape->GetStorageShape().GetDim(i);
   tiling->size = data_sz;

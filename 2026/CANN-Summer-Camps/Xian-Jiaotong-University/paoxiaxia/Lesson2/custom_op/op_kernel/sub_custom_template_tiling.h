@@ -3,7 +3,7 @@
 #include <cstdint>
 
 struct SubCustomTemplateTilingData {
-    uint32_t size;
+    uint64_t size;
 };
 
 #endif

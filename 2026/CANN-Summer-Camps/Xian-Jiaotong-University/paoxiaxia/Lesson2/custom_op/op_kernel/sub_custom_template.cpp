@@ -7,15 +7,15 @@ constexpr uint32_t TILE_LENGTH = 4096;
 class KernelSub {
 public:
     __aicore__ inline KernelSub() {}
-    __aicore__ inline void Init(GM_ADDR x, GM_ADDR y, GM_ADDR z, uint32_t totalLength, uint32_t tileNum)
+    __aicore__ inline void Init(GM_ADDR x, GM_ADDR y, GM_ADDR z, uint64_t totalLength, uint32_t tileNum)
     {
         uint32_t blockDim = AscendC::GetBlockNum();
         this->blockLength = (totalLength + blockDim - 1) / blockDim;
         this->tileNum = tileNum;
         this->tileLength = (this->blockLength + tileNum - 1) / tileNum;
 
-        uint32_t blockOffset = this->blockLength * AscendC::GetBlockIdx();
-        uint32_t remaining = (blockOffset + this->blockLength <= totalLength)
+        uint64_t blockOffset = this->blockLength * AscendC::GetBlockIdx();
+        uint64_t remaining = (blockOffset + this->blockLength <= totalLength)
             ? this->blockLength
             : (totalLength > blockOffset ? totalLength - blockOffset : 0);
 
@@ -38,10 +38,10 @@ public:
     }
 
 private:
-    __aicore__ inline uint32_t GetTileLength(int32_t progress)
+    __aicore__ inline uint64_t GetTileLength(int32_t progress)
     {
-        uint32_t offset = this->tileLength * progress;
-        uint32_t remaining = this->blockLength - offset;
+        uint64_t offset = this->tileLength * progress;
+        uint64_t remaining = this->blockLength - offset;
         return (remaining < this->tileLength) ? remaining : this->tileLength;
     }
 
@@ -49,7 +49,7 @@ private:
     {
         AscendC::LocalTensor<half> xLocal = inQueueX.AllocTensor<half>();
         AscendC::LocalTensor<half> yLocal = inQueueY.AllocTensor<half>();
-        uint32_t len = GetTileLength(progress);
+        uint64_t len = GetTileLength(progress);
         AscendC::DataCopy(xLocal, xGm[progress * this->tileLength], len);
         AscendC::DataCopy(yLocal, yGm[progress * this->tileLength], len);
         inQueueX.EnQue(xLocal);
@@ -61,7 +61,7 @@ private:
         AscendC::LocalTensor<half> xLocal = inQueueX.DeQue<half>();
         AscendC::LocalTensor<half> yLocal = inQueueY.DeQue<half>();
         AscendC::LocalTensor<half> zLocal = outQueueZ.AllocTensor<half>();
-        uint32_t len = GetTileLength(progress);
+        uint64_t len = GetTileLength(progress);
 
         AscendC::Sub(zLocal, xLocal, yLocal, len);
 
@@ -73,7 +73,7 @@ private:
     __aicore__ inline void CopyOut(int32_t progress)
     {
         AscendC::LocalTensor<half> zLocal = outQueueZ.DeQue<half>();
-        uint32_t len = GetTileLength(progress);
+        uint64_t len = GetTileLength(progress);
         AscendC::DataCopy(zGm[progress * this->tileLength], zLocal, len);
         outQueueZ.FreeTensor(zLocal);
     }
@@ -83,7 +83,8 @@ private:
     AscendC::TQue<AscendC::QuePosition::VECIN, BUFFER_NUM> inQueueX, inQueueY;
     AscendC::TQue<AscendC::QuePosition::VECOUT, BUFFER_NUM> outQueueZ;
     AscendC::GlobalTensor<half> xGm, yGm, zGm;
-    uint32_t blockLength, tileNum, tileLength;
+    uint64_t blockLength, tileLength;
+    uint32_t tileNum;
 };
 
 extern "C" __global__ __aicore__ void sub_custom_template(GM_ADDR x, GM_ADDR y, GM_ADDR z, GM_ADDR workspace, GM_ADDR tiling) {
