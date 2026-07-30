@@ -1,0 +1,1 @@
+/home/developer/.cannbot/repo/plugins-official/ops-direct-invoke-flash/AGENTS.md
