@@ -1,0 +1,254 @@
+[REVALIDATION INFO] date=2026-07-09T18:58:31+08:00
+[REVALIDATION INFO] CANN=/opt/conda/Ascend/cann-9.0.0
+[REVALIDATION INFO] ASCEND_VISIBLE_DEVICES=3
+[REVALIDATION INFO] build SoftShrinkGrad
+----------------------------------------------------------------
+[INFO] Configuring project...
+[INFO] CMAKE_ARGS: -DASCEND_COMPUTE_UNIT=ascend910b
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- set package config: INSTALL_PATH;/workspace/notebook1/ops_tasks_three_revalidation_20260709/SoftShrinkGrad/code/build
+-- Opbuild generating sources
+-- Opbuild generating sources - done
+INFO target name: cust_optiling
+INFO target name: cust_op_proto
+INFO target name: cust_opapi
+CMake Warning (dev) at /opt/conda/Ascend/cann-9.0.0/compiler/tikcpp/ascendc_kernel_cmake/fwk_modules/func.cmake:1035 (install):
+  Policy CMP0177 is not set: install() DESTINATION paths are normalized.  Run
+  "cmake --help-policy CMP0177" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+Call Stack (most recent call first):
+  op_host/CMakeLists.txt:85 (npu_op_package_add)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /opt/conda/Ascend/cann-9.0.0/compiler/tikcpp/ascendc_kernel_cmake/fwk_modules/func.cmake:1072 (install):
+  Policy CMP0177 is not set: install() DESTINATION paths are normalized.  Run
+  "cmake --help-policy CMP0177" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+Call Stack (most recent call first):
+  op_host/CMakeLists.txt:85 (npu_op_package_add)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /opt/conda/Ascend/cann-9.0.0/compiler/tikcpp/ascendc_kernel_cmake/fwk_modules/func.cmake:1081 (install):
+  Policy CMP0177 is not set: install() DESTINATION paths are normalized.  Run
+  "cmake --help-policy CMP0177" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+Call Stack (most recent call first):
+  op_host/CMakeLists.txt:85 (npu_op_package_add)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /opt/conda/Ascend/cann-9.0.0/compiler/tikcpp/ascendc_kernel_cmake/fwk_modules/func.cmake:1126 (install):
+  Policy CMP0177 is not set: install() DESTINATION paths are normalized.  Run
+  "cmake --help-policy CMP0177" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+Call Stack (most recent call first):
+  op_host/CMakeLists.txt:85 (npu_op_package_add)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /opt/conda/Ascend/cann-9.0.0/compiler/tikcpp/ascendc_kernel_cmake/fwk_modules/func.cmake:1135 (install):
+  Policy CMP0177 is not set: install() DESTINATION paths are normalized.  Run
+  "cmake --help-policy CMP0177" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+Call Stack (most recent call first):
+  op_host/CMakeLists.txt:85 (npu_op_package_add)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+INFO target name: ascendc_kernels
+CMake Warning (dev) at /opt/conda/Ascend/cann-9.0.0/compiler/tikcpp/ascendc_kernel_cmake/fwk_modules/func.cmake:1345 (install):
+  Policy CMP0177 is not set: install() DESTINATION paths are normalized.  Run
+  "cmake --help-policy CMP0177" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+Call Stack (most recent call first):
+  op_kernel/CMakeLists.txt:14 (npu_op_package_add)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /opt/conda/Ascend/cann-9.0.0/compiler/tikcpp/ascendc_kernel_cmake/fwk_modules/func.cmake:1354 (install):
+  Policy CMP0177 is not set: install() DESTINATION paths are normalized.  Run
+  "cmake --help-policy CMP0177" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+Call Stack (most recent call first):
+  op_kernel/CMakeLists.txt:14 (npu_op_package_add)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning at CMakeLists.txt:28 (message):
+  cmake 'make' does NOT build kernel binary by default.  Use: bash build.sh
+  --soc=<soc>
+
+
+-- Configuring done (2.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /workspace/notebook1/ops_tasks_three_revalidation_20260709/SoftShrinkGrad/code/build
+----------------------------------------------------------------
+[INFO] Building project with 8 threads...
+[  6%] Generating scripts/install.sh, scripts/upgrade.sh, scripts/uninstall.sh
+[ 33%] Building CXX object op_host/CMakeFiles/cust_optiling.dir/soft_shrink_grad_def.cpp.o
+[ 33%] Building CXX object op_host/CMakeFiles/cust_opapi.dir/__/autogen/aclnn_soft_shrink_grad.cpp.o
+[ 33%] Building CXX object op_host/CMakeFiles/cust_op_proto.dir/soft_shrink_grad_def.cpp.o
+[ 33%] Building CXX object op_host/CMakeFiles/cust_optiling.dir/soft_shrink_grad_infershape.cpp.o
+[ 46%] Generating ascendc_kernels/tbe/op_info_cfg/ai_core/npu_supported_ops.json
+[ 46%] Generating ../autogen/copy_kernel_src.timestamp
+[ 46%] Built target gen_version_info
+/workspace/notebook1/ops_tasks_three_revalidation_20260709/SoftShrinkGrad/code/build/autogen /workspace/notebook1/ops_tasks_three_revalidation_20260709/SoftShrinkGrad/code/build/op_kernel/ascendc_kernels/tbe/op_info_cfg/ai_core
+[ 53%] Building CXX object op_host/CMakeFiles/cust_optiling.dir/soft_shrink_grad_tiling.cpp.o
+[ 53%] Built target modify_vendor
+[ 60%] Building CXX object op_host/CMakeFiles/cust_op_proto.dir/soft_shrink_grad_infershape.cpp.o
+[INFO] Succeeded generated /workspace/notebook1/ops_tasks_three_revalidation_20260709/SoftShrinkGrad/code/build/op_kernel/ascendc_kernels/tbe/op_info_cfg/ai_core/npu_supported_ops.json
+[ 60%] Built target soft_shrink_grad_custom_npu_supported_ops
+[ 60%] Built target ascendc_kernels_copy_kernel_srcs
+[ 73%] Building CXX object op_host/CMakeFiles/cust_op_proto.dir/soft_shrink_grad_tiling.cpp.o
+[ 73%] Building CXX object op_host/CMakeFiles/cust_op_proto.dir/__/autogen/op_proto.cc.o
+[ 73%] Built target cust_opapi
+[ 80%] Generating ascendc_kernels/tbe/op_info_cfg/ai_core/ascend910b/aic-ascend910b-ops-info.json
+
+
+==============check valid for ops info start==============
+==============check valid for ops info end================
+
+
+Compile op info cfg successfully.
+[ 80%] Built target ascendc_kernels_ops_info_gen_ascend910b
+[ 86%] Linking CXX shared library libcust_opapi.so
+[ 86%] Built target soft_shrink_grad_custom_ascendc_cust_opapi
+[ 86%] Built target cust_optiling
+[ 93%] Linking CXX shared library libcust_opmaster_rt2.0.so
+[ 93%] Built target cust_op_proto
+[100%] Linking CXX shared library libcust_opsproto_rt2.0.so
+[100%] Built target soft_shrink_grad_custom_ascendc_cust_optiling
+[100%] Built target optiling_compat
+[100%] Built target soft_shrink_grad_custom_ascendc_cust_op_proto
+[ 16%] Built target ascendc_kernels_copy_kernel_srcs
+[ 66%] Built target cust_optiling
+[ 83%] Built target ascendc_kernels_ops_info_gen_ascend910b
+[100%] Built target soft_shrink_grad_custom_ascendc_cust_optiling
+[ascend910b] Generating SoftShrinkGrad_275b4e0c1baed41ef766af2ac746a7e4 ...
+[ascend910b] Generating SoftShrinkGrad_b448b9e58e22550731b20b06e4759e1d ...
+[ascend910b] Generating SoftShrinkGrad_1eee30fa9657e2ffc01150d4e866444b ...
+Opc tool start working now, please wait for a moment.
+[ascend910b] Generating SoftShrinkGrad_1eee30fa9657e2ffc01150d4e866444b Done
+Opc tool start working now, please wait for a moment.
+[ascend910b] Generating SoftShrinkGrad_275b4e0c1baed41ef766af2ac746a7e4 Done
+Opc tool start working now, please wait for a moment.
+[ascend910b] Generating SoftShrinkGrad_b448b9e58e22550731b20b06e4759e1d Done
+[100%] Built target SoftShrinkGrad_ascend910b
+[100%] Built target ascendc_kernels_ascendc_bin_ascend910b_gen_ops_config
+[100%] Built target binary
+Run CPack packaging tool...
+CPack: Create package using External
+CPack: Install projects
+CPack: - Run preinstall target for: soft_shrink_grad_op_prj
+CPack: - Install project: soft_shrink_grad_op_prj []
+CPack: Create package
+
+About to compress 2504 KB of data...
+Adding files to archive named "custom_opp_ubuntu_aarch64.run"...
+./help.info
+./install.sh
+./packages/vendors/soft_shrink_grad_custom/framework/tensorflow/npu_supported_ops.json
+./packages/vendors/soft_shrink_grad_custom/op_api/include/aclnn_soft_shrink_grad.h
+./packages/vendors/soft_shrink_grad_custom/op_api/lib/libcust_opapi.so
+./packages/vendors/soft_shrink_grad_custom/op_impl/ai_core/tbe/config/ascend910b/aic-ascend910b-ops-info.json
+./packages/vendors/soft_shrink_grad_custom/op_impl/ai_core/tbe/kernel/ascend910b/soft_shrink_grad/SoftShrinkGrad_1eee30fa9657e2ffc01150d4e866444b.json
+./packages/vendors/soft_shrink_grad_custom/op_impl/ai_core/tbe/kernel/ascend910b/soft_shrink_grad/SoftShrinkGrad_1eee30fa9657e2ffc01150d4e866444b.o
+./packages/vendors/soft_shrink_grad_custom/op_impl/ai_core/tbe/kernel/ascend910b/soft_shrink_grad/SoftShrinkGrad_275b4e0c1baed41ef766af2ac746a7e4.json
+./packages/vendors/soft_shrink_grad_custom/op_impl/ai_core/tbe/kernel/ascend910b/soft_shrink_grad/SoftShrinkGrad_275b4e0c1baed41ef766af2ac746a7e4.o
+./packages/vendors/soft_shrink_grad_custom/op_impl/ai_core/tbe/kernel/ascend910b/soft_shrink_grad/SoftShrinkGrad_b448b9e58e22550731b20b06e4759e1d.json
+./packages/vendors/soft_shrink_grad_custom/op_impl/ai_core/tbe/kernel/ascend910b/soft_shrink_grad/SoftShrinkGrad_b448b9e58e22550731b20b06e4759e1d.o
+./packages/vendors/soft_shrink_grad_custom/op_impl/ai_core/tbe/kernel/config/ascend910b/binary_info_config.json
+./packages/vendors/soft_shrink_grad_custom/op_impl/ai_core/tbe/kernel/config/ascend910b/soft_shrink_grad.json
+./packages/vendors/soft_shrink_grad_custom/op_impl/ai_core/tbe/op_tiling/lib/linux/aarch64/libcust_opmaster_rt2.0.so
+./packages/vendors/soft_shrink_grad_custom/op_impl/ai_core/tbe/op_tiling/liboptiling.so
+./packages/vendors/soft_shrink_grad_custom/op_impl/ai_core/tbe/soft_shrink_grad_custom_impl/dynamic/soft_shrink_grad.cpp
+./packages/vendors/soft_shrink_grad_custom/op_impl/ai_core/tbe/soft_shrink_grad_custom_impl/dynamic/soft_shrink_grad.h
+./packages/vendors/soft_shrink_grad_custom/op_impl/ai_core/tbe/soft_shrink_grad_custom_impl/dynamic/soft_shrink_grad.py
+./packages/vendors/soft_shrink_grad_custom/op_impl/ai_core/tbe/soft_shrink_grad_custom_impl/dynamic/soft_shrink_grad_tiling_data.h
+./packages/vendors/soft_shrink_grad_custom/op_impl/ai_core/tbe/soft_shrink_grad_custom_impl/dynamic/soft_shrink_grad_tiling_key.h
+./packages/vendors/soft_shrink_grad_custom/op_proto/inc/op_proto.h
+./packages/vendors/soft_shrink_grad_custom/op_proto/lib/linux/aarch64/libcust_opsproto_rt2.0.so
+./packages/vendors/soft_shrink_grad_custom/version.info
+./uninstall.sh
+./upgrade.sh
+CRC: 1193433109
+SHA256: 123f9dbb38463433794e3b0726e326ee319a515402689f2da5c3ee0def2ec35b
+Skipping md5sum at user request
+
+Self-extractable archive "custom_opp_ubuntu_aarch64.run" successfully created.
+Copy /workspace/notebook1/ops_tasks_three_revalidation_20260709/SoftShrinkGrad/code/build/_CPack_Packages/Linux/External/custom_opp_ubuntu_aarch64.run/custom_opp_ubuntu_aarch64.run to /workspace/notebook1/ops_tasks_three_revalidation_20260709/SoftShrinkGrad/code/build/
+CPack: - package: /workspace/notebook1/ops_tasks_three_revalidation_20260709/SoftShrinkGrad/code/build/custom_opp_ubuntu_aarch64.run.json generated.
+CPack: - package: /workspace/notebook1/ops_tasks_three_revalidation_20260709/SoftShrinkGrad/code/build/custom_opp_ubuntu_aarch64.run generated.
+Install the project...
+-- Install configuration: ""
+-- Up-to-date: /workspace/notebook1/ops_tasks_three_revalidation_20260709/SoftShrinkGrad/code/build/.
+-- Installing: /workspace/notebook1/ops_tasks_three_revalidation_20260709/SoftShrinkGrad/code/build/./install.sh
+-- Installing: /workspace/notebook1/ops_tasks_three_revalidation_20260709/SoftShrinkGrad/code/build/./uninstall.sh
+-- Installing: /workspace/notebook1/ops_tasks_three_revalidation_20260709/SoftShrinkGrad/code/build/./help.info
+-- Installing: /workspace/notebook1/ops_tasks_three_revalidation_20260709/SoftShrinkGrad/code/build/./upgrade.sh
+-- Installing: /workspace/notebook1/ops_tasks_three_revalidation_20260709/SoftShrinkGrad/code/build/packages/vendors/soft_shrink_grad_custom/version.info
+-- Installing: /workspace/notebook1/ops_tasks_three_revalidation_20260709/SoftShrinkGrad/code/build/packages/vendors/soft_shrink_grad_custom/op_impl/ai_core/tbe/op_tiling/lib/linux/aarch64/libcust_opmaster_rt2.0.so
+-- Set non-toolchain portion of runtime path of "/workspace/notebook1/ops_tasks_three_revalidation_20260709/SoftShrinkGrad/code/build/packages/vendors/soft_shrink_grad_custom/op_impl/ai_core/tbe/op_tiling/lib/linux/aarch64/libcust_opmaster_rt2.0.so" to ""
+-- Installing: /workspace/notebook1/ops_tasks_three_revalidation_20260709/SoftShrinkGrad/code/build/packages/vendors/soft_shrink_grad_custom/op_impl/ai_core/tbe/op_tiling/liboptiling.so
+-- Installing: /workspace/notebook1/ops_tasks_three_revalidation_20260709/SoftShrinkGrad/code/build/packages/vendors/soft_shrink_grad_custom/op_proto/lib/linux/aarch64/libcust_opsproto_rt2.0.so
+-- Set non-toolchain portion of runtime path of "/workspace/notebook1/ops_tasks_three_revalidation_20260709/SoftShrinkGrad/code/build/packages/vendors/soft_shrink_grad_custom/op_proto/lib/linux/aarch64/libcust_opsproto_rt2.0.so" to ""
+-- Installing: /workspace/notebook1/ops_tasks_three_revalidation_20260709/SoftShrinkGrad/code/build/packages/vendors/soft_shrink_grad_custom/op_proto/inc/op_proto.h
+-- Installing: /workspace/notebook1/ops_tasks_three_revalidation_20260709/SoftShrinkGrad/code/build/packages/vendors/soft_shrink_grad_custom/op_api/lib/libcust_opapi.so
+-- Set non-toolchain portion of runtime path of "/workspace/notebook1/ops_tasks_three_revalidation_20260709/SoftShrinkGrad/code/build/packages/vendors/soft_shrink_grad_custom/op_api/lib/libcust_opapi.so" to ""
+-- Installing: /workspace/notebook1/ops_tasks_three_revalidation_20260709/SoftShrinkGrad/code/build/packages/vendors/soft_shrink_grad_custom/op_api/include/aclnn_soft_shrink_grad.h
+-- Installing: /workspace/notebook1/ops_tasks_three_revalidation_20260709/SoftShrinkGrad/code/build/packages/vendors/soft_shrink_grad_custom/op_impl/ai_core/tbe/soft_shrink_grad_custom_impl/dynamic/
+-- Installing: /workspace/notebook1/ops_tasks_three_revalidation_20260709/SoftShrinkGrad/code/build/packages/vendors/soft_shrink_grad_custom/op_impl/ai_core/tbe/soft_shrink_grad_custom_impl/dynamic//soft_shrink_grad_tiling_key.h
+-- Installing: /workspace/notebook1/ops_tasks_three_revalidation_20260709/SoftShrinkGrad/code/build/packages/vendors/soft_shrink_grad_custom/op_impl/ai_core/tbe/soft_shrink_grad_custom_impl/dynamic//soft_shrink_grad_tiling_data.h
+-- Installing: /workspace/notebook1/ops_tasks_three_revalidation_20260709/SoftShrinkGrad/code/build/packages/vendors/soft_shrink_grad_custom/op_impl/ai_core/tbe/soft_shrink_grad_custom_impl/dynamic//soft_shrink_grad.h
+-- Installing: /workspace/notebook1/ops_tasks_three_revalidation_20260709/SoftShrinkGrad/code/build/packages/vendors/soft_shrink_grad_custom/op_impl/ai_core/tbe/soft_shrink_grad_custom_impl/dynamic//soft_shrink_grad.cpp
+-- Installing: /workspace/notebook1/ops_tasks_three_revalidation_20260709/SoftShrinkGrad/code/build/packages/vendors/soft_shrink_grad_custom/op_impl/ai_core/tbe/soft_shrink_grad_custom_impl/dynamic//soft_shrink_grad.py
+-- Installing: /workspace/notebook1/ops_tasks_three_revalidation_20260709/SoftShrinkGrad/code/build/packages/vendors/soft_shrink_grad_custom/op_impl/ai_core/tbe//kernel/ascend910b/
+-- Installing: /workspace/notebook1/ops_tasks_three_revalidation_20260709/SoftShrinkGrad/code/build/packages/vendors/soft_shrink_grad_custom/op_impl/ai_core/tbe//kernel/ascend910b//soft_shrink_grad
+-- Installing: /workspace/notebook1/ops_tasks_three_revalidation_20260709/SoftShrinkGrad/code/build/packages/vendors/soft_shrink_grad_custom/op_impl/ai_core/tbe//kernel/ascend910b//soft_shrink_grad/SoftShrinkGrad_b448b9e58e22550731b20b06e4759e1d.json
+-- Installing: /workspace/notebook1/ops_tasks_three_revalidation_20260709/SoftShrinkGrad/code/build/packages/vendors/soft_shrink_grad_custom/op_impl/ai_core/tbe//kernel/ascend910b//soft_shrink_grad/SoftShrinkGrad_275b4e0c1baed41ef766af2ac746a7e4.json
+-- Installing: /workspace/notebook1/ops_tasks_three_revalidation_20260709/SoftShrinkGrad/code/build/packages/vendors/soft_shrink_grad_custom/op_impl/ai_core/tbe//kernel/ascend910b//soft_shrink_grad/SoftShrinkGrad_b448b9e58e22550731b20b06e4759e1d.o
+-- Installing: /workspace/notebook1/ops_tasks_three_revalidation_20260709/SoftShrinkGrad/code/build/packages/vendors/soft_shrink_grad_custom/op_impl/ai_core/tbe//kernel/ascend910b//soft_shrink_grad/SoftShrinkGrad_1eee30fa9657e2ffc01150d4e866444b.json
+-- Installing: /workspace/notebook1/ops_tasks_three_revalidation_20260709/SoftShrinkGrad/code/build/packages/vendors/soft_shrink_grad_custom/op_impl/ai_core/tbe//kernel/ascend910b//soft_shrink_grad/SoftShrinkGrad_1eee30fa9657e2ffc01150d4e866444b.o
+-- Installing: /workspace/notebook1/ops_tasks_three_revalidation_20260709/SoftShrinkGrad/code/build/packages/vendors/soft_shrink_grad_custom/op_impl/ai_core/tbe//kernel/ascend910b//soft_shrink_grad/SoftShrinkGrad_275b4e0c1baed41ef766af2ac746a7e4.o
+-- Installing: /workspace/notebook1/ops_tasks_three_revalidation_20260709/SoftShrinkGrad/code/build/packages/vendors/soft_shrink_grad_custom/op_impl/ai_core/tbe//kernel/config/
+-- Installing: /workspace/notebook1/ops_tasks_three_revalidation_20260709/SoftShrinkGrad/code/build/packages/vendors/soft_shrink_grad_custom/op_impl/ai_core/tbe//kernel/config//ascend910b
+-- Installing: /workspace/notebook1/ops_tasks_three_revalidation_20260709/SoftShrinkGrad/code/build/packages/vendors/soft_shrink_grad_custom/op_impl/ai_core/tbe//kernel/config//ascend910b/binary_info_config.json
+-- Installing: /workspace/notebook1/ops_tasks_three_revalidation_20260709/SoftShrinkGrad/code/build/packages/vendors/soft_shrink_grad_custom/op_impl/ai_core/tbe//kernel/config//ascend910b/soft_shrink_grad.json
+-- Installing: /workspace/notebook1/ops_tasks_three_revalidation_20260709/SoftShrinkGrad/code/build/packages/vendors/soft_shrink_grad_custom/op_impl/ai_core/tbe/config/ascend910b/aic-ascend910b-ops-info.json
+-- Installing: /workspace/notebook1/ops_tasks_three_revalidation_20260709/SoftShrinkGrad/code/build/packages/vendors/soft_shrink_grad_custom/framework/tensorflow/npu_supported_ops.json
+----------------------------------------------------------------
+[INFO] Build completed successfully!
+[INFO] Kernel binary: /workspace/notebook1/ops_tasks_three_revalidation_20260709/SoftShrinkGrad/code/build/op_kernel/ascendc_kernels/binary/ascend910b/soft_shrink_grad/SoftShrinkGrad_b448b9e58e22550731b20b06e4759e1d.o
+[INFO] Package: /workspace/notebook1/ops_tasks_three_revalidation_20260709/SoftShrinkGrad/code/build/custom_opp_ubuntu_aarch64.run
+[REVALIDATION INFO] build ACLNN tests
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (0.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /workspace/notebook1/ops_tasks_three_revalidation_20260709/test_suites/aclnn/build-three
+[ 50%] Building CXX object CMakeFiles/test_soft_shrink_grad.dir/test_soft_shrink_grad.cpp.o
+[ 83%] Linking CXX executable bin/test_soft_shrink_grad
+[100%] Built target test_soft_shrink_grad
+[REVALIDATION INFO] run ACLNN SoftShrinkGrad
+[PERF] SoftShrinkGrad float32 numel=9 lambd=0.500000 elapsed_us=25.9 workspace_bytes=0
+[PASS] SoftShrinkGrad float32 numel=9 lambd=0.500000
+[PERF] SoftShrinkGrad float32 numel=1027 lambd=1.000000 elapsed_us=24.14 workspace_bytes=0
+[PASS] SoftShrinkGrad float32 numel=1027 lambd=1.000000
+[PERF] SoftShrinkGrad float16 numel=9 lambd=0.500000 elapsed_us=20.16 workspace_bytes=0
+[PASS] SoftShrinkGrad float16 numel=9 lambd=0.500000
+[PERF] SoftShrinkGrad float16 numel=1027 lambd=1.000000 elapsed_us=29.18 workspace_bytes=0
+[PASS] SoftShrinkGrad float16 numel=1027 lambd=1.000000
+[PERF] SoftShrinkGrad bfloat16 numel=9 lambd=0.500000 elapsed_us=19.46 workspace_bytes=0
+[PASS] SoftShrinkGrad bfloat16 numel=9 lambd=0.500000
+[PERF] SoftShrinkGrad bfloat16 numel=1027 lambd=1.000000 elapsed_us=18.76 workspace_bytes=0
+[PASS] SoftShrinkGrad bfloat16 numel=1027 lambd=1.000000
