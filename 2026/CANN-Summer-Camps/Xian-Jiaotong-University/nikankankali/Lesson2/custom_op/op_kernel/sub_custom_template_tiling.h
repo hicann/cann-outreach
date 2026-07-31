@@ -1,0 +1,8 @@
+#ifndef SUB_CUSTOM_TEMPLATE_TILING_H
+#define SUB_CUSTOM_TEMPLATE_TILING_H
+#include <cstdint>
+struct TilingDataTemplate {
+    uint32_t totalLength = 0;
+    uint32_t tileNum     = 0;
+};
+#endif
