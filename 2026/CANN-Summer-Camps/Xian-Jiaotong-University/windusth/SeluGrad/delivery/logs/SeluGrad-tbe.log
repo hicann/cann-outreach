@@ -1,0 +1,15 @@
+[REVALIDATION INFO] date=2026-07-09T18:58:31+08:00
+[REVALIDATION INFO] CANN=/opt/conda/Ascend/cann-9.0.0
+[REVALIDATION INFO] ASCEND_VISIBLE_DEVICES=3
+[TBE PERF] SeluGrad float32 numel=7 elapsed_us=58.3
+[TBE PASS] SeluGrad float32 numel=7
+[TBE PERF] SeluGrad float32 numel=2051 elapsed_us=28.96
+[TBE PASS] SeluGrad float32 numel=2051
+[TBE PERF] SeluGrad float16 numel=7 elapsed_us=40.3
+[TBE PASS] SeluGrad float16 numel=7
+[TBE PERF] SeluGrad float16 numel=2051 elapsed_us=38.1
+[TBE PASS] SeluGrad float16 numel=2051
+.[TBE PERF] SeluGrad bfloat16 numel=7 elapsed_us=47.54
+[TBE PASS] SeluGrad bfloat16 numel=7
+[TBE PERF] SeluGrad bfloat16 numel=2051 elapsed_us=34.56
+[TBE PASS] SeluGrad bfloat16 numel=2051
