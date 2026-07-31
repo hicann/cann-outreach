@@ -1,0 +1,30 @@
+{
+  "op_name": "TruncateMod",
+  "op_type": "ElewiseBroadcast",
+  "input_desc": [
+    {
+      "name": "x1",
+      "param_type": "required",
+      "dtype": ["int8", "uint8", "int32", "float16", "bfloat16", "float32"],
+      "format": ["ND"]
+    },
+    {
+      "name": "x2",
+      "param_type": "required",
+      "dtype": ["int8", "uint8", "int32", "float16", "bfloat16", "float32"],
+      "format": ["ND"]
+    }
+  ],
+  "output_desc": [
+    {
+      "name": "y",
+      "dtype": ["int8", "uint8", "int32", "float16", "bfloat16", "float32"],
+      "format": ["ND"]
+    }
+  ],
+  "attr_desc": [],
+  "support_dynamic_shape": true,
+  "support_broadcast": true,
+  "kernel_type": "ascend_c",
+  "soc_version": ["Ascend910B"]
+}
