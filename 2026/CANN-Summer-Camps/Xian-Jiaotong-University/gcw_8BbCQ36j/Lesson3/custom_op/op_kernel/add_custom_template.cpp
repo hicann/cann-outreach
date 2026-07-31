@@ -1,6 +1,6 @@
 #include "kernel_operator.h"
 #include "add_custom_template_tiling.h"
-constexpr int32_t BUFFER_NUM = 1;  // tensor num for each queue
+constexpr int32_t BUFFER_NUM = 2;  // tensor num for each queue
 
 template <class dtypeX, class dtypeY, class dtypeZ>
 class KernelAdd {
