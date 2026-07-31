@@ -1,0 +1,10 @@
+Op Name=AddCustomTemplate_816f04e052850554f4b3cacb35f8e8c6_0
+Block Dim=40
+Run Soc Version=Ascend910B4
+Device Id=0
+Pid=245886
+Current Freq=1650
+Rated Freq=1650
+Is MC2=0
+Is Lccl=0
+Has Simt=0
