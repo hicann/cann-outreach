@@ -14,7 +14,19 @@
 - **数据布局（Format）**：ND。
 
 ### Lesson 3
-（待补充）
+- **课程题目**：根据提供的算子模板，完成 `AddCustomTemplate` 算子的 Ascend C 核函数开发，实现矢量加法算子，计算 `z = x + y`。
+- **算子功能**：矢量加法，`z = x + y`。
+- **数据类型**：输入 `x`、`y` 和输出 `z` 均支持 `float16` 和 `float32`。
+- **数据形状（Shape）**：输入 `x` 和 `y` 的形状为 `(45, 20480)`，输出 `z` 形状相同。
+- **数据布局（Format）**：ND。
+- **文件说明**：
+  - `run.sh`：一键编译部署和测试脚本
+  - `custom_op/`：自定义算子工程目录
+    - `op_kernel/add_custom_template.cpp`：Ascend C 核函数实现（矢量加法）
+    - `op_kernel/add_custom_template_tiling.h`：Tiling 数据结构定义
+    - `op_host/add_custom_template.cpp`：算子注册、形状推导及 Tiling 实现
+    - `framework/tf_plugin/`：TensorFlow 插件注册
+  - `test/main.cpp`：测试代码，验证算子正确性（期望输出 3.0）
 
 #### 提交步骤
 1. 在 `2026/CANN-Summer-Camps` 目录下找到自己学校的目录并进入。
