@@ -1,0 +1,41 @@
+[REVALIDATION INFO] date=2026-07-09T18:58:31+08:00
+[REVALIDATION INFO] CANN=/opt/conda/Ascend/cann-9.0.0
+[REVALIDATION INFO] ASCEND_VISIBLE_DEVICES=3
+[REVALIDATION INFO] TBE baseline: SyncBatchNormBackwardReduce
+[TBE PERF] SyncBatchNormBackwardReduce float32 shape=[1] elapsed_us=58.88
+[TBE PASS] SyncBatchNormBackwardReduce float32 shape=[1]
+[TBE PERF] SyncBatchNormBackwardReduce float32 shape=[5] elapsed_us=49.4
+[TBE PASS] SyncBatchNormBackwardReduce float32 shape=[5]
+[TBE PERF] SyncBatchNormBackwardReduce float32 shape=[17] near_zero elapsed_us=38.7
+[TBE PASS] SyncBatchNormBackwardReduce float32 shape=[17] near_zero
+[TBE PERF] SyncBatchNormBackwardReduce float32 shape=[513] elapsed_us=37.64
+[TBE PASS] SyncBatchNormBackwardReduce float32 shape=[513]
+[TBE PERF] SyncBatchNormBackwardReduce float32 shape=[1025] near_zero elapsed_us=49.06
+[TBE PASS] SyncBatchNormBackwardReduce float32 shape=[1025] near_zero
+[TBE PERF] SyncBatchNormBackwardReduce float32 shape=[2,128] elapsed_us=50.26
+[TBE PASS] SyncBatchNormBackwardReduce float32 shape=[2,128]
+[TBE PERF] SyncBatchNormBackwardReduce float16 shape=[1] elapsed_us=41.92
+[TBE PASS] SyncBatchNormBackwardReduce float16 shape=[1]
+[TBE PERF] SyncBatchNormBackwardReduce float16 shape=[5] elapsed_us=49.6
+[TBE PASS] SyncBatchNormBackwardReduce float16 shape=[5]
+[TBE PERF] SyncBatchNormBackwardReduce float16 shape=[17] near_zero elapsed_us=37.8
+[TBE PASS] SyncBatchNormBackwardReduce float16 shape=[17] near_zero
+[TBE PERF] SyncBatchNormBackwardReduce float16 shape=[513] elapsed_us=48.98
+[TBE PASS] SyncBatchNormBackwardReduce float16 shape=[513]
+[TBE PERF] SyncBatchNormBackwardReduce float16 shape=[1025] near_zero elapsed_us=37.52
+[TBE PASS] SyncBatchNormBackwardReduce float16 shape=[1025] near_zero
+[TBE PERF] SyncBatchNormBackwardReduce float16 shape=[2,128] elapsed_us=49.54
+[TBE PASS] SyncBatchNormBackwardReduce float16 shape=[2,128]
+[TBE PERF] SyncBatchNormBackwardReduce bfloat16 shape=[1] elapsed_us=40.14
+[TBE PASS] SyncBatchNormBackwardReduce bfloat16 shape=[1]
+[TBE PERF] SyncBatchNormBackwardReduce bfloat16 shape=[5] elapsed_us=49.9
+[TBE PASS] SyncBatchNormBackwardReduce bfloat16 shape=[5]
+[TBE PERF] SyncBatchNormBackwardReduce bfloat16 shape=[17] near_zero elapsed_us=45.7
+[TBE PASS] SyncBatchNormBackwardReduce bfloat16 shape=[17] near_zero
+[TBE PERF] SyncBatchNormBackwardReduce bfloat16 shape=[513] elapsed_us=27.6
+[TBE PASS] SyncBatchNormBackwardReduce bfloat16 shape=[513]
+[TBE PERF] SyncBatchNormBackwardReduce bfloat16 shape=[1025] near_zero elapsed_us=27.48
+[TBE PASS] SyncBatchNormBackwardReduce bfloat16 shape=[1025] near_zero
+[TBE PERF] SyncBatchNormBackwardReduce bfloat16 shape=[2,128] elapsed_us=49.54
+[TBE PASS] SyncBatchNormBackwardReduce bfloat16 shape=[2,128]
+[TBE INFO] SyncBatch baseline tests passed
