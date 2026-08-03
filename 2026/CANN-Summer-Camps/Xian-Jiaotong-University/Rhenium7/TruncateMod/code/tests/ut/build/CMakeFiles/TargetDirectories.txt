@@ -1,0 +1,10 @@
+/mnt/workspace/code/tests/ut/build/CMakeFiles/rebuild_cache.dir
+/mnt/workspace/code/tests/ut/build/CMakeFiles/edit_cache.dir
+/mnt/workspace/code/tests/ut/build/CMakeFiles/third_party_gtest.dir
+/mnt/workspace/code/tests/ut/build/op_host/CMakeFiles/rebuild_cache.dir
+/mnt/workspace/code/tests/ut/build/op_host/CMakeFiles/edit_cache.dir
+/mnt/workspace/code/tests/ut/build/op_host/CMakeFiles/truncate_mod_op_host_ut_lib.dir
+/mnt/workspace/code/tests/ut/build/op_host/CMakeFiles/truncate_mod_op_host_ut.dir
+/mnt/workspace/code/tests/ut/build/op_kernel/CMakeFiles/edit_cache.dir
+/mnt/workspace/code/tests/ut/build/op_kernel/CMakeFiles/truncate_mod_op_kernel_ut.dir
+/mnt/workspace/code/tests/ut/build/op_kernel/CMakeFiles/rebuild_cache.dir

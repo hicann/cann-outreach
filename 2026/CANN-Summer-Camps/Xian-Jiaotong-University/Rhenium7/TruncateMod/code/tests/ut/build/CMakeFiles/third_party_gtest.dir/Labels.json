@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/mnt/workspace/code/tests/ut/build/CMakeFiles/third_party_gtest"
+		},
+		{
+			"file" : "/mnt/workspace/code/tests/ut/build/CMakeFiles/third_party_gtest.rule"
+		},
+		{
+			"file" : "/mnt/workspace/code/tests/ut/build/CMakeFiles/third_party_gtest-complete.rule"
+		},
+		{
+			"file" : "/mnt/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-stamp/third_party_gtest-build.rule"
+		},
+		{
+			"file" : "/mnt/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-stamp/third_party_gtest-configure.rule"
+		},
+		{
+			"file" : "/mnt/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-stamp/third_party_gtest-download.rule"
+		},
+		{
+			"file" : "/mnt/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-stamp/third_party_gtest-install.rule"
+		},
+		{
+			"file" : "/mnt/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-stamp/third_party_gtest-mkdir.rule"
+		},
+		{
+			"file" : "/mnt/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-stamp/third_party_gtest-patch.rule"
+		},
+		{
+			"file" : "/mnt/workspace/code/tests/ut/build/third_party_gtest-prefix/src/third_party_gtest-stamp/third_party_gtest-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"third_party_gtest"
+		],
+		"name" : "third_party_gtest"
+	}
+}
