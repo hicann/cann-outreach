@@ -12,7 +12,7 @@
 | 期数 | 主题 | 题目说明 | 难度 | 状态 |
 | :--: | :--- | :------ | :--: | :--: |
 | 01 | DivCustom | 实现两个输入张量的逐元素除法运算 | ★ | 已发布 |
-| 02 | 待发布 |  |  | 未开始 |
+| 02 | DivBf16Custom | 使用 TBuf 管理 bfloat16 类型转换的临时内存，实现 bfloat16 除法 | ★ | - |
 | 03 | 待发布 |  |  | 未开始 |
 | 04 | 待发布 |  |  | 未开始 |
 | 05 | 待发布 |  |  | 未开始 |
@@ -34,7 +34,14 @@ CANN-Code-Detective/
 │       ├── run.sh                 # 编译运行脚本
 │       └── div_custom.asc         # 算子实现骨架（待补充）
 │   └── <你的用户名>/DivCustom/    # 你的实现（复制 Template 后改名）
-├── Challenge02-xxx/              # 第 02 期
+├── Challenge02-DivBf16Custom/     # 第 02 期：bfloat16 除法算子
+│   ├── README.md                  # 题目说明
+│   └── Template/DivBf16Custom/    # 官方代码骨架（请勿直接修改）
+│       ├── CMakeLists.txt         # 构建脚本
+│       ├── run.sh                 # 编译运行脚本
+│       └── div_bf16_custom.asc    # 算子实现骨架（待补充 Compute等实现）
+│   └── <你的用户名>/DivBf16Custom/ # 你的实现（复制 Template 后改名）
+├── Challenge03-xxx/              # 第 03 期
 │   └── ...
 └── ...
 ```
@@ -45,7 +52,7 @@ CANN-Code-Detective/
 2. **复制骨架**：将题目模板目录复制一份，并将目录重命名为你的 gitcode 用户名，例如 `cp -r Template/DivCustom <你的用户名>/DivCustom`。请勿直接修改 Template 目录。
 3. **补充实现**：在你的目录中，按照注释提示补充算子实现代码。
 4. **本地验证**：参考 README.md 中的运行说明，在NPU 环境编译运行，确保输出 `[Success]` 通过验证。
-5. **提交 PR**：将你的实现通过 Pull Request 提交到本仓库，等待评审。
+5. **提交 PR**：将你的实现通过 Pull Request 提交到本仓库，等待评审。提交文件题目模板，不要删除辅助脚本文件，也不要增加编译缓存等冗余文件。
 
 ## 提交与评审
 
@@ -69,7 +76,7 @@ A: 建议先学习参考课程：[AscendC 算子开发](https://gitcode.com/cann
 A: 1、可在[Hidevlab](https://hidevlab.huawei.com/online-develop-intro)申请Atlas A2算力资源，申请中注意填写项目名称为`CANN Code Detective`，申请完成审批后即可使用在线WebIDE中进行开发。**注意：创建环境时算力类型请选择`昇腾910B4`/`昇腾910B3`，镜像选择`CANN9.0.0 Release, Ubuntu22.04`**；2、可以在[notebook在线环境](https://ai.gitcode.com/user/username/notebookcann?repoUrl=https://gitcode.com/cann/cann-learning-hub.git&ttl=120&diskSize=40Gi&path=quick_start/first_custom_operator&scanFilePath=quick_start/first_custom_operator/first_custom_operator.ipynb)中直接开发。
 
 **Q: 可以使用 AI 辅助编程吗？**
-A: 鼓励以学习为目的合理使用 AI 工具，但请确保你理解每一行代码的含义，可以通过注释和reademe文件来解释你的实现思路。
+A: 鼓励以学习为目的合理使用 AI 工具，但请确保你理解每一行代码的含义，可以通过注释说明你的实现思路。
 
 ## 贡献者
 
