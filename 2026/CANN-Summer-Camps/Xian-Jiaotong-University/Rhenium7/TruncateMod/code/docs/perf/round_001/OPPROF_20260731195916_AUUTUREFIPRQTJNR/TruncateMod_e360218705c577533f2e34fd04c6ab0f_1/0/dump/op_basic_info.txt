@@ -1,9 +1,0 @@
-Op Name=TruncateMod_e360218705c577533f2e34fd04c6ab0f_1
-Block Dim=1
-Run Soc Version=Ascend910B3
-Device Id=0
-Pid=53116
-Current Freq=1800
-Rated Freq=1800
-Is MC2=0
-Is Lccl=0
