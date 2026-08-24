@@ -13,9 +13,9 @@
 | :--: | :--- | :------ | :--: | :--: |
 | 01 | DivCustom | 实现两个输入张量的逐元素除法运算 | ★ | 已发布 |
 | 02 | DivBf16Custom | 使用 TBuf 管理 bfloat16 类型转换的临时内存，实现 bfloat16 除法 | ★ | 已发布 |
-| 03 | CoshCustom | 实现双曲余弦（cosh）算子 | ★ | - |
-| 04 | DivCustomTemplate | 工程化算子开发：基于算子原型文件使用 msopgen 生成工程，实现 div 算子 | ★★ | - |
-| 05 | 待发布 |  |  | 未开始 |
+| 03 | CoshCustom | 实现双曲余弦（cosh）算子 | ★ | 已发布 |
+| 04 | DivCustomTemplate | 工程化算子开发：基于算子原型文件使用 msopgen 生成工程，实现 div 算子 | ★★ | 已发布 |
+| 05 | MulCustom | 实现两个输入张量的逐元素乘法运算 | ★ | - |
 | 06 | 待发布 |  |  | 未开始 |
 | 07 | 待发布 |  |  | 未开始 |
 | 08 | 待发布 |  |  | 未开始 |
@@ -57,6 +57,13 @@ CANN-Code-Detective/
 │           ├── main.cpp           # ACLNN 接口调用测试
 │           └── CMakeLists.txt     # 测试构建脚本（可选）
 │   └── <你的用户名>/DivCustomTemplate/ # 你的实现（复制 Template 后改名，工程由 msopgen 生成）
+├── Challenge05-MulCustom/         # 第 05 期：逐元素乘法算子
+│   ├── README.md                  # 题目说明
+│   └── Template/MulCustom/        # 官方代码骨架（请勿直接修改）
+│       ├── CMakeLists.txt         # 构建脚本
+│       ├── run.sh                 # 编译运行脚本
+│       └── mul_custom.asc         # 算子实现骨架（待补充）
+│   └── <你的用户名>/MulCustom/     # 你的实现（复制 Template 后改名）
 └── ...
 ```
 
