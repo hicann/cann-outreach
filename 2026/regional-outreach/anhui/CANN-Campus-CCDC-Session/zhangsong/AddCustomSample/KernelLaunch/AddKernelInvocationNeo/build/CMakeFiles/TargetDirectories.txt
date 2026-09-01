@@ -1,0 +1,8 @@
+/mnt/class/26EAIHFSIC001/samples/tutorials/AddCustomSample/KernelLaunch/AddKernelInvocationNeo/build/CMakeFiles/ascendc_kernels_cpu.dir
+/mnt/class/26EAIHFSIC001/samples/tutorials/AddCustomSample/KernelLaunch/AddKernelInvocationNeo/build/CMakeFiles/ascendc_kernels_bbit.dir
+/mnt/class/26EAIHFSIC001/samples/tutorials/AddCustomSample/KernelLaunch/AddKernelInvocationNeo/build/CMakeFiles/edit_cache.dir
+/mnt/class/26EAIHFSIC001/samples/tutorials/AddCustomSample/KernelLaunch/AddKernelInvocationNeo/build/CMakeFiles/rebuild_cache.dir
+/mnt/class/26EAIHFSIC001/samples/tutorials/AddCustomSample/KernelLaunch/AddKernelInvocationNeo/build/CMakeFiles/list_install_components.dir
+/mnt/class/26EAIHFSIC001/samples/tutorials/AddCustomSample/KernelLaunch/AddKernelInvocationNeo/build/CMakeFiles/install.dir
+/mnt/class/26EAIHFSIC001/samples/tutorials/AddCustomSample/KernelLaunch/AddKernelInvocationNeo/build/CMakeFiles/install/local.dir
+/mnt/class/26EAIHFSIC001/samples/tutorials/AddCustomSample/KernelLaunch/AddKernelInvocationNeo/build/CMakeFiles/install/strip.dir
