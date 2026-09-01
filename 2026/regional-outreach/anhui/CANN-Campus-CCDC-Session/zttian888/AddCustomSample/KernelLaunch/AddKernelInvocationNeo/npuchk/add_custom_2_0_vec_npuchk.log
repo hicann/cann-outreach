@@ -1,0 +1,4480 @@
+
+### set_ffts_base_addr((uint64_t)281473592493728);
+
+[set_ffts_base_addr] unsupported
+[S] [RECV_INST] set_ffts_base_addr type 7
+[S] [EXECUTE] set_ffts_base_addr type 7
+
+### set_vector_mask((uint64_t)18446744073709551615, (uint64_t)18446744073709551615);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### set_mask_norm();
+
+[set_mask_norm] unsupported
+[S] [RECV_INST] set_mask_norm type 7
+[S] [EXECUTE] set_mask_norm type 7
+[ALL] [TBUF_EVENT] ABS_ADDR 0xffffa5a58010 0x30000 B type L1
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_EVENT] ABS_ADDR 0xffffa59d7010 0x80000 B type L0A
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_EVENT] ABS_ADDR 0xaaaadf396ec0 0x10000 B type L1
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_EVENT] ABS_ADDR 0xaaaadf3a6ed0 0x10000 B type L0B
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_EVENT] ABS_ADDR 0xffffa59b6010 0x20000 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_EVENT] ABS_ADDR 0xaaaadde931c0 0x400 B type L0C
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_EVENT] ABS_ADDR 0xaaaadf3b6ee0 0x1c00 B type L0C
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_EVENT] INIT 0xffffa5a58010 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x100, Rate: 0.0976562%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_EVENT] INIT 0xffffa5a58110 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x200, Rate: 0.195312%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][InitMemRecord]add addr: 281473460830224len: 256
+[ALL] [TBUF_EVENT] INIT 0xffffa5a58210 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x300, Rate: 0.292969%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_EVENT] INIT 0xffffa5a58310 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x400, Rate: 0.390625%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][InitMemRecord]add addr: 281473460830736len: 256
+[ALL] [TBUF_EVENT] INIT 0xffffa5a58410 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x500, Rate: 0.488281%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[ALL] [TBUF_EVENT] INIT 0xffffa5a58510 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][InitMemRecord]add addr: 281473460831248len: 256
+[ALL] [TBUF_EVENT] ALLOC 0xffffa5a58010 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x100, Rate: 0.0976562%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473460830224len: 256
+[ALL] [TBUF_EVENT] ALLOC 0xffffa5a58210 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x200, Rate: 0.195312%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473460830736len: 256
+
+### copy_gm_to_ubuf((__ubuf__ void*)0xffffa5a58010, (__gm__ void*)0xffffac2a9000, (uint8_t)0, (uint16_t)1, (uint16_t)8, (uint16_t)0, (uint16_t)0);
+
+[MTE2] [RECV_INST] copy_gm_to_ubuf type 0
+[MTE2] [EXECUTE] copy_gm_to_ubuf type 0
+[MTE2] read  data 0xffffac2a9000 0x100 B type GM
+[MTE2] [DATA_MARK] 0xffffac2a9000 0x100 B type GM mark read
+[MTE2] write data 0xffffa5a58010 0x100 B type UB
+[MTE2] checking pending queue
+[MTE2] [CHECK_DATA] 0xffffa5a58010 0x100 B type UB
+[MTE2] checking wrote queue
+[MTE2] [CHECK_DATA] 0xffffa5a58010 0x100 B type UB
+[MTE2] [CHECK_TBUF] 0xffffa5a58010 0x100 B type UB
+[MTE2] allocation buffer match result 0
+[MEMCHEK] Mem[281473460830224]checkNum is 0
+
+### copy_gm_to_ubuf((__ubuf__ void*)0xffffa5a58210, (__gm__ void*)0xffffabcb9000, (uint8_t)0, (uint16_t)1, (uint16_t)8, (uint16_t)0, (uint16_t)0);
+
+[MTE2] [RECV_INST] copy_gm_to_ubuf type 0
+[MTE2] [EXECUTE] copy_gm_to_ubuf type 0
+[MTE2] read  data 0xffffabcb9000 0x100 B type GM
+[MTE2] [DATA_MARK] 0xffffabcb9000 0x100 B type GM mark read
+[MTE2] write data 0xffffa5a58210 0x100 B type UB
+[MTE2] checking pending queue
+[MTE2] [CHECK_DATA] 0xffffa5a58210 0x100 B type UB
+[MTE2] checking wrote queue
+[MTE2] [CHECK_DATA] 0xffffa5a58210 0x100 B type UB
+[MTE2] [CHECK_TBUF] 0xffffa5a58210 0x100 B type UB
+[MTE2] allocation buffer match result 0
+[MEMCHEK] Mem[281473460830736]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[MTE2] [RECV_INST] set_flag type 3
+[MTE2] [EXECUTE] set_flag type 3
+[MTE2] [SYNC_DATA] 0xffffa5a58010 0x100 B type UB
+[MTE2] [SYNC_DATA] 0xffffa5a58210 0x100 B type UB
+[MTE2] [send event] on set_flag 4 1 0
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58010 0x100 B stat 1 type UB
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58210 0x100 B stat 1 type UB
+[V] [RECV_EVENT] SRC MTE2 DST V EVENT 0
+[V] [RECV_DATA] 0xffffa5a58010 0x100 B stat 1 type UB
+[V] [RECV_DATA] 0xffffa5a58210 0x100 B stat 1 type UB
+[MEMCHEK] Mem[281473460830224]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)1);
+
+[MTE2] [RECV_INST] set_flag type 3
+[MTE2] [EXECUTE] set_flag type 3
+[MTE2] [send event] on set_flag 4 1 1
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58010 0x100 B stat 1 type UB
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58210 0x100 B stat 1 type UB
+[V] [RECV_EVENT] SRC MTE2 DST V EVENT 1
+[V] [RECV_DATA] 0xffffa5a58010 0x100 B stat 1 type UB
+[V] [RECV_DATA] 0xffffa5a58210 0x100 B stat 1 type UB
+[MEMCHEK] Mem[281473460830736]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 4 1 0
+[MTE2] [EVENT_CLEAR] send 4 1 0 has been waited
+[MEMCHEK] Mem[281473460830224]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)1);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 4 1 1
+[MTE2] [EVENT_CLEAR] send 4 1 1 has been waited
+[MEMCHEK] Mem[281473460830736]checkNum is 0
+[ALL] [TBUF_EVENT] ALLOC 0xffffa5a58410 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x300, Rate: 0.292969%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473460831248len: 256
+
+### set_mask_count();
+
+[set_mask_count] unsupported
+[S] [RECV_INST] set_mask_count type 7
+[S] [EXECUTE] set_mask_count type 7
+
+### set_vector_mask((uint64_t)0, (uint64_t)128);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### vadd((__ubuf__ half*)0xffffa5a58410, (__ubuf__ half*)0xffffa5a58010, (__ubuf__ half*)0xffffa5a58210, (uint8_t)1, (uint8_t)1, (uint8_t)1, (uint8_t)1, (uint8_t)8, (uint8_t)8, (uint8_t)8);
+
+[V] [RECV_INST] vadd type 1
+[V] [EXECUTE] vadd type 1
+[MEMCHEK] Mem[281473460830224]checkNum is 0
+[MEMCHEK] Mem[281473460830736]checkNum is 0
+[MEMCHEK] Mem[281473460831248]checkNum is 0
+DataMergeAllOnceAll dataLen: 256
+[V] read  data 0xffffa5a58010 0x100 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffffa5a58010 0x100 B type UB
+[V] data matched whole 0xffffa5a58010 0x100 stat 1
+[V] [DATA_MARK] 0xffffa5a58010 0x100 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffa5a58010 0x100 B type UB
+[V] [CHECK_TBUF] 0xffffa5a58010 0x100 B type UB
+[V] allocation buffer match result 0
+[V] read  data 0xffffa5a58210 0x100 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffffa5a58210 0x100 B type UB
+[V] data matched whole 0xffffa5a58210 0x100 stat 1
+[V] [DATA_MARK] 0xffffa5a58210 0x100 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffa5a58210 0x100 B type UB
+[V] [CHECK_TBUF] 0xffffa5a58210 0x100 B type UB
+[V] allocation buffer match result 0
+[V] write data 0xffffa5a58410 0x100 B type UB
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffa5a58410 0x100 B type UB
+[V] checking wrote queue
+[V] [CHECK_DATA] 0xffffa5a58410 0x100 B type UB
+[V] [CHECK_TBUF] 0xffffa5a58410 0x100 B type UB
+[V] allocation buffer match result 0
+
+### set_mask_norm();
+
+[set_mask_norm] unsupported
+[S] [RECV_INST] set_mask_norm type 7
+[S] [EXECUTE] set_mask_norm type 7
+
+### set_vector_mask((uint64_t)18446744073709551615, (uint64_t)18446744073709551615);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [SYNC_DATA] 0xffffa5a58410 0x100 B type UB
+[V] [send event] on set_flag 1 5 0
+[V] -> [MTE3] [GET_DATA] 0xffffa5a58410 0x100 B stat 1 type UB
+[MTE3] [RECV_EVENT] SRC V DST MTE3 EVENT 0
+[MTE3] [RECV_DATA] 0xffffa5a58410 0x100 B stat 1 type UB
+[MEMCHEK] Mem[281473460831248]checkNum is 0
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)0);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [send event] on set_flag 1 4 0
+[V] -> [MTE2] [GET_DATA] 0xffffa5a58410 0x100 B stat 1 type UB
+[MTE2] [RECV_EVENT] SRC V DST MTE2 EVENT 0
+[MTE2] [RECV_DATA] 0xffffa5a58410 0x100 B stat 1 type UB
+[ALL] [TBUF_EVENT] FREE 0xffffa5a58010 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x200, Rate: 0.195312%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473460830224]checkNum is 0
+[MEMCHEK] Mem[281473460830224] is FREE
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)1);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [send event] on set_flag 1 4 1
+[V] -> [MTE2] [GET_DATA] 0xffffa5a58410 0x100 B stat 1 type UB
+[MTE2] [RECV_EVENT] SRC V DST MTE2 EVENT 1
+[MTE2] [RECV_DATA] 0xffffa5a58410 0x100 B stat 1 type UB
+[ALL] [TBUF_EVENT] FREE 0xffffa5a58210 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x100, Rate: 0.0976562%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473460830736]checkNum is 0
+[MEMCHEK] Mem[281473460830736] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[MTE3] [RECV_INST] wait_flag type 4
+[MTE3] [EXECUTE] wait_flag type 4
+[MTE3] [no wait] on wait_flag 1 5 0
+[V] [EVENT_CLEAR] send 1 5 0 has been waited
+[MEMCHEK] Mem[281473460831248]checkNum is 0
+
+### copy_ubuf_to_gm((__gm__ void*)0xffffab419000, (__ubuf__ void*)0xffffa5a58410, (uint8_t)0, (uint16_t)1, (uint16_t)8, (uint16_t)0, (uint16_t)0);
+
+[MTE3] [RECV_INST] copy_ubuf_to_gm type 0
+[MTE3] [EXECUTE] copy_ubuf_to_gm type 0
+[MTE3] read  data 0xffffa5a58410 0x100 B type UB
+[MTE3] checking synced queue
+[MTE3] [CHECK_DATA] 0xffffa5a58410 0x100 B type UB
+[MTE3] data matched whole 0xffffa5a58410 0x100 stat 1
+[MTE3] [DATA_MARK] 0xffffa5a58410 0x100 B type UB mark read
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffffa5a58410 0x100 B type UB
+[MTE3] [CHECK_TBUF] 0xffffa5a58410 0x100 B type UB
+[MTE3] allocation buffer match result 0
+[MTE3] write data 0xffffab419000 0x100 B type GM
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffffab419000 0x100 B type GM
+[MTE3] checking wrote queue
+[MTE3] [CHECK_DATA] 0xffffab419000 0x100 B type GM
+[MTE3] [CHECK_TBUF] 0xffffab419000 0x100 B type GM
+[MEMCHEK] Mem[281473460831248]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)0);
+
+[MTE3] [RECV_INST] set_flag type 3
+[MTE3] [EXECUTE] set_flag type 3
+[MTE3] [SYNC_DATA] 0xffffab419000 0x100 B type GM
+[MTE3] [send event] on set_flag 5 1 0
+[MTE3] -> [V] [GET_DATA] 0xffffab419000 0x100 B stat 1 type GM
+[V] [RECV_EVENT] SRC MTE3 DST V EVENT 0
+[V] [RECV_DATA] 0xffffab419000 0x100 B stat 1 type GM
+[ALL] [TBUF_EVENT] FREE 0xffffa5a58410 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473460831248]checkNum is 0
+[MEMCHEK] Mem[281473460831248] is FREE
+[ALL] [TBUF_EVENT] ALLOC 0xffffa5a58110 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x100, Rate: 0.0976562%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473460830480len: 256
+[ALL] [TBUF_EVENT] ALLOC 0xffffa5a58310 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x200, Rate: 0.195312%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473460830992len: 256
+
+### copy_gm_to_ubuf((__ubuf__ void*)0xffffa5a58110, (__gm__ void*)0xffffac2a9100, (uint8_t)0, (uint16_t)1, (uint16_t)8, (uint16_t)0, (uint16_t)0);
+
+[MTE2] [RECV_INST] copy_gm_to_ubuf type 0
+[MTE2] [EXECUTE] copy_gm_to_ubuf type 0
+[MTE2] read  data 0xffffac2a9100 0x100 B type GM
+[MTE2] [DATA_MARK] 0xffffac2a9100 0x100 B type GM mark read
+[MTE2] write data 0xffffa5a58110 0x100 B type UB
+[MTE2] checking pending queue
+[MTE2] [CHECK_DATA] 0xffffa5a58110 0x100 B type UB
+[MTE2] checking wrote queue
+[MTE2] [CHECK_DATA] 0xffffa5a58110 0x100 B type UB
+[MTE2] [CHECK_TBUF] 0xffffa5a58110 0x100 B type UB
+[MTE2] allocation buffer match result 0
+[MEMCHEK] Mem[281473460830480]checkNum is 0
+
+### copy_gm_to_ubuf((__ubuf__ void*)0xffffa5a58310, (__gm__ void*)0xffffabcb9100, (uint8_t)0, (uint16_t)1, (uint16_t)8, (uint16_t)0, (uint16_t)0);
+
+[MTE2] [RECV_INST] copy_gm_to_ubuf type 0
+[MTE2] [EXECUTE] copy_gm_to_ubuf type 0
+[MTE2] read  data 0xffffabcb9100 0x100 B type GM
+[MTE2] [DATA_MARK] 0xffffabcb9100 0x100 B type GM mark read
+[MTE2] write data 0xffffa5a58310 0x100 B type UB
+[MTE2] checking pending queue
+[MTE2] [CHECK_DATA] 0xffffa5a58310 0x100 B type UB
+[MTE2] checking wrote queue
+[MTE2] [CHECK_DATA] 0xffffa5a58310 0x100 B type UB
+[MTE2] [CHECK_TBUF] 0xffffa5a58310 0x100 B type UB
+[MTE2] allocation buffer match result 0
+[MEMCHEK] Mem[281473460830992]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[MTE2] [RECV_INST] set_flag type 3
+[MTE2] [EXECUTE] set_flag type 3
+[MTE2] [SYNC_DATA] 0xffffa5a58110 0x100 B type UB
+[MTE2] [SYNC_DATA] 0xffffa5a58310 0x100 B type UB
+[MTE2] [send event] on set_flag 4 1 0
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58010 0x200 B stat 1 type UB
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[V] [RECV_EVENT] SRC MTE2 DST V EVENT 0
+[V] [RECV_DATA] 0xffffa5a58010 0x200 B stat 1 type UB
+[V] [RECV_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[MEMCHEK] Mem[281473460830480]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)1);
+
+[MTE2] [RECV_INST] set_flag type 3
+[MTE2] [EXECUTE] set_flag type 3
+[MTE2] [send event] on set_flag 4 1 1
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58010 0x200 B stat 1 type UB
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[V] [RECV_EVENT] SRC MTE2 DST V EVENT 1
+[V] [RECV_DATA] 0xffffa5a58010 0x200 B stat 1 type UB
+[V] [RECV_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[MEMCHEK] Mem[281473460830992]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 4 1 0
+[MTE2] [EVENT_CLEAR] send 4 1 0 has been waited
+[MEMCHEK] Mem[281473460830480]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)1);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 4 1 1
+[MTE2] [EVENT_CLEAR] send 4 1 1 has been waited
+[MEMCHEK] Mem[281473460830992]checkNum is 0
+[ALL] [TBUF_EVENT] ALLOC 0xffffa5a58510 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x300, Rate: 0.292969%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473460831504len: 256
+
+### set_mask_count();
+
+[set_mask_count] unsupported
+[S] [RECV_INST] set_mask_count type 7
+[S] [EXECUTE] set_mask_count type 7
+
+### set_vector_mask((uint64_t)0, (uint64_t)128);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### vadd((__ubuf__ half*)0xffffa5a58510, (__ubuf__ half*)0xffffa5a58110, (__ubuf__ half*)0xffffa5a58310, (uint8_t)1, (uint8_t)1, (uint8_t)1, (uint8_t)1, (uint8_t)8, (uint8_t)8, (uint8_t)8);
+
+[V] [RECV_INST] vadd type 1
+[V] [EXECUTE] vadd type 1
+[MEMCHEK] Mem[281473460830480]checkNum is 0
+[MEMCHEK] Mem[281473460830992]checkNum is 0
+[MEMCHEK] Mem[281473460831504]checkNum is 0
+DataMergeAllOnceAll dataLen: 256
+[V] read  data 0xffffa5a58110 0x100 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffffa5a58110 0x100 B type UB
+[V] data matched whole 0xffffa5a58010 0x400 stat 1
+[V] [DATA_MARK] 0xffffa5a58110 0x100 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffa5a58110 0x100 B type UB
+[V] [CHECK_TBUF] 0xffffa5a58110 0x100 B type UB
+[V] allocation buffer match result 0
+[V] read  data 0xffffa5a58310 0x100 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffffa5a58310 0x100 B type UB
+[V] data matched whole 0xffffa5a58010 0x400 stat 1
+[V] [DATA_MARK] 0xffffa5a58310 0x100 B type UB mark read
+[V] [DATA_MARK] 0xffffa5a58310 0x100 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffa5a58310 0x100 B type UB
+[V] [CHECK_TBUF] 0xffffa5a58310 0x100 B type UB
+[V] allocation buffer match result 0
+[V] write data 0xffffa5a58510 0x100 B type UB
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffa5a58510 0x100 B type UB
+[V] checking wrote queue
+[V] [CHECK_DATA] 0xffffa5a58510 0x100 B type UB
+[V] [CHECK_TBUF] 0xffffa5a58510 0x100 B type UB
+[V] allocation buffer match result 0
+
+### set_mask_norm();
+
+[set_mask_norm] unsupported
+[S] [RECV_INST] set_mask_norm type 7
+[S] [EXECUTE] set_mask_norm type 7
+
+### set_vector_mask((uint64_t)18446744073709551615, (uint64_t)18446744073709551615);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [SYNC_DATA] 0xffffa5a58510 0x100 B type UB
+[V] [send event] on set_flag 1 5 0
+[V] -> [MTE3] [GET_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE3] [RECV_EVENT] SRC V DST MTE3 EVENT 0
+[MTE3] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MEMCHEK] Mem[281473460831504]checkNum is 0
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)2);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [send event] on set_flag 1 4 2
+[V] -> [MTE2] [GET_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE2] [RECV_EVENT] SRC V DST MTE2 EVENT 2
+[MTE2] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[ALL] [TBUF_EVENT] FREE 0xffffa5a58110 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x200, Rate: 0.195312%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473460830480]checkNum is 0
+[MEMCHEK] Mem[281473460830480] is FREE
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)3);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [send event] on set_flag 1 4 3
+[V] -> [MTE2] [GET_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE2] [RECV_EVENT] SRC V DST MTE2 EVENT 3
+[MTE2] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[ALL] [TBUF_EVENT] FREE 0xffffa5a58310 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x100, Rate: 0.0976562%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473460830992]checkNum is 0
+[MEMCHEK] Mem[281473460830992] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[MTE3] [RECV_INST] wait_flag type 4
+[MTE3] [EXECUTE] wait_flag type 4
+[MTE3] [no wait] on wait_flag 1 5 0
+[V] [EVENT_CLEAR] send 1 5 0 has been waited
+[MEMCHEK] Mem[281473460831504]checkNum is 0
+
+### copy_ubuf_to_gm((__gm__ void*)0xffffab419100, (__ubuf__ void*)0xffffa5a58510, (uint8_t)0, (uint16_t)1, (uint16_t)8, (uint16_t)0, (uint16_t)0);
+
+[MTE3] [RECV_INST] copy_ubuf_to_gm type 0
+[MTE3] [EXECUTE] copy_ubuf_to_gm type 0
+[MTE3] read  data 0xffffa5a58510 0x100 B type UB
+[MTE3] checking synced queue
+[MTE3] [CHECK_DATA] 0xffffa5a58510 0x100 B type UB
+[MTE3] data matched whole 0xffffa5a58410 0x200 stat 1
+[MTE3] [DATA_MARK] 0xffffa5a58510 0x100 B type UB mark read
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffffa5a58510 0x100 B type UB
+[MTE3] [CHECK_TBUF] 0xffffa5a58510 0x100 B type UB
+[MTE3] allocation buffer match result 0
+[MTE3] write data 0xffffab419100 0x100 B type GM
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffffab419100 0x100 B type GM
+[MTE3] checking wrote queue
+[MTE3] [CHECK_DATA] 0xffffab419100 0x100 B type GM
+[MTE3] [CHECK_TBUF] 0xffffab419100 0x100 B type GM
+[MEMCHEK] Mem[281473460831504]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)1);
+
+[MTE3] [RECV_INST] set_flag type 3
+[MTE3] [EXECUTE] set_flag type 3
+[MTE3] [SYNC_DATA] 0xffffab419100 0x100 B type GM
+[MTE3] [send event] on set_flag 5 1 1
+[MTE3] -> [V] [GET_DATA] 0xffffab419000 0x200 B stat 1 type GM
+[V] [RECV_EVENT] SRC MTE3 DST V EVENT 1
+[V] [RECV_DATA] 0xffffab419000 0x200 B stat 1 type GM
+[ALL] [TBUF_EVENT] FREE 0xffffa5a58510 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473460831504]checkNum is 0
+[MEMCHEK] Mem[281473460831504] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)0);
+
+[MTE2] [RECV_INST] wait_flag type 4
+[MTE2] [EXECUTE] wait_flag type 4
+[MTE2] [no wait] on wait_flag 1 4 0
+[V] [EVENT_CLEAR] send 1 4 0 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffffa5a58010 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x100, Rate: 0.0976562%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473460830224len: 256
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)1);
+
+[MTE2] [RECV_INST] wait_flag type 4
+[MTE2] [EXECUTE] wait_flag type 4
+[MTE2] [no wait] on wait_flag 1 4 1
+[V] [EVENT_CLEAR] send 1 4 1 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffffa5a58210 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x200, Rate: 0.195312%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473460830736len: 256
+
+### copy_gm_to_ubuf((__ubuf__ void*)0xffffa5a58010, (__gm__ void*)0xffffac2a9200, (uint8_t)0, (uint16_t)1, (uint16_t)8, (uint16_t)0, (uint16_t)0);
+
+[MTE2] [RECV_INST] copy_gm_to_ubuf type 0
+[MTE2] [EXECUTE] copy_gm_to_ubuf type 0
+[MTE2] read  data 0xffffac2a9200 0x100 B type GM
+[MTE2] [DATA_MARK] 0xffffac2a9200 0x100 B type GM mark read
+[MTE2] write data 0xffffa5a58010 0x100 B type UB
+[MTE2] checking pending queue
+[MTE2] [CHECK_DATA] 0xffffa5a58010 0x100 B type UB
+[MTE2] checking wrote queue
+[MTE2] [CHECK_DATA] 0xffffa5a58010 0x100 B type UB
+[MTE2] data matched whole 0xffffa5a58010 0x200 stat 1
+[MTE2] [CHECK_TBUF] 0xffffa5a58010 0x100 B type UB
+[MTE2] allocation buffer match result 0
+[MEMCHEK] Mem[281473460830224]checkNum is 0
+
+### copy_gm_to_ubuf((__ubuf__ void*)0xffffa5a58210, (__gm__ void*)0xffffabcb9200, (uint8_t)0, (uint16_t)1, (uint16_t)8, (uint16_t)0, (uint16_t)0);
+
+[MTE2] [RECV_INST] copy_gm_to_ubuf type 0
+[MTE2] [EXECUTE] copy_gm_to_ubuf type 0
+[MTE2] read  data 0xffffabcb9200 0x100 B type GM
+[MTE2] [DATA_MARK] 0xffffabcb9200 0x100 B type GM mark read
+[MTE2] write data 0xffffa5a58210 0x100 B type UB
+[MTE2] checking pending queue
+[MTE2] [CHECK_DATA] 0xffffa5a58210 0x100 B type UB
+[MTE2] checking wrote queue
+[MTE2] [CHECK_DATA] 0xffffa5a58210 0x100 B type UB
+[MTE2] data matched whole 0xffffa5a58210 0x200 stat 1
+[MTE2] [CHECK_TBUF] 0xffffa5a58210 0x100 B type UB
+[MTE2] allocation buffer match result 0
+[MEMCHEK] Mem[281473460830736]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[MTE2] [RECV_INST] set_flag type 3
+[MTE2] [EXECUTE] set_flag type 3
+[MTE2] [SYNC_DATA] 0xffffa5a58010 0x100 B type UB
+[MTE2] [SYNC_DATA] 0xffffa5a58210 0x100 B type UB
+[MTE2] [send event] on set_flag 4 1 0
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58010 0x300 B stat 1 type UB
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[V] [RECV_EVENT] SRC MTE2 DST V EVENT 0
+[V] [RECV_DATA] 0xffffa5a58010 0x300 B stat 1 type UB
+[V] [RECV_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[MEMCHEK] Mem[281473460830224]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)1);
+
+[MTE2] [RECV_INST] set_flag type 3
+[MTE2] [EXECUTE] set_flag type 3
+[MTE2] [send event] on set_flag 4 1 1
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58010 0x300 B stat 1 type UB
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[V] [RECV_EVENT] SRC MTE2 DST V EVENT 1
+[V] [RECV_DATA] 0xffffa5a58010 0x300 B stat 1 type UB
+[V] [RECV_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[MEMCHEK] Mem[281473460830736]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 4 1 0
+[MTE2] [EVENT_CLEAR] send 4 1 0 has been waited
+[MEMCHEK] Mem[281473460830224]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)1);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 4 1 1
+[MTE2] [EVENT_CLEAR] send 4 1 1 has been waited
+[MEMCHEK] Mem[281473460830736]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)0);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 5 1 0
+[MTE3] [EVENT_CLEAR] send 5 1 0 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffffa5a58410 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x300, Rate: 0.292969%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473460831248len: 256
+
+### set_mask_count();
+
+[set_mask_count] unsupported
+[S] [RECV_INST] set_mask_count type 7
+[S] [EXECUTE] set_mask_count type 7
+
+### set_vector_mask((uint64_t)0, (uint64_t)128);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### vadd((__ubuf__ half*)0xffffa5a58410, (__ubuf__ half*)0xffffa5a58010, (__ubuf__ half*)0xffffa5a58210, (uint8_t)1, (uint8_t)1, (uint8_t)1, (uint8_t)1, (uint8_t)8, (uint8_t)8, (uint8_t)8);
+
+[V] [RECV_INST] vadd type 1
+[V] [EXECUTE] vadd type 1
+[MEMCHEK] Mem[281473460830224]checkNum is 0
+[MEMCHEK] Mem[281473460830736]checkNum is 0
+[MEMCHEK] Mem[281473460831248]checkNum is 0
+DataMergeAllOnceAll dataLen: 256
+[V] read  data 0xffffa5a58010 0x100 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffffa5a58010 0x100 B type UB
+[V] data matched whole 0xffffa5a58010 0x400 stat 1
+[V] [DATA_MARK] 0xffffa5a58010 0x100 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffa5a58010 0x100 B type UB
+[V] [CHECK_TBUF] 0xffffa5a58010 0x100 B type UB
+[V] allocation buffer match result 0
+[V] read  data 0xffffa5a58210 0x100 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffffa5a58210 0x100 B type UB
+[V] data matched whole 0xffffa5a58010 0x400 stat 1
+[V] [DATA_MARK] 0xffffa5a58210 0x100 B type UB mark read
+[V] [DATA_MARK] 0xffffa5a58210 0x100 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffa5a58210 0x100 B type UB
+[V] [CHECK_TBUF] 0xffffa5a58210 0x100 B type UB
+[V] allocation buffer match result 0
+[V] write data 0xffffa5a58410 0x100 B type UB
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffa5a58410 0x100 B type UB
+[V] checking wrote queue
+[V] [CHECK_DATA] 0xffffa5a58410 0x100 B type UB
+[V] data matched whole 0xffffa5a58410 0x200 stat 1
+[V] [CHECK_TBUF] 0xffffa5a58410 0x100 B type UB
+[V] allocation buffer match result 0
+
+### set_mask_norm();
+
+[set_mask_norm] unsupported
+[S] [RECV_INST] set_mask_norm type 7
+[S] [EXECUTE] set_mask_norm type 7
+
+### set_vector_mask((uint64_t)18446744073709551615, (uint64_t)18446744073709551615);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [SYNC_DATA] 0xffffa5a58410 0x100 B type UB
+[V] [send event] on set_flag 1 5 0
+[V] -> [MTE3] [GET_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE3] [RECV_EVENT] SRC V DST MTE3 EVENT 0
+[MTE3] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MEMCHEK] Mem[281473460831248]checkNum is 0
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)0);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [send event] on set_flag 1 4 0
+[V] -> [MTE2] [GET_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE2] [RECV_EVENT] SRC V DST MTE2 EVENT 0
+[MTE2] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[ALL] [TBUF_EVENT] FREE 0xffffa5a58010 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x200, Rate: 0.195312%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473460830224]checkNum is 0
+[MEMCHEK] Mem[281473460830224] is FREE
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)1);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [send event] on set_flag 1 4 1
+[V] -> [MTE2] [GET_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE2] [RECV_EVENT] SRC V DST MTE2 EVENT 1
+[MTE2] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[ALL] [TBUF_EVENT] FREE 0xffffa5a58210 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x100, Rate: 0.0976562%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473460830736]checkNum is 0
+[MEMCHEK] Mem[281473460830736] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[MTE3] [RECV_INST] wait_flag type 4
+[MTE3] [EXECUTE] wait_flag type 4
+[MTE3] [no wait] on wait_flag 1 5 0
+[V] [EVENT_CLEAR] send 1 5 0 has been waited
+[MEMCHEK] Mem[281473460831248]checkNum is 0
+
+### copy_ubuf_to_gm((__gm__ void*)0xffffab419200, (__ubuf__ void*)0xffffa5a58410, (uint8_t)0, (uint16_t)1, (uint16_t)8, (uint16_t)0, (uint16_t)0);
+
+[MTE3] [RECV_INST] copy_ubuf_to_gm type 0
+[MTE3] [EXECUTE] copy_ubuf_to_gm type 0
+[MTE3] read  data 0xffffa5a58410 0x100 B type UB
+[MTE3] checking synced queue
+[MTE3] [CHECK_DATA] 0xffffa5a58410 0x100 B type UB
+[MTE3] data matched whole 0xffffa5a58410 0x200 stat 1
+[MTE3] [DATA_MARK] 0xffffa5a58410 0x100 B type UB mark read
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffffa5a58410 0x100 B type UB
+[MTE3] [CHECK_TBUF] 0xffffa5a58410 0x100 B type UB
+[MTE3] allocation buffer match result 0
+[MTE3] write data 0xffffab419200 0x100 B type GM
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffffab419200 0x100 B type GM
+[MTE3] checking wrote queue
+[MTE3] [CHECK_DATA] 0xffffab419200 0x100 B type GM
+[MTE3] [CHECK_TBUF] 0xffffab419200 0x100 B type GM
+[MEMCHEK] Mem[281473460831248]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)0);
+
+[MTE3] [RECV_INST] set_flag type 3
+[MTE3] [EXECUTE] set_flag type 3
+[MTE3] [SYNC_DATA] 0xffffab419200 0x100 B type GM
+[MTE3] [send event] on set_flag 5 1 0
+[MTE3] -> [V] [GET_DATA] 0xffffab419000 0x300 B stat 1 type GM
+[V] [RECV_EVENT] SRC MTE3 DST V EVENT 0
+[V] [RECV_DATA] 0xffffab419000 0x300 B stat 1 type GM
+[ALL] [TBUF_EVENT] FREE 0xffffa5a58410 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473460831248]checkNum is 0
+[MEMCHEK] Mem[281473460831248] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)2);
+
+[MTE2] [RECV_INST] wait_flag type 4
+[MTE2] [EXECUTE] wait_flag type 4
+[MTE2] [no wait] on wait_flag 1 4 2
+[V] [EVENT_CLEAR] send 1 4 2 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffffa5a58110 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x100, Rate: 0.0976562%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473460830480len: 256
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)3);
+
+[MTE2] [RECV_INST] wait_flag type 4
+[MTE2] [EXECUTE] wait_flag type 4
+[MTE2] [no wait] on wait_flag 1 4 3
+[V] [EVENT_CLEAR] send 1 4 3 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffffa5a58310 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x200, Rate: 0.195312%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473460830992len: 256
+
+### copy_gm_to_ubuf((__ubuf__ void*)0xffffa5a58110, (__gm__ void*)0xffffac2a9300, (uint8_t)0, (uint16_t)1, (uint16_t)8, (uint16_t)0, (uint16_t)0);
+
+[MTE2] [RECV_INST] copy_gm_to_ubuf type 0
+[MTE2] [EXECUTE] copy_gm_to_ubuf type 0
+[MTE2] read  data 0xffffac2a9300 0x100 B type GM
+[MTE2] [DATA_MARK] 0xffffac2a9300 0x100 B type GM mark read
+[MTE2] write data 0xffffa5a58110 0x100 B type UB
+[MTE2] checking pending queue
+[MTE2] [CHECK_DATA] 0xffffa5a58110 0x100 B type UB
+[MTE2] checking wrote queue
+[MTE2] [CHECK_DATA] 0xffffa5a58110 0x100 B type UB
+[MTE2] data matched whole 0xffffa5a58010 0x300 stat 1
+[MTE2] [CHECK_TBUF] 0xffffa5a58110 0x100 B type UB
+[MTE2] allocation buffer match result 0
+[MEMCHEK] Mem[281473460830480]checkNum is 0
+
+### copy_gm_to_ubuf((__ubuf__ void*)0xffffa5a58310, (__gm__ void*)0xffffabcb9300, (uint8_t)0, (uint16_t)1, (uint16_t)8, (uint16_t)0, (uint16_t)0);
+
+[MTE2] [RECV_INST] copy_gm_to_ubuf type 0
+[MTE2] [EXECUTE] copy_gm_to_ubuf type 0
+[MTE2] read  data 0xffffabcb9300 0x100 B type GM
+[MTE2] [DATA_MARK] 0xffffabcb9300 0x100 B type GM mark read
+[MTE2] write data 0xffffa5a58310 0x100 B type UB
+[MTE2] checking pending queue
+[MTE2] [CHECK_DATA] 0xffffa5a58310 0x100 B type UB
+[MTE2] checking wrote queue
+[MTE2] [CHECK_DATA] 0xffffa5a58310 0x100 B type UB
+[MTE2] data matched whole 0xffffa5a58210 0x200 stat 1
+[MTE2] [CHECK_TBUF] 0xffffa5a58310 0x100 B type UB
+[MTE2] allocation buffer match result 0
+[MEMCHEK] Mem[281473460830992]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[MTE2] [RECV_INST] set_flag type 3
+[MTE2] [EXECUTE] set_flag type 3
+[MTE2] [SYNC_DATA] 0xffffa5a58110 0x100 B type UB
+[MTE2] [SYNC_DATA] 0xffffa5a58310 0x100 B type UB
+[MTE2] [send event] on set_flag 4 1 0
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[V] [RECV_EVENT] SRC MTE2 DST V EVENT 0
+[V] [RECV_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[V] [RECV_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[MEMCHEK] Mem[281473460830480]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)1);
+
+[MTE2] [RECV_INST] set_flag type 3
+[MTE2] [EXECUTE] set_flag type 3
+[MTE2] [send event] on set_flag 4 1 1
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[V] [RECV_EVENT] SRC MTE2 DST V EVENT 1
+[V] [RECV_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[V] [RECV_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[MEMCHEK] Mem[281473460830992]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 4 1 0
+[MTE2] [EVENT_CLEAR] send 4 1 0 has been waited
+[MEMCHEK] Mem[281473460830480]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)1);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 4 1 1
+[MTE2] [EVENT_CLEAR] send 4 1 1 has been waited
+[MEMCHEK] Mem[281473460830992]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)1);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 5 1 1
+[MTE3] [EVENT_CLEAR] send 5 1 1 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffffa5a58510 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x300, Rate: 0.292969%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473460831504len: 256
+
+### set_mask_count();
+
+[set_mask_count] unsupported
+[S] [RECV_INST] set_mask_count type 7
+[S] [EXECUTE] set_mask_count type 7
+
+### set_vector_mask((uint64_t)0, (uint64_t)128);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### vadd((__ubuf__ half*)0xffffa5a58510, (__ubuf__ half*)0xffffa5a58110, (__ubuf__ half*)0xffffa5a58310, (uint8_t)1, (uint8_t)1, (uint8_t)1, (uint8_t)1, (uint8_t)8, (uint8_t)8, (uint8_t)8);
+
+[V] [RECV_INST] vadd type 1
+[V] [EXECUTE] vadd type 1
+[MEMCHEK] Mem[281473460830480]checkNum is 0
+[MEMCHEK] Mem[281473460830992]checkNum is 0
+[MEMCHEK] Mem[281473460831504]checkNum is 0
+DataMergeAllOnceAll dataLen: 256
+[V] read  data 0xffffa5a58110 0x100 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffffa5a58110 0x100 B type UB
+[V] data matched whole 0xffffa5a58010 0x500 stat 1
+[V] [DATA_MARK] 0xffffa5a58110 0x100 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffa5a58110 0x100 B type UB
+[V] [CHECK_TBUF] 0xffffa5a58110 0x100 B type UB
+[V] allocation buffer match result 0
+[V] read  data 0xffffa5a58310 0x100 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffffa5a58310 0x100 B type UB
+[V] data matched whole 0xffffa5a58010 0x500 stat 1
+[V] [DATA_MARK] 0xffffa5a58310 0x100 B type UB mark read
+[V] [DATA_MARK] 0xffffa5a58310 0x100 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffa5a58310 0x100 B type UB
+[V] [CHECK_TBUF] 0xffffa5a58310 0x100 B type UB
+[V] allocation buffer match result 0
+[V] write data 0xffffa5a58510 0x100 B type UB
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffa5a58510 0x100 B type UB
+[V] checking wrote queue
+[V] [CHECK_DATA] 0xffffa5a58510 0x100 B type UB
+[V] data matched whole 0xffffa5a58410 0x200 stat 1
+[V] [CHECK_TBUF] 0xffffa5a58510 0x100 B type UB
+[V] allocation buffer match result 0
+
+### set_mask_norm();
+
+[set_mask_norm] unsupported
+[S] [RECV_INST] set_mask_norm type 7
+[S] [EXECUTE] set_mask_norm type 7
+
+### set_vector_mask((uint64_t)18446744073709551615, (uint64_t)18446744073709551615);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [SYNC_DATA] 0xffffa5a58510 0x100 B type UB
+[V] [send event] on set_flag 1 5 0
+[V] -> [MTE3] [GET_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE3] [RECV_EVENT] SRC V DST MTE3 EVENT 0
+[MTE3] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MEMCHEK] Mem[281473460831504]checkNum is 0
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)2);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [send event] on set_flag 1 4 2
+[V] -> [MTE2] [GET_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE2] [RECV_EVENT] SRC V DST MTE2 EVENT 2
+[MTE2] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[ALL] [TBUF_EVENT] FREE 0xffffa5a58110 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x200, Rate: 0.195312%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473460830480]checkNum is 0
+[MEMCHEK] Mem[281473460830480] is FREE
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)3);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [send event] on set_flag 1 4 3
+[V] -> [MTE2] [GET_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE2] [RECV_EVENT] SRC V DST MTE2 EVENT 3
+[MTE2] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[ALL] [TBUF_EVENT] FREE 0xffffa5a58310 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x100, Rate: 0.0976562%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473460830992]checkNum is 0
+[MEMCHEK] Mem[281473460830992] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[MTE3] [RECV_INST] wait_flag type 4
+[MTE3] [EXECUTE] wait_flag type 4
+[MTE3] [no wait] on wait_flag 1 5 0
+[V] [EVENT_CLEAR] send 1 5 0 has been waited
+[MEMCHEK] Mem[281473460831504]checkNum is 0
+
+### copy_ubuf_to_gm((__gm__ void*)0xffffab419300, (__ubuf__ void*)0xffffa5a58510, (uint8_t)0, (uint16_t)1, (uint16_t)8, (uint16_t)0, (uint16_t)0);
+
+[MTE3] [RECV_INST] copy_ubuf_to_gm type 0
+[MTE3] [EXECUTE] copy_ubuf_to_gm type 0
+[MTE3] read  data 0xffffa5a58510 0x100 B type UB
+[MTE3] checking synced queue
+[MTE3] [CHECK_DATA] 0xffffa5a58510 0x100 B type UB
+[MTE3] data matched whole 0xffffa5a58410 0x200 stat 1
+[MTE3] [DATA_MARK] 0xffffa5a58510 0x100 B type UB mark read
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffffa5a58510 0x100 B type UB
+[MTE3] [CHECK_TBUF] 0xffffa5a58510 0x100 B type UB
+[MTE3] allocation buffer match result 0
+[MTE3] write data 0xffffab419300 0x100 B type GM
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffffab419300 0x100 B type GM
+[MTE3] checking wrote queue
+[MTE3] [CHECK_DATA] 0xffffab419300 0x100 B type GM
+[MTE3] [CHECK_TBUF] 0xffffab419300 0x100 B type GM
+[MEMCHEK] Mem[281473460831504]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)1);
+
+[MTE3] [RECV_INST] set_flag type 3
+[MTE3] [EXECUTE] set_flag type 3
+[MTE3] [SYNC_DATA] 0xffffab419300 0x100 B type GM
+[MTE3] [send event] on set_flag 5 1 1
+[MTE3] -> [V] [GET_DATA] 0xffffab419000 0x400 B stat 1 type GM
+[V] [RECV_EVENT] SRC MTE3 DST V EVENT 1
+[V] [RECV_DATA] 0xffffab419000 0x400 B stat 1 type GM
+[ALL] [TBUF_EVENT] FREE 0xffffa5a58510 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473460831504]checkNum is 0
+[MEMCHEK] Mem[281473460831504] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)0);
+
+[MTE2] [RECV_INST] wait_flag type 4
+[MTE2] [EXECUTE] wait_flag type 4
+[MTE2] [no wait] on wait_flag 1 4 0
+[V] [EVENT_CLEAR] send 1 4 0 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffffa5a58010 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x100, Rate: 0.0976562%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473460830224len: 256
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)1);
+
+[MTE2] [RECV_INST] wait_flag type 4
+[MTE2] [EXECUTE] wait_flag type 4
+[MTE2] [no wait] on wait_flag 1 4 1
+[V] [EVENT_CLEAR] send 1 4 1 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffffa5a58210 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x200, Rate: 0.195312%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473460830736len: 256
+
+### copy_gm_to_ubuf((__ubuf__ void*)0xffffa5a58010, (__gm__ void*)0xffffac2a9400, (uint8_t)0, (uint16_t)1, (uint16_t)8, (uint16_t)0, (uint16_t)0);
+
+[MTE2] [RECV_INST] copy_gm_to_ubuf type 0
+[MTE2] [EXECUTE] copy_gm_to_ubuf type 0
+[MTE2] read  data 0xffffac2a9400 0x100 B type GM
+[MTE2] [DATA_MARK] 0xffffac2a9400 0x100 B type GM mark read
+[MTE2] write data 0xffffa5a58010 0x100 B type UB
+[MTE2] checking pending queue
+[MTE2] [CHECK_DATA] 0xffffa5a58010 0x100 B type UB
+[MTE2] checking wrote queue
+[MTE2] [CHECK_DATA] 0xffffa5a58010 0x100 B type UB
+[MTE2] data matched whole 0xffffa5a58010 0x400 stat 1
+[MTE2] [CHECK_TBUF] 0xffffa5a58010 0x100 B type UB
+[MTE2] allocation buffer match result 0
+[MEMCHEK] Mem[281473460830224]checkNum is 0
+
+### copy_gm_to_ubuf((__ubuf__ void*)0xffffa5a58210, (__gm__ void*)0xffffabcb9400, (uint8_t)0, (uint16_t)1, (uint16_t)8, (uint16_t)0, (uint16_t)0);
+
+[MTE2] [RECV_INST] copy_gm_to_ubuf type 0
+[MTE2] [EXECUTE] copy_gm_to_ubuf type 0
+[MTE2] read  data 0xffffabcb9400 0x100 B type GM
+[MTE2] [DATA_MARK] 0xffffabcb9400 0x100 B type GM mark read
+[MTE2] write data 0xffffa5a58210 0x100 B type UB
+[MTE2] checking pending queue
+[MTE2] [CHECK_DATA] 0xffffa5a58210 0x100 B type UB
+[MTE2] checking wrote queue
+[MTE2] [CHECK_DATA] 0xffffa5a58210 0x100 B type UB
+[MTE2] data matched whole 0xffffa5a58010 0x400 stat 1
+[MTE2] [CHECK_TBUF] 0xffffa5a58210 0x100 B type UB
+[MTE2] allocation buffer match result 0
+[MEMCHEK] Mem[281473460830736]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[MTE2] [RECV_INST] set_flag type 3
+[MTE2] [EXECUTE] set_flag type 3
+[MTE2] [SYNC_DATA] 0xffffa5a58010 0x100 B type UB
+[MTE2] [SYNC_DATA] 0xffffa5a58210 0x100 B type UB
+[MTE2] [send event] on set_flag 4 1 0
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[V] [RECV_EVENT] SRC MTE2 DST V EVENT 0
+[V] [RECV_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[V] [RECV_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[MEMCHEK] Mem[281473460830224]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)1);
+
+[MTE2] [RECV_INST] set_flag type 3
+[MTE2] [EXECUTE] set_flag type 3
+[MTE2] [send event] on set_flag 4 1 1
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[V] [RECV_EVENT] SRC MTE2 DST V EVENT 1
+[V] [RECV_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[V] [RECV_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[MEMCHEK] Mem[281473460830736]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 4 1 0
+[MTE2] [EVENT_CLEAR] send 4 1 0 has been waited
+[MEMCHEK] Mem[281473460830224]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)1);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 4 1 1
+[MTE2] [EVENT_CLEAR] send 4 1 1 has been waited
+[MEMCHEK] Mem[281473460830736]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)0);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 5 1 0
+[MTE3] [EVENT_CLEAR] send 5 1 0 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffffa5a58410 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x300, Rate: 0.292969%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473460831248len: 256
+
+### set_mask_count();
+
+[set_mask_count] unsupported
+[S] [RECV_INST] set_mask_count type 7
+[S] [EXECUTE] set_mask_count type 7
+
+### set_vector_mask((uint64_t)0, (uint64_t)128);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### vadd((__ubuf__ half*)0xffffa5a58410, (__ubuf__ half*)0xffffa5a58010, (__ubuf__ half*)0xffffa5a58210, (uint8_t)1, (uint8_t)1, (uint8_t)1, (uint8_t)1, (uint8_t)8, (uint8_t)8, (uint8_t)8);
+
+[V] [RECV_INST] vadd type 1
+[V] [EXECUTE] vadd type 1
+[MEMCHEK] Mem[281473460830224]checkNum is 0
+[MEMCHEK] Mem[281473460830736]checkNum is 0
+[MEMCHEK] Mem[281473460831248]checkNum is 0
+DataMergeAllOnceAll dataLen: 256
+[V] read  data 0xffffa5a58010 0x100 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffffa5a58010 0x100 B type UB
+[V] data matched whole 0xffffa5a58010 0x600 stat 1
+[V] [DATA_MARK] 0xffffa5a58010 0x100 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffa5a58010 0x100 B type UB
+[V] [CHECK_TBUF] 0xffffa5a58010 0x100 B type UB
+[V] allocation buffer match result 0
+[V] read  data 0xffffa5a58210 0x100 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffffa5a58210 0x100 B type UB
+[V] data matched whole 0xffffa5a58010 0x600 stat 1
+[V] [DATA_MARK] 0xffffa5a58210 0x100 B type UB mark read
+[V] [DATA_MARK] 0xffffa5a58210 0x100 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffa5a58210 0x100 B type UB
+[V] [CHECK_TBUF] 0xffffa5a58210 0x100 B type UB
+[V] allocation buffer match result 0
+[V] write data 0xffffa5a58410 0x100 B type UB
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffa5a58410 0x100 B type UB
+[V] checking wrote queue
+[V] [CHECK_DATA] 0xffffa5a58410 0x100 B type UB
+[V] data matched whole 0xffffa5a58410 0x200 stat 1
+[V] [CHECK_TBUF] 0xffffa5a58410 0x100 B type UB
+[V] allocation buffer match result 0
+
+### set_mask_norm();
+
+[set_mask_norm] unsupported
+[S] [RECV_INST] set_mask_norm type 7
+[S] [EXECUTE] set_mask_norm type 7
+
+### set_vector_mask((uint64_t)18446744073709551615, (uint64_t)18446744073709551615);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [SYNC_DATA] 0xffffa5a58410 0x100 B type UB
+[V] [send event] on set_flag 1 5 0
+[V] -> [MTE3] [GET_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE3] [RECV_EVENT] SRC V DST MTE3 EVENT 0
+[MTE3] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MEMCHEK] Mem[281473460831248]checkNum is 0
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)0);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [send event] on set_flag 1 4 0
+[V] -> [MTE2] [GET_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE2] [RECV_EVENT] SRC V DST MTE2 EVENT 0
+[MTE2] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[ALL] [TBUF_EVENT] FREE 0xffffa5a58010 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x200, Rate: 0.195312%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473460830224]checkNum is 0
+[MEMCHEK] Mem[281473460830224] is FREE
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)1);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [send event] on set_flag 1 4 1
+[V] -> [MTE2] [GET_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE2] [RECV_EVENT] SRC V DST MTE2 EVENT 1
+[MTE2] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[ALL] [TBUF_EVENT] FREE 0xffffa5a58210 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x100, Rate: 0.0976562%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473460830736]checkNum is 0
+[MEMCHEK] Mem[281473460830736] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[MTE3] [RECV_INST] wait_flag type 4
+[MTE3] [EXECUTE] wait_flag type 4
+[MTE3] [no wait] on wait_flag 1 5 0
+[V] [EVENT_CLEAR] send 1 5 0 has been waited
+[MEMCHEK] Mem[281473460831248]checkNum is 0
+
+### copy_ubuf_to_gm((__gm__ void*)0xffffab419400, (__ubuf__ void*)0xffffa5a58410, (uint8_t)0, (uint16_t)1, (uint16_t)8, (uint16_t)0, (uint16_t)0);
+
+[MTE3] [RECV_INST] copy_ubuf_to_gm type 0
+[MTE3] [EXECUTE] copy_ubuf_to_gm type 0
+[MTE3] read  data 0xffffa5a58410 0x100 B type UB
+[MTE3] checking synced queue
+[MTE3] [CHECK_DATA] 0xffffa5a58410 0x100 B type UB
+[MTE3] data matched whole 0xffffa5a58410 0x200 stat 1
+[MTE3] [DATA_MARK] 0xffffa5a58410 0x100 B type UB mark read
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffffa5a58410 0x100 B type UB
+[MTE3] [CHECK_TBUF] 0xffffa5a58410 0x100 B type UB
+[MTE3] allocation buffer match result 0
+[MTE3] write data 0xffffab419400 0x100 B type GM
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffffab419400 0x100 B type GM
+[MTE3] checking wrote queue
+[MTE3] [CHECK_DATA] 0xffffab419400 0x100 B type GM
+[MTE3] [CHECK_TBUF] 0xffffab419400 0x100 B type GM
+[MEMCHEK] Mem[281473460831248]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)0);
+
+[MTE3] [RECV_INST] set_flag type 3
+[MTE3] [EXECUTE] set_flag type 3
+[MTE3] [SYNC_DATA] 0xffffab419400 0x100 B type GM
+[MTE3] [send event] on set_flag 5 1 0
+[MTE3] -> [V] [GET_DATA] 0xffffab419000 0x500 B stat 1 type GM
+[V] [RECV_EVENT] SRC MTE3 DST V EVENT 0
+[V] [RECV_DATA] 0xffffab419000 0x500 B stat 1 type GM
+[ALL] [TBUF_EVENT] FREE 0xffffa5a58410 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473460831248]checkNum is 0
+[MEMCHEK] Mem[281473460831248] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)2);
+
+[MTE2] [RECV_INST] wait_flag type 4
+[MTE2] [EXECUTE] wait_flag type 4
+[MTE2] [no wait] on wait_flag 1 4 2
+[V] [EVENT_CLEAR] send 1 4 2 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffffa5a58110 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x100, Rate: 0.0976562%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473460830480len: 256
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)3);
+
+[MTE2] [RECV_INST] wait_flag type 4
+[MTE2] [EXECUTE] wait_flag type 4
+[MTE2] [no wait] on wait_flag 1 4 3
+[V] [EVENT_CLEAR] send 1 4 3 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffffa5a58310 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x200, Rate: 0.195312%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473460830992len: 256
+
+### copy_gm_to_ubuf((__ubuf__ void*)0xffffa5a58110, (__gm__ void*)0xffffac2a9500, (uint8_t)0, (uint16_t)1, (uint16_t)8, (uint16_t)0, (uint16_t)0);
+
+[MTE2] [RECV_INST] copy_gm_to_ubuf type 0
+[MTE2] [EXECUTE] copy_gm_to_ubuf type 0
+[MTE2] read  data 0xffffac2a9500 0x100 B type GM
+[MTE2] [DATA_MARK] 0xffffac2a9500 0x100 B type GM mark read
+[MTE2] write data 0xffffa5a58110 0x100 B type UB
+[MTE2] checking pending queue
+[MTE2] [CHECK_DATA] 0xffffa5a58110 0x100 B type UB
+[MTE2] checking wrote queue
+[MTE2] [CHECK_DATA] 0xffffa5a58110 0x100 B type UB
+[MTE2] data matched whole 0xffffa5a58010 0x400 stat 1
+[MTE2] [CHECK_TBUF] 0xffffa5a58110 0x100 B type UB
+[MTE2] allocation buffer match result 0
+[MEMCHEK] Mem[281473460830480]checkNum is 0
+
+### copy_gm_to_ubuf((__ubuf__ void*)0xffffa5a58310, (__gm__ void*)0xffffabcb9500, (uint8_t)0, (uint16_t)1, (uint16_t)8, (uint16_t)0, (uint16_t)0);
+
+[MTE2] [RECV_INST] copy_gm_to_ubuf type 0
+[MTE2] [EXECUTE] copy_gm_to_ubuf type 0
+[MTE2] read  data 0xffffabcb9500 0x100 B type GM
+[MTE2] [DATA_MARK] 0xffffabcb9500 0x100 B type GM mark read
+[MTE2] write data 0xffffa5a58310 0x100 B type UB
+[MTE2] checking pending queue
+[MTE2] [CHECK_DATA] 0xffffa5a58310 0x100 B type UB
+[MTE2] checking wrote queue
+[MTE2] [CHECK_DATA] 0xffffa5a58310 0x100 B type UB
+[MTE2] data matched whole 0xffffa5a58010 0x400 stat 1
+[MTE2] [CHECK_TBUF] 0xffffa5a58310 0x100 B type UB
+[MTE2] allocation buffer match result 0
+[MEMCHEK] Mem[281473460830992]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[MTE2] [RECV_INST] set_flag type 3
+[MTE2] [EXECUTE] set_flag type 3
+[MTE2] [SYNC_DATA] 0xffffa5a58110 0x100 B type UB
+[MTE2] [SYNC_DATA] 0xffffa5a58310 0x100 B type UB
+[MTE2] [send event] on set_flag 4 1 0
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[V] [RECV_EVENT] SRC MTE2 DST V EVENT 0
+[V] [RECV_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[V] [RECV_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[MEMCHEK] Mem[281473460830480]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)1);
+
+[MTE2] [RECV_INST] set_flag type 3
+[MTE2] [EXECUTE] set_flag type 3
+[MTE2] [send event] on set_flag 4 1 1
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[V] [RECV_EVENT] SRC MTE2 DST V EVENT 1
+[V] [RECV_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[V] [RECV_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[MEMCHEK] Mem[281473460830992]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 4 1 0
+[MTE2] [EVENT_CLEAR] send 4 1 0 has been waited
+[MEMCHEK] Mem[281473460830480]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)1);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 4 1 1
+[MTE2] [EVENT_CLEAR] send 4 1 1 has been waited
+[MEMCHEK] Mem[281473460830992]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)1);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 5 1 1
+[MTE3] [EVENT_CLEAR] send 5 1 1 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffffa5a58510 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x300, Rate: 0.292969%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473460831504len: 256
+
+### set_mask_count();
+
+[set_mask_count] unsupported
+[S] [RECV_INST] set_mask_count type 7
+[S] [EXECUTE] set_mask_count type 7
+
+### set_vector_mask((uint64_t)0, (uint64_t)128);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### vadd((__ubuf__ half*)0xffffa5a58510, (__ubuf__ half*)0xffffa5a58110, (__ubuf__ half*)0xffffa5a58310, (uint8_t)1, (uint8_t)1, (uint8_t)1, (uint8_t)1, (uint8_t)8, (uint8_t)8, (uint8_t)8);
+
+[V] [RECV_INST] vadd type 1
+[V] [EXECUTE] vadd type 1
+[MEMCHEK] Mem[281473460830480]checkNum is 0
+[MEMCHEK] Mem[281473460830992]checkNum is 0
+[MEMCHEK] Mem[281473460831504]checkNum is 0
+DataMergeAllOnceAll dataLen: 256
+[V] read  data 0xffffa5a58110 0x100 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffffa5a58110 0x100 B type UB
+[V] data matched whole 0xffffa5a58010 0x600 stat 1
+[V] [DATA_MARK] 0xffffa5a58110 0x100 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffa5a58110 0x100 B type UB
+[V] [CHECK_TBUF] 0xffffa5a58110 0x100 B type UB
+[V] allocation buffer match result 0
+[V] read  data 0xffffa5a58310 0x100 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffffa5a58310 0x100 B type UB
+[V] data matched whole 0xffffa5a58010 0x600 stat 1
+[V] [DATA_MARK] 0xffffa5a58310 0x100 B type UB mark read
+[V] [DATA_MARK] 0xffffa5a58310 0x100 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffa5a58310 0x100 B type UB
+[V] [CHECK_TBUF] 0xffffa5a58310 0x100 B type UB
+[V] allocation buffer match result 0
+[V] write data 0xffffa5a58510 0x100 B type UB
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffa5a58510 0x100 B type UB
+[V] checking wrote queue
+[V] [CHECK_DATA] 0xffffa5a58510 0x100 B type UB
+[V] data matched whole 0xffffa5a58410 0x200 stat 1
+[V] [CHECK_TBUF] 0xffffa5a58510 0x100 B type UB
+[V] allocation buffer match result 0
+
+### set_mask_norm();
+
+[set_mask_norm] unsupported
+[S] [RECV_INST] set_mask_norm type 7
+[S] [EXECUTE] set_mask_norm type 7
+
+### set_vector_mask((uint64_t)18446744073709551615, (uint64_t)18446744073709551615);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [SYNC_DATA] 0xffffa5a58510 0x100 B type UB
+[V] [send event] on set_flag 1 5 0
+[V] -> [MTE3] [GET_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE3] [RECV_EVENT] SRC V DST MTE3 EVENT 0
+[MTE3] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MEMCHEK] Mem[281473460831504]checkNum is 0
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)2);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [send event] on set_flag 1 4 2
+[V] -> [MTE2] [GET_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE2] [RECV_EVENT] SRC V DST MTE2 EVENT 2
+[MTE2] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[ALL] [TBUF_EVENT] FREE 0xffffa5a58110 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x200, Rate: 0.195312%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473460830480]checkNum is 0
+[MEMCHEK] Mem[281473460830480] is FREE
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)3);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [send event] on set_flag 1 4 3
+[V] -> [MTE2] [GET_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE2] [RECV_EVENT] SRC V DST MTE2 EVENT 3
+[MTE2] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[ALL] [TBUF_EVENT] FREE 0xffffa5a58310 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x100, Rate: 0.0976562%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473460830992]checkNum is 0
+[MEMCHEK] Mem[281473460830992] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[MTE3] [RECV_INST] wait_flag type 4
+[MTE3] [EXECUTE] wait_flag type 4
+[MTE3] [no wait] on wait_flag 1 5 0
+[V] [EVENT_CLEAR] send 1 5 0 has been waited
+[MEMCHEK] Mem[281473460831504]checkNum is 0
+
+### copy_ubuf_to_gm((__gm__ void*)0xffffab419500, (__ubuf__ void*)0xffffa5a58510, (uint8_t)0, (uint16_t)1, (uint16_t)8, (uint16_t)0, (uint16_t)0);
+
+[MTE3] [RECV_INST] copy_ubuf_to_gm type 0
+[MTE3] [EXECUTE] copy_ubuf_to_gm type 0
+[MTE3] read  data 0xffffa5a58510 0x100 B type UB
+[MTE3] checking synced queue
+[MTE3] [CHECK_DATA] 0xffffa5a58510 0x100 B type UB
+[MTE3] data matched whole 0xffffa5a58410 0x200 stat 1
+[MTE3] [DATA_MARK] 0xffffa5a58510 0x100 B type UB mark read
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffffa5a58510 0x100 B type UB
+[MTE3] [CHECK_TBUF] 0xffffa5a58510 0x100 B type UB
+[MTE3] allocation buffer match result 0
+[MTE3] write data 0xffffab419500 0x100 B type GM
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffffab419500 0x100 B type GM
+[MTE3] checking wrote queue
+[MTE3] [CHECK_DATA] 0xffffab419500 0x100 B type GM
+[MTE3] [CHECK_TBUF] 0xffffab419500 0x100 B type GM
+[MEMCHEK] Mem[281473460831504]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)1);
+
+[MTE3] [RECV_INST] set_flag type 3
+[MTE3] [EXECUTE] set_flag type 3
+[MTE3] [SYNC_DATA] 0xffffab419500 0x100 B type GM
+[MTE3] [send event] on set_flag 5 1 1
+[MTE3] -> [V] [GET_DATA] 0xffffab419000 0x600 B stat 1 type GM
+[V] [RECV_EVENT] SRC MTE3 DST V EVENT 1
+[V] [RECV_DATA] 0xffffab419000 0x600 B stat 1 type GM
+[ALL] [TBUF_EVENT] FREE 0xffffa5a58510 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473460831504]checkNum is 0
+[MEMCHEK] Mem[281473460831504] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)0);
+
+[MTE2] [RECV_INST] wait_flag type 4
+[MTE2] [EXECUTE] wait_flag type 4
+[MTE2] [no wait] on wait_flag 1 4 0
+[V] [EVENT_CLEAR] send 1 4 0 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffffa5a58010 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x100, Rate: 0.0976562%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473460830224len: 256
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)1);
+
+[MTE2] [RECV_INST] wait_flag type 4
+[MTE2] [EXECUTE] wait_flag type 4
+[MTE2] [no wait] on wait_flag 1 4 1
+[V] [EVENT_CLEAR] send 1 4 1 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffffa5a58210 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x200, Rate: 0.195312%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473460830736len: 256
+
+### copy_gm_to_ubuf((__ubuf__ void*)0xffffa5a58010, (__gm__ void*)0xffffac2a9600, (uint8_t)0, (uint16_t)1, (uint16_t)8, (uint16_t)0, (uint16_t)0);
+
+[MTE2] [RECV_INST] copy_gm_to_ubuf type 0
+[MTE2] [EXECUTE] copy_gm_to_ubuf type 0
+[MTE2] read  data 0xffffac2a9600 0x100 B type GM
+[MTE2] [DATA_MARK] 0xffffac2a9600 0x100 B type GM mark read
+[MTE2] write data 0xffffa5a58010 0x100 B type UB
+[MTE2] checking pending queue
+[MTE2] [CHECK_DATA] 0xffffa5a58010 0x100 B type UB
+[MTE2] checking wrote queue
+[MTE2] [CHECK_DATA] 0xffffa5a58010 0x100 B type UB
+[MTE2] data matched whole 0xffffa5a58010 0x400 stat 1
+[MTE2] [CHECK_TBUF] 0xffffa5a58010 0x100 B type UB
+[MTE2] allocation buffer match result 0
+[MEMCHEK] Mem[281473460830224]checkNum is 0
+
+### copy_gm_to_ubuf((__ubuf__ void*)0xffffa5a58210, (__gm__ void*)0xffffabcb9600, (uint8_t)0, (uint16_t)1, (uint16_t)8, (uint16_t)0, (uint16_t)0);
+
+[MTE2] [RECV_INST] copy_gm_to_ubuf type 0
+[MTE2] [EXECUTE] copy_gm_to_ubuf type 0
+[MTE2] read  data 0xffffabcb9600 0x100 B type GM
+[MTE2] [DATA_MARK] 0xffffabcb9600 0x100 B type GM mark read
+[MTE2] write data 0xffffa5a58210 0x100 B type UB
+[MTE2] checking pending queue
+[MTE2] [CHECK_DATA] 0xffffa5a58210 0x100 B type UB
+[MTE2] checking wrote queue
+[MTE2] [CHECK_DATA] 0xffffa5a58210 0x100 B type UB
+[MTE2] data matched whole 0xffffa5a58010 0x400 stat 1
+[MTE2] [CHECK_TBUF] 0xffffa5a58210 0x100 B type UB
+[MTE2] allocation buffer match result 0
+[MEMCHEK] Mem[281473460830736]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[MTE2] [RECV_INST] set_flag type 3
+[MTE2] [EXECUTE] set_flag type 3
+[MTE2] [SYNC_DATA] 0xffffa5a58010 0x100 B type UB
+[MTE2] [SYNC_DATA] 0xffffa5a58210 0x100 B type UB
+[MTE2] [send event] on set_flag 4 1 0
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[V] [RECV_EVENT] SRC MTE2 DST V EVENT 0
+[V] [RECV_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[V] [RECV_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[MEMCHEK] Mem[281473460830224]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)1);
+
+[MTE2] [RECV_INST] set_flag type 3
+[MTE2] [EXECUTE] set_flag type 3
+[MTE2] [send event] on set_flag 4 1 1
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[V] [RECV_EVENT] SRC MTE2 DST V EVENT 1
+[V] [RECV_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[V] [RECV_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[MEMCHEK] Mem[281473460830736]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 4 1 0
+[MTE2] [EVENT_CLEAR] send 4 1 0 has been waited
+[MEMCHEK] Mem[281473460830224]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)1);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 4 1 1
+[MTE2] [EVENT_CLEAR] send 4 1 1 has been waited
+[MEMCHEK] Mem[281473460830736]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)0);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 5 1 0
+[MTE3] [EVENT_CLEAR] send 5 1 0 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffffa5a58410 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x300, Rate: 0.292969%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473460831248len: 256
+
+### set_mask_count();
+
+[set_mask_count] unsupported
+[S] [RECV_INST] set_mask_count type 7
+[S] [EXECUTE] set_mask_count type 7
+
+### set_vector_mask((uint64_t)0, (uint64_t)128);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### vadd((__ubuf__ half*)0xffffa5a58410, (__ubuf__ half*)0xffffa5a58010, (__ubuf__ half*)0xffffa5a58210, (uint8_t)1, (uint8_t)1, (uint8_t)1, (uint8_t)1, (uint8_t)8, (uint8_t)8, (uint8_t)8);
+
+[V] [RECV_INST] vadd type 1
+[V] [EXECUTE] vadd type 1
+[MEMCHEK] Mem[281473460830224]checkNum is 0
+[MEMCHEK] Mem[281473460830736]checkNum is 0
+[MEMCHEK] Mem[281473460831248]checkNum is 0
+DataMergeAllOnceAll dataLen: 256
+[V] read  data 0xffffa5a58010 0x100 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffffa5a58010 0x100 B type UB
+[V] data matched whole 0xffffa5a58010 0x600 stat 1
+[V] [DATA_MARK] 0xffffa5a58010 0x100 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffa5a58010 0x100 B type UB
+[V] [CHECK_TBUF] 0xffffa5a58010 0x100 B type UB
+[V] allocation buffer match result 0
+[V] read  data 0xffffa5a58210 0x100 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffffa5a58210 0x100 B type UB
+[V] data matched whole 0xffffa5a58010 0x600 stat 1
+[V] [DATA_MARK] 0xffffa5a58210 0x100 B type UB mark read
+[V] [DATA_MARK] 0xffffa5a58210 0x100 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffa5a58210 0x100 B type UB
+[V] [CHECK_TBUF] 0xffffa5a58210 0x100 B type UB
+[V] allocation buffer match result 0
+[V] write data 0xffffa5a58410 0x100 B type UB
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffa5a58410 0x100 B type UB
+[V] checking wrote queue
+[V] [CHECK_DATA] 0xffffa5a58410 0x100 B type UB
+[V] data matched whole 0xffffa5a58410 0x200 stat 1
+[V] [CHECK_TBUF] 0xffffa5a58410 0x100 B type UB
+[V] allocation buffer match result 0
+
+### set_mask_norm();
+
+[set_mask_norm] unsupported
+[S] [RECV_INST] set_mask_norm type 7
+[S] [EXECUTE] set_mask_norm type 7
+
+### set_vector_mask((uint64_t)18446744073709551615, (uint64_t)18446744073709551615);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [SYNC_DATA] 0xffffa5a58410 0x100 B type UB
+[V] [send event] on set_flag 1 5 0
+[V] -> [MTE3] [GET_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE3] [RECV_EVENT] SRC V DST MTE3 EVENT 0
+[MTE3] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MEMCHEK] Mem[281473460831248]checkNum is 0
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)0);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [send event] on set_flag 1 4 0
+[V] -> [MTE2] [GET_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE2] [RECV_EVENT] SRC V DST MTE2 EVENT 0
+[MTE2] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[ALL] [TBUF_EVENT] FREE 0xffffa5a58010 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x200, Rate: 0.195312%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473460830224]checkNum is 0
+[MEMCHEK] Mem[281473460830224] is FREE
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)1);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [send event] on set_flag 1 4 1
+[V] -> [MTE2] [GET_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE2] [RECV_EVENT] SRC V DST MTE2 EVENT 1
+[MTE2] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[ALL] [TBUF_EVENT] FREE 0xffffa5a58210 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x100, Rate: 0.0976562%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473460830736]checkNum is 0
+[MEMCHEK] Mem[281473460830736] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[MTE3] [RECV_INST] wait_flag type 4
+[MTE3] [EXECUTE] wait_flag type 4
+[MTE3] [no wait] on wait_flag 1 5 0
+[V] [EVENT_CLEAR] send 1 5 0 has been waited
+[MEMCHEK] Mem[281473460831248]checkNum is 0
+
+### copy_ubuf_to_gm((__gm__ void*)0xffffab419600, (__ubuf__ void*)0xffffa5a58410, (uint8_t)0, (uint16_t)1, (uint16_t)8, (uint16_t)0, (uint16_t)0);
+
+[MTE3] [RECV_INST] copy_ubuf_to_gm type 0
+[MTE3] [EXECUTE] copy_ubuf_to_gm type 0
+[MTE3] read  data 0xffffa5a58410 0x100 B type UB
+[MTE3] checking synced queue
+[MTE3] [CHECK_DATA] 0xffffa5a58410 0x100 B type UB
+[MTE3] data matched whole 0xffffa5a58410 0x200 stat 1
+[MTE3] [DATA_MARK] 0xffffa5a58410 0x100 B type UB mark read
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffffa5a58410 0x100 B type UB
+[MTE3] [CHECK_TBUF] 0xffffa5a58410 0x100 B type UB
+[MTE3] allocation buffer match result 0
+[MTE3] write data 0xffffab419600 0x100 B type GM
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffffab419600 0x100 B type GM
+[MTE3] checking wrote queue
+[MTE3] [CHECK_DATA] 0xffffab419600 0x100 B type GM
+[MTE3] [CHECK_TBUF] 0xffffab419600 0x100 B type GM
+[MEMCHEK] Mem[281473460831248]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)0);
+
+[MTE3] [RECV_INST] set_flag type 3
+[MTE3] [EXECUTE] set_flag type 3
+[MTE3] [SYNC_DATA] 0xffffab419600 0x100 B type GM
+[MTE3] [send event] on set_flag 5 1 0
+[MTE3] -> [V] [GET_DATA] 0xffffab419000 0x700 B stat 1 type GM
+[V] [RECV_EVENT] SRC MTE3 DST V EVENT 0
+[V] [RECV_DATA] 0xffffab419000 0x700 B stat 1 type GM
+[ALL] [TBUF_EVENT] FREE 0xffffa5a58410 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473460831248]checkNum is 0
+[MEMCHEK] Mem[281473460831248] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)2);
+
+[MTE2] [RECV_INST] wait_flag type 4
+[MTE2] [EXECUTE] wait_flag type 4
+[MTE2] [no wait] on wait_flag 1 4 2
+[V] [EVENT_CLEAR] send 1 4 2 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffffa5a58110 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x100, Rate: 0.0976562%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473460830480len: 256
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)3);
+
+[MTE2] [RECV_INST] wait_flag type 4
+[MTE2] [EXECUTE] wait_flag type 4
+[MTE2] [no wait] on wait_flag 1 4 3
+[V] [EVENT_CLEAR] send 1 4 3 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffffa5a58310 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x200, Rate: 0.195312%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473460830992len: 256
+
+### copy_gm_to_ubuf((__ubuf__ void*)0xffffa5a58110, (__gm__ void*)0xffffac2a9700, (uint8_t)0, (uint16_t)1, (uint16_t)8, (uint16_t)0, (uint16_t)0);
+
+[MTE2] [RECV_INST] copy_gm_to_ubuf type 0
+[MTE2] [EXECUTE] copy_gm_to_ubuf type 0
+[MTE2] read  data 0xffffac2a9700 0x100 B type GM
+[MTE2] [DATA_MARK] 0xffffac2a9700 0x100 B type GM mark read
+[MTE2] write data 0xffffa5a58110 0x100 B type UB
+[MTE2] checking pending queue
+[MTE2] [CHECK_DATA] 0xffffa5a58110 0x100 B type UB
+[MTE2] checking wrote queue
+[MTE2] [CHECK_DATA] 0xffffa5a58110 0x100 B type UB
+[MTE2] data matched whole 0xffffa5a58010 0x400 stat 1
+[MTE2] [CHECK_TBUF] 0xffffa5a58110 0x100 B type UB
+[MTE2] allocation buffer match result 0
+[MEMCHEK] Mem[281473460830480]checkNum is 0
+
+### copy_gm_to_ubuf((__ubuf__ void*)0xffffa5a58310, (__gm__ void*)0xffffabcb9700, (uint8_t)0, (uint16_t)1, (uint16_t)8, (uint16_t)0, (uint16_t)0);
+
+[MTE2] [RECV_INST] copy_gm_to_ubuf type 0
+[MTE2] [EXECUTE] copy_gm_to_ubuf type 0
+[MTE2] read  data 0xffffabcb9700 0x100 B type GM
+[MTE2] [DATA_MARK] 0xffffabcb9700 0x100 B type GM mark read
+[MTE2] write data 0xffffa5a58310 0x100 B type UB
+[MTE2] checking pending queue
+[MTE2] [CHECK_DATA] 0xffffa5a58310 0x100 B type UB
+[MTE2] checking wrote queue
+[MTE2] [CHECK_DATA] 0xffffa5a58310 0x100 B type UB
+[MTE2] data matched whole 0xffffa5a58010 0x400 stat 1
+[MTE2] [CHECK_TBUF] 0xffffa5a58310 0x100 B type UB
+[MTE2] allocation buffer match result 0
+[MEMCHEK] Mem[281473460830992]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[MTE2] [RECV_INST] set_flag type 3
+[MTE2] [EXECUTE] set_flag type 3
+[MTE2] [SYNC_DATA] 0xffffa5a58110 0x100 B type UB
+[MTE2] [SYNC_DATA] 0xffffa5a58310 0x100 B type UB
+[MTE2] [send event] on set_flag 4 1 0
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[V] [RECV_EVENT] SRC MTE2 DST V EVENT 0
+[V] [RECV_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[V] [RECV_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[MEMCHEK] Mem[281473460830480]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)1);
+
+[MTE2] [RECV_INST] set_flag type 3
+[MTE2] [EXECUTE] set_flag type 3
+[MTE2] [send event] on set_flag 4 1 1
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[V] [RECV_EVENT] SRC MTE2 DST V EVENT 1
+[V] [RECV_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[V] [RECV_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[MEMCHEK] Mem[281473460830992]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 4 1 0
+[MTE2] [EVENT_CLEAR] send 4 1 0 has been waited
+[MEMCHEK] Mem[281473460830480]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)1);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 4 1 1
+[MTE2] [EVENT_CLEAR] send 4 1 1 has been waited
+[MEMCHEK] Mem[281473460830992]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)1);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 5 1 1
+[MTE3] [EVENT_CLEAR] send 5 1 1 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffffa5a58510 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x300, Rate: 0.292969%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473460831504len: 256
+
+### set_mask_count();
+
+[set_mask_count] unsupported
+[S] [RECV_INST] set_mask_count type 7
+[S] [EXECUTE] set_mask_count type 7
+
+### set_vector_mask((uint64_t)0, (uint64_t)128);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### vadd((__ubuf__ half*)0xffffa5a58510, (__ubuf__ half*)0xffffa5a58110, (__ubuf__ half*)0xffffa5a58310, (uint8_t)1, (uint8_t)1, (uint8_t)1, (uint8_t)1, (uint8_t)8, (uint8_t)8, (uint8_t)8);
+
+[V] [RECV_INST] vadd type 1
+[V] [EXECUTE] vadd type 1
+[MEMCHEK] Mem[281473460830480]checkNum is 0
+[MEMCHEK] Mem[281473460830992]checkNum is 0
+[MEMCHEK] Mem[281473460831504]checkNum is 0
+DataMergeAllOnceAll dataLen: 256
+[V] read  data 0xffffa5a58110 0x100 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffffa5a58110 0x100 B type UB
+[V] data matched whole 0xffffa5a58010 0x600 stat 1
+[V] [DATA_MARK] 0xffffa5a58110 0x100 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffa5a58110 0x100 B type UB
+[V] [CHECK_TBUF] 0xffffa5a58110 0x100 B type UB
+[V] allocation buffer match result 0
+[V] read  data 0xffffa5a58310 0x100 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffffa5a58310 0x100 B type UB
+[V] data matched whole 0xffffa5a58010 0x600 stat 1
+[V] [DATA_MARK] 0xffffa5a58310 0x100 B type UB mark read
+[V] [DATA_MARK] 0xffffa5a58310 0x100 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffa5a58310 0x100 B type UB
+[V] [CHECK_TBUF] 0xffffa5a58310 0x100 B type UB
+[V] allocation buffer match result 0
+[V] write data 0xffffa5a58510 0x100 B type UB
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffa5a58510 0x100 B type UB
+[V] checking wrote queue
+[V] [CHECK_DATA] 0xffffa5a58510 0x100 B type UB
+[V] data matched whole 0xffffa5a58410 0x200 stat 1
+[V] [CHECK_TBUF] 0xffffa5a58510 0x100 B type UB
+[V] allocation buffer match result 0
+
+### set_mask_norm();
+
+[set_mask_norm] unsupported
+[S] [RECV_INST] set_mask_norm type 7
+[S] [EXECUTE] set_mask_norm type 7
+
+### set_vector_mask((uint64_t)18446744073709551615, (uint64_t)18446744073709551615);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [SYNC_DATA] 0xffffa5a58510 0x100 B type UB
+[V] [send event] on set_flag 1 5 0
+[V] -> [MTE3] [GET_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE3] [RECV_EVENT] SRC V DST MTE3 EVENT 0
+[MTE3] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MEMCHEK] Mem[281473460831504]checkNum is 0
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)2);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [send event] on set_flag 1 4 2
+[V] -> [MTE2] [GET_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE2] [RECV_EVENT] SRC V DST MTE2 EVENT 2
+[MTE2] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[ALL] [TBUF_EVENT] FREE 0xffffa5a58110 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x200, Rate: 0.195312%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473460830480]checkNum is 0
+[MEMCHEK] Mem[281473460830480] is FREE
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)3);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [send event] on set_flag 1 4 3
+[V] -> [MTE2] [GET_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE2] [RECV_EVENT] SRC V DST MTE2 EVENT 3
+[MTE2] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[ALL] [TBUF_EVENT] FREE 0xffffa5a58310 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x100, Rate: 0.0976562%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473460830992]checkNum is 0
+[MEMCHEK] Mem[281473460830992] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[MTE3] [RECV_INST] wait_flag type 4
+[MTE3] [EXECUTE] wait_flag type 4
+[MTE3] [no wait] on wait_flag 1 5 0
+[V] [EVENT_CLEAR] send 1 5 0 has been waited
+[MEMCHEK] Mem[281473460831504]checkNum is 0
+
+### copy_ubuf_to_gm((__gm__ void*)0xffffab419700, (__ubuf__ void*)0xffffa5a58510, (uint8_t)0, (uint16_t)1, (uint16_t)8, (uint16_t)0, (uint16_t)0);
+
+[MTE3] [RECV_INST] copy_ubuf_to_gm type 0
+[MTE3] [EXECUTE] copy_ubuf_to_gm type 0
+[MTE3] read  data 0xffffa5a58510 0x100 B type UB
+[MTE3] checking synced queue
+[MTE3] [CHECK_DATA] 0xffffa5a58510 0x100 B type UB
+[MTE3] data matched whole 0xffffa5a58410 0x200 stat 1
+[MTE3] [DATA_MARK] 0xffffa5a58510 0x100 B type UB mark read
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffffa5a58510 0x100 B type UB
+[MTE3] [CHECK_TBUF] 0xffffa5a58510 0x100 B type UB
+[MTE3] allocation buffer match result 0
+[MTE3] write data 0xffffab419700 0x100 B type GM
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffffab419700 0x100 B type GM
+[MTE3] checking wrote queue
+[MTE3] [CHECK_DATA] 0xffffab419700 0x100 B type GM
+[MTE3] [CHECK_TBUF] 0xffffab419700 0x100 B type GM
+[MEMCHEK] Mem[281473460831504]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)1);
+
+[MTE3] [RECV_INST] set_flag type 3
+[MTE3] [EXECUTE] set_flag type 3
+[MTE3] [SYNC_DATA] 0xffffab419700 0x100 B type GM
+[MTE3] [send event] on set_flag 5 1 1
+[MTE3] -> [V] [GET_DATA] 0xffffab419000 0x800 B stat 1 type GM
+[V] [RECV_EVENT] SRC MTE3 DST V EVENT 1
+[V] [RECV_DATA] 0xffffab419000 0x800 B stat 1 type GM
+[ALL] [TBUF_EVENT] FREE 0xffffa5a58510 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473460831504]checkNum is 0
+[MEMCHEK] Mem[281473460831504] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)0);
+
+[MTE2] [RECV_INST] wait_flag type 4
+[MTE2] [EXECUTE] wait_flag type 4
+[MTE2] [no wait] on wait_flag 1 4 0
+[V] [EVENT_CLEAR] send 1 4 0 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffffa5a58010 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x100, Rate: 0.0976562%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473460830224len: 256
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)1);
+
+[MTE2] [RECV_INST] wait_flag type 4
+[MTE2] [EXECUTE] wait_flag type 4
+[MTE2] [no wait] on wait_flag 1 4 1
+[V] [EVENT_CLEAR] send 1 4 1 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffffa5a58210 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x200, Rate: 0.195312%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473460830736len: 256
+
+### copy_gm_to_ubuf((__ubuf__ void*)0xffffa5a58010, (__gm__ void*)0xffffac2a9800, (uint8_t)0, (uint16_t)1, (uint16_t)8, (uint16_t)0, (uint16_t)0);
+
+[MTE2] [RECV_INST] copy_gm_to_ubuf type 0
+[MTE2] [EXECUTE] copy_gm_to_ubuf type 0
+[MTE2] read  data 0xffffac2a9800 0x100 B type GM
+[MTE2] [DATA_MARK] 0xffffac2a9800 0x100 B type GM mark read
+[MTE2] write data 0xffffa5a58010 0x100 B type UB
+[MTE2] checking pending queue
+[MTE2] [CHECK_DATA] 0xffffa5a58010 0x100 B type UB
+[MTE2] checking wrote queue
+[MTE2] [CHECK_DATA] 0xffffa5a58010 0x100 B type UB
+[MTE2] data matched whole 0xffffa5a58010 0x400 stat 1
+[MTE2] [CHECK_TBUF] 0xffffa5a58010 0x100 B type UB
+[MTE2] allocation buffer match result 0
+[MEMCHEK] Mem[281473460830224]checkNum is 0
+
+### copy_gm_to_ubuf((__ubuf__ void*)0xffffa5a58210, (__gm__ void*)0xffffabcb9800, (uint8_t)0, (uint16_t)1, (uint16_t)8, (uint16_t)0, (uint16_t)0);
+
+[MTE2] [RECV_INST] copy_gm_to_ubuf type 0
+[MTE2] [EXECUTE] copy_gm_to_ubuf type 0
+[MTE2] read  data 0xffffabcb9800 0x100 B type GM
+[MTE2] [DATA_MARK] 0xffffabcb9800 0x100 B type GM mark read
+[MTE2] write data 0xffffa5a58210 0x100 B type UB
+[MTE2] checking pending queue
+[MTE2] [CHECK_DATA] 0xffffa5a58210 0x100 B type UB
+[MTE2] checking wrote queue
+[MTE2] [CHECK_DATA] 0xffffa5a58210 0x100 B type UB
+[MTE2] data matched whole 0xffffa5a58010 0x400 stat 1
+[MTE2] [CHECK_TBUF] 0xffffa5a58210 0x100 B type UB
+[MTE2] allocation buffer match result 0
+[MEMCHEK] Mem[281473460830736]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[MTE2] [RECV_INST] set_flag type 3
+[MTE2] [EXECUTE] set_flag type 3
+[MTE2] [SYNC_DATA] 0xffffa5a58010 0x100 B type UB
+[MTE2] [SYNC_DATA] 0xffffa5a58210 0x100 B type UB
+[MTE2] [send event] on set_flag 4 1 0
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[V] [RECV_EVENT] SRC MTE2 DST V EVENT 0
+[V] [RECV_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[V] [RECV_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[MEMCHEK] Mem[281473460830224]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)1);
+
+[MTE2] [RECV_INST] set_flag type 3
+[MTE2] [EXECUTE] set_flag type 3
+[MTE2] [send event] on set_flag 4 1 1
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[V] [RECV_EVENT] SRC MTE2 DST V EVENT 1
+[V] [RECV_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[V] [RECV_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[MEMCHEK] Mem[281473460830736]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 4 1 0
+[MTE2] [EVENT_CLEAR] send 4 1 0 has been waited
+[MEMCHEK] Mem[281473460830224]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)1);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 4 1 1
+[MTE2] [EVENT_CLEAR] send 4 1 1 has been waited
+[MEMCHEK] Mem[281473460830736]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)0);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 5 1 0
+[MTE3] [EVENT_CLEAR] send 5 1 0 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffffa5a58410 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x300, Rate: 0.292969%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473460831248len: 256
+
+### set_mask_count();
+
+[set_mask_count] unsupported
+[S] [RECV_INST] set_mask_count type 7
+[S] [EXECUTE] set_mask_count type 7
+
+### set_vector_mask((uint64_t)0, (uint64_t)128);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### vadd((__ubuf__ half*)0xffffa5a58410, (__ubuf__ half*)0xffffa5a58010, (__ubuf__ half*)0xffffa5a58210, (uint8_t)1, (uint8_t)1, (uint8_t)1, (uint8_t)1, (uint8_t)8, (uint8_t)8, (uint8_t)8);
+
+[V] [RECV_INST] vadd type 1
+[V] [EXECUTE] vadd type 1
+[MEMCHEK] Mem[281473460830224]checkNum is 0
+[MEMCHEK] Mem[281473460830736]checkNum is 0
+[MEMCHEK] Mem[281473460831248]checkNum is 0
+DataMergeAllOnceAll dataLen: 256
+[V] read  data 0xffffa5a58010 0x100 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffffa5a58010 0x100 B type UB
+[V] data matched whole 0xffffa5a58010 0x600 stat 1
+[V] [DATA_MARK] 0xffffa5a58010 0x100 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffa5a58010 0x100 B type UB
+[V] [CHECK_TBUF] 0xffffa5a58010 0x100 B type UB
+[V] allocation buffer match result 0
+[V] read  data 0xffffa5a58210 0x100 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffffa5a58210 0x100 B type UB
+[V] data matched whole 0xffffa5a58010 0x600 stat 1
+[V] [DATA_MARK] 0xffffa5a58210 0x100 B type UB mark read
+[V] [DATA_MARK] 0xffffa5a58210 0x100 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffa5a58210 0x100 B type UB
+[V] [CHECK_TBUF] 0xffffa5a58210 0x100 B type UB
+[V] allocation buffer match result 0
+[V] write data 0xffffa5a58410 0x100 B type UB
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffa5a58410 0x100 B type UB
+[V] checking wrote queue
+[V] [CHECK_DATA] 0xffffa5a58410 0x100 B type UB
+[V] data matched whole 0xffffa5a58410 0x200 stat 1
+[V] [CHECK_TBUF] 0xffffa5a58410 0x100 B type UB
+[V] allocation buffer match result 0
+
+### set_mask_norm();
+
+[set_mask_norm] unsupported
+[S] [RECV_INST] set_mask_norm type 7
+[S] [EXECUTE] set_mask_norm type 7
+
+### set_vector_mask((uint64_t)18446744073709551615, (uint64_t)18446744073709551615);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [SYNC_DATA] 0xffffa5a58410 0x100 B type UB
+[V] [send event] on set_flag 1 5 0
+[V] -> [MTE3] [GET_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE3] [RECV_EVENT] SRC V DST MTE3 EVENT 0
+[MTE3] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MEMCHEK] Mem[281473460831248]checkNum is 0
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)0);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [send event] on set_flag 1 4 0
+[V] -> [MTE2] [GET_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE2] [RECV_EVENT] SRC V DST MTE2 EVENT 0
+[MTE2] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[ALL] [TBUF_EVENT] FREE 0xffffa5a58010 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x200, Rate: 0.195312%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473460830224]checkNum is 0
+[MEMCHEK] Mem[281473460830224] is FREE
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)1);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [send event] on set_flag 1 4 1
+[V] -> [MTE2] [GET_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE2] [RECV_EVENT] SRC V DST MTE2 EVENT 1
+[MTE2] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[ALL] [TBUF_EVENT] FREE 0xffffa5a58210 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x100, Rate: 0.0976562%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473460830736]checkNum is 0
+[MEMCHEK] Mem[281473460830736] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[MTE3] [RECV_INST] wait_flag type 4
+[MTE3] [EXECUTE] wait_flag type 4
+[MTE3] [no wait] on wait_flag 1 5 0
+[V] [EVENT_CLEAR] send 1 5 0 has been waited
+[MEMCHEK] Mem[281473460831248]checkNum is 0
+
+### copy_ubuf_to_gm((__gm__ void*)0xffffab419800, (__ubuf__ void*)0xffffa5a58410, (uint8_t)0, (uint16_t)1, (uint16_t)8, (uint16_t)0, (uint16_t)0);
+
+[MTE3] [RECV_INST] copy_ubuf_to_gm type 0
+[MTE3] [EXECUTE] copy_ubuf_to_gm type 0
+[MTE3] read  data 0xffffa5a58410 0x100 B type UB
+[MTE3] checking synced queue
+[MTE3] [CHECK_DATA] 0xffffa5a58410 0x100 B type UB
+[MTE3] data matched whole 0xffffa5a58410 0x200 stat 1
+[MTE3] [DATA_MARK] 0xffffa5a58410 0x100 B type UB mark read
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffffa5a58410 0x100 B type UB
+[MTE3] [CHECK_TBUF] 0xffffa5a58410 0x100 B type UB
+[MTE3] allocation buffer match result 0
+[MTE3] write data 0xffffab419800 0x100 B type GM
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffffab419800 0x100 B type GM
+[MTE3] checking wrote queue
+[MTE3] [CHECK_DATA] 0xffffab419800 0x100 B type GM
+[MTE3] [CHECK_TBUF] 0xffffab419800 0x100 B type GM
+[MEMCHEK] Mem[281473460831248]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)0);
+
+[MTE3] [RECV_INST] set_flag type 3
+[MTE3] [EXECUTE] set_flag type 3
+[MTE3] [SYNC_DATA] 0xffffab419800 0x100 B type GM
+[MTE3] [send event] on set_flag 5 1 0
+[MTE3] -> [V] [GET_DATA] 0xffffab419000 0x900 B stat 1 type GM
+[V] [RECV_EVENT] SRC MTE3 DST V EVENT 0
+[V] [RECV_DATA] 0xffffab419000 0x900 B stat 1 type GM
+[ALL] [TBUF_EVENT] FREE 0xffffa5a58410 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473460831248]checkNum is 0
+[MEMCHEK] Mem[281473460831248] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)2);
+
+[MTE2] [RECV_INST] wait_flag type 4
+[MTE2] [EXECUTE] wait_flag type 4
+[MTE2] [no wait] on wait_flag 1 4 2
+[V] [EVENT_CLEAR] send 1 4 2 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffffa5a58110 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x100, Rate: 0.0976562%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473460830480len: 256
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)3);
+
+[MTE2] [RECV_INST] wait_flag type 4
+[MTE2] [EXECUTE] wait_flag type 4
+[MTE2] [no wait] on wait_flag 1 4 3
+[V] [EVENT_CLEAR] send 1 4 3 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffffa5a58310 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x200, Rate: 0.195312%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473460830992len: 256
+
+### copy_gm_to_ubuf((__ubuf__ void*)0xffffa5a58110, (__gm__ void*)0xffffac2a9900, (uint8_t)0, (uint16_t)1, (uint16_t)8, (uint16_t)0, (uint16_t)0);
+
+[MTE2] [RECV_INST] copy_gm_to_ubuf type 0
+[MTE2] [EXECUTE] copy_gm_to_ubuf type 0
+[MTE2] read  data 0xffffac2a9900 0x100 B type GM
+[MTE2] [DATA_MARK] 0xffffac2a9900 0x100 B type GM mark read
+[MTE2] write data 0xffffa5a58110 0x100 B type UB
+[MTE2] checking pending queue
+[MTE2] [CHECK_DATA] 0xffffa5a58110 0x100 B type UB
+[MTE2] checking wrote queue
+[MTE2] [CHECK_DATA] 0xffffa5a58110 0x100 B type UB
+[MTE2] data matched whole 0xffffa5a58010 0x400 stat 1
+[MTE2] [CHECK_TBUF] 0xffffa5a58110 0x100 B type UB
+[MTE2] allocation buffer match result 0
+[MEMCHEK] Mem[281473460830480]checkNum is 0
+
+### copy_gm_to_ubuf((__ubuf__ void*)0xffffa5a58310, (__gm__ void*)0xffffabcb9900, (uint8_t)0, (uint16_t)1, (uint16_t)8, (uint16_t)0, (uint16_t)0);
+
+[MTE2] [RECV_INST] copy_gm_to_ubuf type 0
+[MTE2] [EXECUTE] copy_gm_to_ubuf type 0
+[MTE2] read  data 0xffffabcb9900 0x100 B type GM
+[MTE2] [DATA_MARK] 0xffffabcb9900 0x100 B type GM mark read
+[MTE2] write data 0xffffa5a58310 0x100 B type UB
+[MTE2] checking pending queue
+[MTE2] [CHECK_DATA] 0xffffa5a58310 0x100 B type UB
+[MTE2] checking wrote queue
+[MTE2] [CHECK_DATA] 0xffffa5a58310 0x100 B type UB
+[MTE2] data matched whole 0xffffa5a58010 0x400 stat 1
+[MTE2] [CHECK_TBUF] 0xffffa5a58310 0x100 B type UB
+[MTE2] allocation buffer match result 0
+[MEMCHEK] Mem[281473460830992]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[MTE2] [RECV_INST] set_flag type 3
+[MTE2] [EXECUTE] set_flag type 3
+[MTE2] [SYNC_DATA] 0xffffa5a58110 0x100 B type UB
+[MTE2] [SYNC_DATA] 0xffffa5a58310 0x100 B type UB
+[MTE2] [send event] on set_flag 4 1 0
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[V] [RECV_EVENT] SRC MTE2 DST V EVENT 0
+[V] [RECV_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[V] [RECV_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[MEMCHEK] Mem[281473460830480]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)1);
+
+[MTE2] [RECV_INST] set_flag type 3
+[MTE2] [EXECUTE] set_flag type 3
+[MTE2] [send event] on set_flag 4 1 1
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[V] [RECV_EVENT] SRC MTE2 DST V EVENT 1
+[V] [RECV_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[V] [RECV_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[MEMCHEK] Mem[281473460830992]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 4 1 0
+[MTE2] [EVENT_CLEAR] send 4 1 0 has been waited
+[MEMCHEK] Mem[281473460830480]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)1);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 4 1 1
+[MTE2] [EVENT_CLEAR] send 4 1 1 has been waited
+[MEMCHEK] Mem[281473460830992]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)1);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 5 1 1
+[MTE3] [EVENT_CLEAR] send 5 1 1 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffffa5a58510 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x300, Rate: 0.292969%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473460831504len: 256
+
+### set_mask_count();
+
+[set_mask_count] unsupported
+[S] [RECV_INST] set_mask_count type 7
+[S] [EXECUTE] set_mask_count type 7
+
+### set_vector_mask((uint64_t)0, (uint64_t)128);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### vadd((__ubuf__ half*)0xffffa5a58510, (__ubuf__ half*)0xffffa5a58110, (__ubuf__ half*)0xffffa5a58310, (uint8_t)1, (uint8_t)1, (uint8_t)1, (uint8_t)1, (uint8_t)8, (uint8_t)8, (uint8_t)8);
+
+[V] [RECV_INST] vadd type 1
+[V] [EXECUTE] vadd type 1
+[MEMCHEK] Mem[281473460830480]checkNum is 0
+[MEMCHEK] Mem[281473460830992]checkNum is 0
+[MEMCHEK] Mem[281473460831504]checkNum is 0
+DataMergeAllOnceAll dataLen: 256
+[V] read  data 0xffffa5a58110 0x100 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffffa5a58110 0x100 B type UB
+[V] data matched whole 0xffffa5a58010 0x600 stat 1
+[V] [DATA_MARK] 0xffffa5a58110 0x100 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffa5a58110 0x100 B type UB
+[V] [CHECK_TBUF] 0xffffa5a58110 0x100 B type UB
+[V] allocation buffer match result 0
+[V] read  data 0xffffa5a58310 0x100 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffffa5a58310 0x100 B type UB
+[V] data matched whole 0xffffa5a58010 0x600 stat 1
+[V] [DATA_MARK] 0xffffa5a58310 0x100 B type UB mark read
+[V] [DATA_MARK] 0xffffa5a58310 0x100 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffa5a58310 0x100 B type UB
+[V] [CHECK_TBUF] 0xffffa5a58310 0x100 B type UB
+[V] allocation buffer match result 0
+[V] write data 0xffffa5a58510 0x100 B type UB
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffa5a58510 0x100 B type UB
+[V] checking wrote queue
+[V] [CHECK_DATA] 0xffffa5a58510 0x100 B type UB
+[V] data matched whole 0xffffa5a58410 0x200 stat 1
+[V] [CHECK_TBUF] 0xffffa5a58510 0x100 B type UB
+[V] allocation buffer match result 0
+
+### set_mask_norm();
+
+[set_mask_norm] unsupported
+[S] [RECV_INST] set_mask_norm type 7
+[S] [EXECUTE] set_mask_norm type 7
+
+### set_vector_mask((uint64_t)18446744073709551615, (uint64_t)18446744073709551615);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [SYNC_DATA] 0xffffa5a58510 0x100 B type UB
+[V] [send event] on set_flag 1 5 0
+[V] -> [MTE3] [GET_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE3] [RECV_EVENT] SRC V DST MTE3 EVENT 0
+[MTE3] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MEMCHEK] Mem[281473460831504]checkNum is 0
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)2);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [send event] on set_flag 1 4 2
+[V] -> [MTE2] [GET_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE2] [RECV_EVENT] SRC V DST MTE2 EVENT 2
+[MTE2] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[ALL] [TBUF_EVENT] FREE 0xffffa5a58110 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x200, Rate: 0.195312%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473460830480]checkNum is 0
+[MEMCHEK] Mem[281473460830480] is FREE
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)3);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [send event] on set_flag 1 4 3
+[V] -> [MTE2] [GET_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE2] [RECV_EVENT] SRC V DST MTE2 EVENT 3
+[MTE2] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[ALL] [TBUF_EVENT] FREE 0xffffa5a58310 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x100, Rate: 0.0976562%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473460830992]checkNum is 0
+[MEMCHEK] Mem[281473460830992] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[MTE3] [RECV_INST] wait_flag type 4
+[MTE3] [EXECUTE] wait_flag type 4
+[MTE3] [no wait] on wait_flag 1 5 0
+[V] [EVENT_CLEAR] send 1 5 0 has been waited
+[MEMCHEK] Mem[281473460831504]checkNum is 0
+
+### copy_ubuf_to_gm((__gm__ void*)0xffffab419900, (__ubuf__ void*)0xffffa5a58510, (uint8_t)0, (uint16_t)1, (uint16_t)8, (uint16_t)0, (uint16_t)0);
+
+[MTE3] [RECV_INST] copy_ubuf_to_gm type 0
+[MTE3] [EXECUTE] copy_ubuf_to_gm type 0
+[MTE3] read  data 0xffffa5a58510 0x100 B type UB
+[MTE3] checking synced queue
+[MTE3] [CHECK_DATA] 0xffffa5a58510 0x100 B type UB
+[MTE3] data matched whole 0xffffa5a58410 0x200 stat 1
+[MTE3] [DATA_MARK] 0xffffa5a58510 0x100 B type UB mark read
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffffa5a58510 0x100 B type UB
+[MTE3] [CHECK_TBUF] 0xffffa5a58510 0x100 B type UB
+[MTE3] allocation buffer match result 0
+[MTE3] write data 0xffffab419900 0x100 B type GM
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffffab419900 0x100 B type GM
+[MTE3] checking wrote queue
+[MTE3] [CHECK_DATA] 0xffffab419900 0x100 B type GM
+[MTE3] [CHECK_TBUF] 0xffffab419900 0x100 B type GM
+[MEMCHEK] Mem[281473460831504]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)1);
+
+[MTE3] [RECV_INST] set_flag type 3
+[MTE3] [EXECUTE] set_flag type 3
+[MTE3] [SYNC_DATA] 0xffffab419900 0x100 B type GM
+[MTE3] [send event] on set_flag 5 1 1
+[MTE3] -> [V] [GET_DATA] 0xffffab419000 0xa00 B stat 1 type GM
+[V] [RECV_EVENT] SRC MTE3 DST V EVENT 1
+[V] [RECV_DATA] 0xffffab419000 0xa00 B stat 1 type GM
+[ALL] [TBUF_EVENT] FREE 0xffffa5a58510 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473460831504]checkNum is 0
+[MEMCHEK] Mem[281473460831504] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)0);
+
+[MTE2] [RECV_INST] wait_flag type 4
+[MTE2] [EXECUTE] wait_flag type 4
+[MTE2] [no wait] on wait_flag 1 4 0
+[V] [EVENT_CLEAR] send 1 4 0 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffffa5a58010 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x100, Rate: 0.0976562%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473460830224len: 256
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)1);
+
+[MTE2] [RECV_INST] wait_flag type 4
+[MTE2] [EXECUTE] wait_flag type 4
+[MTE2] [no wait] on wait_flag 1 4 1
+[V] [EVENT_CLEAR] send 1 4 1 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffffa5a58210 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x200, Rate: 0.195312%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473460830736len: 256
+
+### copy_gm_to_ubuf((__ubuf__ void*)0xffffa5a58010, (__gm__ void*)0xffffac2a9a00, (uint8_t)0, (uint16_t)1, (uint16_t)8, (uint16_t)0, (uint16_t)0);
+
+[MTE2] [RECV_INST] copy_gm_to_ubuf type 0
+[MTE2] [EXECUTE] copy_gm_to_ubuf type 0
+[MTE2] read  data 0xffffac2a9a00 0x100 B type GM
+[MTE2] [DATA_MARK] 0xffffac2a9a00 0x100 B type GM mark read
+[MTE2] write data 0xffffa5a58010 0x100 B type UB
+[MTE2] checking pending queue
+[MTE2] [CHECK_DATA] 0xffffa5a58010 0x100 B type UB
+[MTE2] checking wrote queue
+[MTE2] [CHECK_DATA] 0xffffa5a58010 0x100 B type UB
+[MTE2] data matched whole 0xffffa5a58010 0x400 stat 1
+[MTE2] [CHECK_TBUF] 0xffffa5a58010 0x100 B type UB
+[MTE2] allocation buffer match result 0
+[MEMCHEK] Mem[281473460830224]checkNum is 0
+
+### copy_gm_to_ubuf((__ubuf__ void*)0xffffa5a58210, (__gm__ void*)0xffffabcb9a00, (uint8_t)0, (uint16_t)1, (uint16_t)8, (uint16_t)0, (uint16_t)0);
+
+[MTE2] [RECV_INST] copy_gm_to_ubuf type 0
+[MTE2] [EXECUTE] copy_gm_to_ubuf type 0
+[MTE2] read  data 0xffffabcb9a00 0x100 B type GM
+[MTE2] [DATA_MARK] 0xffffabcb9a00 0x100 B type GM mark read
+[MTE2] write data 0xffffa5a58210 0x100 B type UB
+[MTE2] checking pending queue
+[MTE2] [CHECK_DATA] 0xffffa5a58210 0x100 B type UB
+[MTE2] checking wrote queue
+[MTE2] [CHECK_DATA] 0xffffa5a58210 0x100 B type UB
+[MTE2] data matched whole 0xffffa5a58010 0x400 stat 1
+[MTE2] [CHECK_TBUF] 0xffffa5a58210 0x100 B type UB
+[MTE2] allocation buffer match result 0
+[MEMCHEK] Mem[281473460830736]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[MTE2] [RECV_INST] set_flag type 3
+[MTE2] [EXECUTE] set_flag type 3
+[MTE2] [SYNC_DATA] 0xffffa5a58010 0x100 B type UB
+[MTE2] [SYNC_DATA] 0xffffa5a58210 0x100 B type UB
+[MTE2] [send event] on set_flag 4 1 0
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[V] [RECV_EVENT] SRC MTE2 DST V EVENT 0
+[V] [RECV_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[V] [RECV_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[MEMCHEK] Mem[281473460830224]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)1);
+
+[MTE2] [RECV_INST] set_flag type 3
+[MTE2] [EXECUTE] set_flag type 3
+[MTE2] [send event] on set_flag 4 1 1
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[V] [RECV_EVENT] SRC MTE2 DST V EVENT 1
+[V] [RECV_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[V] [RECV_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[MEMCHEK] Mem[281473460830736]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 4 1 0
+[MTE2] [EVENT_CLEAR] send 4 1 0 has been waited
+[MEMCHEK] Mem[281473460830224]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)1);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 4 1 1
+[MTE2] [EVENT_CLEAR] send 4 1 1 has been waited
+[MEMCHEK] Mem[281473460830736]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)0);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 5 1 0
+[MTE3] [EVENT_CLEAR] send 5 1 0 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffffa5a58410 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x300, Rate: 0.292969%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473460831248len: 256
+
+### set_mask_count();
+
+[set_mask_count] unsupported
+[S] [RECV_INST] set_mask_count type 7
+[S] [EXECUTE] set_mask_count type 7
+
+### set_vector_mask((uint64_t)0, (uint64_t)128);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### vadd((__ubuf__ half*)0xffffa5a58410, (__ubuf__ half*)0xffffa5a58010, (__ubuf__ half*)0xffffa5a58210, (uint8_t)1, (uint8_t)1, (uint8_t)1, (uint8_t)1, (uint8_t)8, (uint8_t)8, (uint8_t)8);
+
+[V] [RECV_INST] vadd type 1
+[V] [EXECUTE] vadd type 1
+[MEMCHEK] Mem[281473460830224]checkNum is 0
+[MEMCHEK] Mem[281473460830736]checkNum is 0
+[MEMCHEK] Mem[281473460831248]checkNum is 0
+DataMergeAllOnceAll dataLen: 256
+[V] read  data 0xffffa5a58010 0x100 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffffa5a58010 0x100 B type UB
+[V] data matched whole 0xffffa5a58010 0x600 stat 1
+[V] [DATA_MARK] 0xffffa5a58010 0x100 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffa5a58010 0x100 B type UB
+[V] [CHECK_TBUF] 0xffffa5a58010 0x100 B type UB
+[V] allocation buffer match result 0
+[V] read  data 0xffffa5a58210 0x100 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffffa5a58210 0x100 B type UB
+[V] data matched whole 0xffffa5a58010 0x600 stat 1
+[V] [DATA_MARK] 0xffffa5a58210 0x100 B type UB mark read
+[V] [DATA_MARK] 0xffffa5a58210 0x100 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffa5a58210 0x100 B type UB
+[V] [CHECK_TBUF] 0xffffa5a58210 0x100 B type UB
+[V] allocation buffer match result 0
+[V] write data 0xffffa5a58410 0x100 B type UB
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffa5a58410 0x100 B type UB
+[V] checking wrote queue
+[V] [CHECK_DATA] 0xffffa5a58410 0x100 B type UB
+[V] data matched whole 0xffffa5a58410 0x200 stat 1
+[V] [CHECK_TBUF] 0xffffa5a58410 0x100 B type UB
+[V] allocation buffer match result 0
+
+### set_mask_norm();
+
+[set_mask_norm] unsupported
+[S] [RECV_INST] set_mask_norm type 7
+[S] [EXECUTE] set_mask_norm type 7
+
+### set_vector_mask((uint64_t)18446744073709551615, (uint64_t)18446744073709551615);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [SYNC_DATA] 0xffffa5a58410 0x100 B type UB
+[V] [send event] on set_flag 1 5 0
+[V] -> [MTE3] [GET_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE3] [RECV_EVENT] SRC V DST MTE3 EVENT 0
+[MTE3] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MEMCHEK] Mem[281473460831248]checkNum is 0
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)0);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [send event] on set_flag 1 4 0
+[V] -> [MTE2] [GET_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE2] [RECV_EVENT] SRC V DST MTE2 EVENT 0
+[MTE2] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[ALL] [TBUF_EVENT] FREE 0xffffa5a58010 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x200, Rate: 0.195312%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473460830224]checkNum is 0
+[MEMCHEK] Mem[281473460830224] is FREE
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)1);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [send event] on set_flag 1 4 1
+[V] -> [MTE2] [GET_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE2] [RECV_EVENT] SRC V DST MTE2 EVENT 1
+[MTE2] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[ALL] [TBUF_EVENT] FREE 0xffffa5a58210 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x100, Rate: 0.0976562%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473460830736]checkNum is 0
+[MEMCHEK] Mem[281473460830736] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[MTE3] [RECV_INST] wait_flag type 4
+[MTE3] [EXECUTE] wait_flag type 4
+[MTE3] [no wait] on wait_flag 1 5 0
+[V] [EVENT_CLEAR] send 1 5 0 has been waited
+[MEMCHEK] Mem[281473460831248]checkNum is 0
+
+### copy_ubuf_to_gm((__gm__ void*)0xffffab419a00, (__ubuf__ void*)0xffffa5a58410, (uint8_t)0, (uint16_t)1, (uint16_t)8, (uint16_t)0, (uint16_t)0);
+
+[MTE3] [RECV_INST] copy_ubuf_to_gm type 0
+[MTE3] [EXECUTE] copy_ubuf_to_gm type 0
+[MTE3] read  data 0xffffa5a58410 0x100 B type UB
+[MTE3] checking synced queue
+[MTE3] [CHECK_DATA] 0xffffa5a58410 0x100 B type UB
+[MTE3] data matched whole 0xffffa5a58410 0x200 stat 1
+[MTE3] [DATA_MARK] 0xffffa5a58410 0x100 B type UB mark read
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffffa5a58410 0x100 B type UB
+[MTE3] [CHECK_TBUF] 0xffffa5a58410 0x100 B type UB
+[MTE3] allocation buffer match result 0
+[MTE3] write data 0xffffab419a00 0x100 B type GM
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffffab419a00 0x100 B type GM
+[MTE3] checking wrote queue
+[MTE3] [CHECK_DATA] 0xffffab419a00 0x100 B type GM
+[MTE3] [CHECK_TBUF] 0xffffab419a00 0x100 B type GM
+[MEMCHEK] Mem[281473460831248]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)0);
+
+[MTE3] [RECV_INST] set_flag type 3
+[MTE3] [EXECUTE] set_flag type 3
+[MTE3] [SYNC_DATA] 0xffffab419a00 0x100 B type GM
+[MTE3] [send event] on set_flag 5 1 0
+[MTE3] -> [V] [GET_DATA] 0xffffab419000 0xb00 B stat 1 type GM
+[V] [RECV_EVENT] SRC MTE3 DST V EVENT 0
+[V] [RECV_DATA] 0xffffab419000 0xb00 B stat 1 type GM
+[ALL] [TBUF_EVENT] FREE 0xffffa5a58410 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473460831248]checkNum is 0
+[MEMCHEK] Mem[281473460831248] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)2);
+
+[MTE2] [RECV_INST] wait_flag type 4
+[MTE2] [EXECUTE] wait_flag type 4
+[MTE2] [no wait] on wait_flag 1 4 2
+[V] [EVENT_CLEAR] send 1 4 2 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffffa5a58110 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x100, Rate: 0.0976562%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473460830480len: 256
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)3);
+
+[MTE2] [RECV_INST] wait_flag type 4
+[MTE2] [EXECUTE] wait_flag type 4
+[MTE2] [no wait] on wait_flag 1 4 3
+[V] [EVENT_CLEAR] send 1 4 3 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffffa5a58310 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x200, Rate: 0.195312%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473460830992len: 256
+
+### copy_gm_to_ubuf((__ubuf__ void*)0xffffa5a58110, (__gm__ void*)0xffffac2a9b00, (uint8_t)0, (uint16_t)1, (uint16_t)8, (uint16_t)0, (uint16_t)0);
+
+[MTE2] [RECV_INST] copy_gm_to_ubuf type 0
+[MTE2] [EXECUTE] copy_gm_to_ubuf type 0
+[MTE2] read  data 0xffffac2a9b00 0x100 B type GM
+[MTE2] [DATA_MARK] 0xffffac2a9b00 0x100 B type GM mark read
+[MTE2] write data 0xffffa5a58110 0x100 B type UB
+[MTE2] checking pending queue
+[MTE2] [CHECK_DATA] 0xffffa5a58110 0x100 B type UB
+[MTE2] checking wrote queue
+[MTE2] [CHECK_DATA] 0xffffa5a58110 0x100 B type UB
+[MTE2] data matched whole 0xffffa5a58010 0x400 stat 1
+[MTE2] [CHECK_TBUF] 0xffffa5a58110 0x100 B type UB
+[MTE2] allocation buffer match result 0
+[MEMCHEK] Mem[281473460830480]checkNum is 0
+
+### copy_gm_to_ubuf((__ubuf__ void*)0xffffa5a58310, (__gm__ void*)0xffffabcb9b00, (uint8_t)0, (uint16_t)1, (uint16_t)8, (uint16_t)0, (uint16_t)0);
+
+[MTE2] [RECV_INST] copy_gm_to_ubuf type 0
+[MTE2] [EXECUTE] copy_gm_to_ubuf type 0
+[MTE2] read  data 0xffffabcb9b00 0x100 B type GM
+[MTE2] [DATA_MARK] 0xffffabcb9b00 0x100 B type GM mark read
+[MTE2] write data 0xffffa5a58310 0x100 B type UB
+[MTE2] checking pending queue
+[MTE2] [CHECK_DATA] 0xffffa5a58310 0x100 B type UB
+[MTE2] checking wrote queue
+[MTE2] [CHECK_DATA] 0xffffa5a58310 0x100 B type UB
+[MTE2] data matched whole 0xffffa5a58010 0x400 stat 1
+[MTE2] [CHECK_TBUF] 0xffffa5a58310 0x100 B type UB
+[MTE2] allocation buffer match result 0
+[MEMCHEK] Mem[281473460830992]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[MTE2] [RECV_INST] set_flag type 3
+[MTE2] [EXECUTE] set_flag type 3
+[MTE2] [SYNC_DATA] 0xffffa5a58110 0x100 B type UB
+[MTE2] [SYNC_DATA] 0xffffa5a58310 0x100 B type UB
+[MTE2] [send event] on set_flag 4 1 0
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[V] [RECV_EVENT] SRC MTE2 DST V EVENT 0
+[V] [RECV_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[V] [RECV_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[MEMCHEK] Mem[281473460830480]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)1);
+
+[MTE2] [RECV_INST] set_flag type 3
+[MTE2] [EXECUTE] set_flag type 3
+[MTE2] [send event] on set_flag 4 1 1
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[V] [RECV_EVENT] SRC MTE2 DST V EVENT 1
+[V] [RECV_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[V] [RECV_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[MEMCHEK] Mem[281473460830992]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 4 1 0
+[MTE2] [EVENT_CLEAR] send 4 1 0 has been waited
+[MEMCHEK] Mem[281473460830480]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)1);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 4 1 1
+[MTE2] [EVENT_CLEAR] send 4 1 1 has been waited
+[MEMCHEK] Mem[281473460830992]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)1);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 5 1 1
+[MTE3] [EVENT_CLEAR] send 5 1 1 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffffa5a58510 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x300, Rate: 0.292969%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473460831504len: 256
+
+### set_mask_count();
+
+[set_mask_count] unsupported
+[S] [RECV_INST] set_mask_count type 7
+[S] [EXECUTE] set_mask_count type 7
+
+### set_vector_mask((uint64_t)0, (uint64_t)128);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### vadd((__ubuf__ half*)0xffffa5a58510, (__ubuf__ half*)0xffffa5a58110, (__ubuf__ half*)0xffffa5a58310, (uint8_t)1, (uint8_t)1, (uint8_t)1, (uint8_t)1, (uint8_t)8, (uint8_t)8, (uint8_t)8);
+
+[V] [RECV_INST] vadd type 1
+[V] [EXECUTE] vadd type 1
+[MEMCHEK] Mem[281473460830480]checkNum is 0
+[MEMCHEK] Mem[281473460830992]checkNum is 0
+[MEMCHEK] Mem[281473460831504]checkNum is 0
+DataMergeAllOnceAll dataLen: 256
+[V] read  data 0xffffa5a58110 0x100 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffffa5a58110 0x100 B type UB
+[V] data matched whole 0xffffa5a58010 0x600 stat 1
+[V] [DATA_MARK] 0xffffa5a58110 0x100 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffa5a58110 0x100 B type UB
+[V] [CHECK_TBUF] 0xffffa5a58110 0x100 B type UB
+[V] allocation buffer match result 0
+[V] read  data 0xffffa5a58310 0x100 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffffa5a58310 0x100 B type UB
+[V] data matched whole 0xffffa5a58010 0x600 stat 1
+[V] [DATA_MARK] 0xffffa5a58310 0x100 B type UB mark read
+[V] [DATA_MARK] 0xffffa5a58310 0x100 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffa5a58310 0x100 B type UB
+[V] [CHECK_TBUF] 0xffffa5a58310 0x100 B type UB
+[V] allocation buffer match result 0
+[V] write data 0xffffa5a58510 0x100 B type UB
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffa5a58510 0x100 B type UB
+[V] checking wrote queue
+[V] [CHECK_DATA] 0xffffa5a58510 0x100 B type UB
+[V] data matched whole 0xffffa5a58410 0x200 stat 1
+[V] [CHECK_TBUF] 0xffffa5a58510 0x100 B type UB
+[V] allocation buffer match result 0
+
+### set_mask_norm();
+
+[set_mask_norm] unsupported
+[S] [RECV_INST] set_mask_norm type 7
+[S] [EXECUTE] set_mask_norm type 7
+
+### set_vector_mask((uint64_t)18446744073709551615, (uint64_t)18446744073709551615);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [SYNC_DATA] 0xffffa5a58510 0x100 B type UB
+[V] [send event] on set_flag 1 5 0
+[V] -> [MTE3] [GET_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE3] [RECV_EVENT] SRC V DST MTE3 EVENT 0
+[MTE3] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MEMCHEK] Mem[281473460831504]checkNum is 0
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)2);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [send event] on set_flag 1 4 2
+[V] -> [MTE2] [GET_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE2] [RECV_EVENT] SRC V DST MTE2 EVENT 2
+[MTE2] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[ALL] [TBUF_EVENT] FREE 0xffffa5a58110 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x200, Rate: 0.195312%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473460830480]checkNum is 0
+[MEMCHEK] Mem[281473460830480] is FREE
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)3);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [send event] on set_flag 1 4 3
+[V] -> [MTE2] [GET_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE2] [RECV_EVENT] SRC V DST MTE2 EVENT 3
+[MTE2] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[ALL] [TBUF_EVENT] FREE 0xffffa5a58310 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x100, Rate: 0.0976562%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473460830992]checkNum is 0
+[MEMCHEK] Mem[281473460830992] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[MTE3] [RECV_INST] wait_flag type 4
+[MTE3] [EXECUTE] wait_flag type 4
+[MTE3] [no wait] on wait_flag 1 5 0
+[V] [EVENT_CLEAR] send 1 5 0 has been waited
+[MEMCHEK] Mem[281473460831504]checkNum is 0
+
+### copy_ubuf_to_gm((__gm__ void*)0xffffab419b00, (__ubuf__ void*)0xffffa5a58510, (uint8_t)0, (uint16_t)1, (uint16_t)8, (uint16_t)0, (uint16_t)0);
+
+[MTE3] [RECV_INST] copy_ubuf_to_gm type 0
+[MTE3] [EXECUTE] copy_ubuf_to_gm type 0
+[MTE3] read  data 0xffffa5a58510 0x100 B type UB
+[MTE3] checking synced queue
+[MTE3] [CHECK_DATA] 0xffffa5a58510 0x100 B type UB
+[MTE3] data matched whole 0xffffa5a58410 0x200 stat 1
+[MTE3] [DATA_MARK] 0xffffa5a58510 0x100 B type UB mark read
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffffa5a58510 0x100 B type UB
+[MTE3] [CHECK_TBUF] 0xffffa5a58510 0x100 B type UB
+[MTE3] allocation buffer match result 0
+[MTE3] write data 0xffffab419b00 0x100 B type GM
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffffab419b00 0x100 B type GM
+[MTE3] checking wrote queue
+[MTE3] [CHECK_DATA] 0xffffab419b00 0x100 B type GM
+[MTE3] [CHECK_TBUF] 0xffffab419b00 0x100 B type GM
+[MEMCHEK] Mem[281473460831504]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)1);
+
+[MTE3] [RECV_INST] set_flag type 3
+[MTE3] [EXECUTE] set_flag type 3
+[MTE3] [SYNC_DATA] 0xffffab419b00 0x100 B type GM
+[MTE3] [send event] on set_flag 5 1 1
+[MTE3] -> [V] [GET_DATA] 0xffffab419000 0xc00 B stat 1 type GM
+[V] [RECV_EVENT] SRC MTE3 DST V EVENT 1
+[V] [RECV_DATA] 0xffffab419000 0xc00 B stat 1 type GM
+[ALL] [TBUF_EVENT] FREE 0xffffa5a58510 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473460831504]checkNum is 0
+[MEMCHEK] Mem[281473460831504] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)0);
+
+[MTE2] [RECV_INST] wait_flag type 4
+[MTE2] [EXECUTE] wait_flag type 4
+[MTE2] [no wait] on wait_flag 1 4 0
+[V] [EVENT_CLEAR] send 1 4 0 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffffa5a58010 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x100, Rate: 0.0976562%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473460830224len: 256
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)1);
+
+[MTE2] [RECV_INST] wait_flag type 4
+[MTE2] [EXECUTE] wait_flag type 4
+[MTE2] [no wait] on wait_flag 1 4 1
+[V] [EVENT_CLEAR] send 1 4 1 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffffa5a58210 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x200, Rate: 0.195312%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473460830736len: 256
+
+### copy_gm_to_ubuf((__ubuf__ void*)0xffffa5a58010, (__gm__ void*)0xffffac2a9c00, (uint8_t)0, (uint16_t)1, (uint16_t)8, (uint16_t)0, (uint16_t)0);
+
+[MTE2] [RECV_INST] copy_gm_to_ubuf type 0
+[MTE2] [EXECUTE] copy_gm_to_ubuf type 0
+[MTE2] read  data 0xffffac2a9c00 0x100 B type GM
+[MTE2] [DATA_MARK] 0xffffac2a9c00 0x100 B type GM mark read
+[MTE2] write data 0xffffa5a58010 0x100 B type UB
+[MTE2] checking pending queue
+[MTE2] [CHECK_DATA] 0xffffa5a58010 0x100 B type UB
+[MTE2] checking wrote queue
+[MTE2] [CHECK_DATA] 0xffffa5a58010 0x100 B type UB
+[MTE2] data matched whole 0xffffa5a58010 0x400 stat 1
+[MTE2] [CHECK_TBUF] 0xffffa5a58010 0x100 B type UB
+[MTE2] allocation buffer match result 0
+[MEMCHEK] Mem[281473460830224]checkNum is 0
+
+### copy_gm_to_ubuf((__ubuf__ void*)0xffffa5a58210, (__gm__ void*)0xffffabcb9c00, (uint8_t)0, (uint16_t)1, (uint16_t)8, (uint16_t)0, (uint16_t)0);
+
+[MTE2] [RECV_INST] copy_gm_to_ubuf type 0
+[MTE2] [EXECUTE] copy_gm_to_ubuf type 0
+[MTE2] read  data 0xffffabcb9c00 0x100 B type GM
+[MTE2] [DATA_MARK] 0xffffabcb9c00 0x100 B type GM mark read
+[MTE2] write data 0xffffa5a58210 0x100 B type UB
+[MTE2] checking pending queue
+[MTE2] [CHECK_DATA] 0xffffa5a58210 0x100 B type UB
+[MTE2] checking wrote queue
+[MTE2] [CHECK_DATA] 0xffffa5a58210 0x100 B type UB
+[MTE2] data matched whole 0xffffa5a58010 0x400 stat 1
+[MTE2] [CHECK_TBUF] 0xffffa5a58210 0x100 B type UB
+[MTE2] allocation buffer match result 0
+[MEMCHEK] Mem[281473460830736]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[MTE2] [RECV_INST] set_flag type 3
+[MTE2] [EXECUTE] set_flag type 3
+[MTE2] [SYNC_DATA] 0xffffa5a58010 0x100 B type UB
+[MTE2] [SYNC_DATA] 0xffffa5a58210 0x100 B type UB
+[MTE2] [send event] on set_flag 4 1 0
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[V] [RECV_EVENT] SRC MTE2 DST V EVENT 0
+[V] [RECV_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[V] [RECV_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[MEMCHEK] Mem[281473460830224]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)1);
+
+[MTE2] [RECV_INST] set_flag type 3
+[MTE2] [EXECUTE] set_flag type 3
+[MTE2] [send event] on set_flag 4 1 1
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[V] [RECV_EVENT] SRC MTE2 DST V EVENT 1
+[V] [RECV_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[V] [RECV_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[MEMCHEK] Mem[281473460830736]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 4 1 0
+[MTE2] [EVENT_CLEAR] send 4 1 0 has been waited
+[MEMCHEK] Mem[281473460830224]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)1);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 4 1 1
+[MTE2] [EVENT_CLEAR] send 4 1 1 has been waited
+[MEMCHEK] Mem[281473460830736]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)0);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 5 1 0
+[MTE3] [EVENT_CLEAR] send 5 1 0 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffffa5a58410 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x300, Rate: 0.292969%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473460831248len: 256
+
+### set_mask_count();
+
+[set_mask_count] unsupported
+[S] [RECV_INST] set_mask_count type 7
+[S] [EXECUTE] set_mask_count type 7
+
+### set_vector_mask((uint64_t)0, (uint64_t)128);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### vadd((__ubuf__ half*)0xffffa5a58410, (__ubuf__ half*)0xffffa5a58010, (__ubuf__ half*)0xffffa5a58210, (uint8_t)1, (uint8_t)1, (uint8_t)1, (uint8_t)1, (uint8_t)8, (uint8_t)8, (uint8_t)8);
+
+[V] [RECV_INST] vadd type 1
+[V] [EXECUTE] vadd type 1
+[MEMCHEK] Mem[281473460830224]checkNum is 0
+[MEMCHEK] Mem[281473460830736]checkNum is 0
+[MEMCHEK] Mem[281473460831248]checkNum is 0
+DataMergeAllOnceAll dataLen: 256
+[V] read  data 0xffffa5a58010 0x100 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffffa5a58010 0x100 B type UB
+[V] data matched whole 0xffffa5a58010 0x600 stat 1
+[V] [DATA_MARK] 0xffffa5a58010 0x100 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffa5a58010 0x100 B type UB
+[V] [CHECK_TBUF] 0xffffa5a58010 0x100 B type UB
+[V] allocation buffer match result 0
+[V] read  data 0xffffa5a58210 0x100 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffffa5a58210 0x100 B type UB
+[V] data matched whole 0xffffa5a58010 0x600 stat 1
+[V] [DATA_MARK] 0xffffa5a58210 0x100 B type UB mark read
+[V] [DATA_MARK] 0xffffa5a58210 0x100 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffa5a58210 0x100 B type UB
+[V] [CHECK_TBUF] 0xffffa5a58210 0x100 B type UB
+[V] allocation buffer match result 0
+[V] write data 0xffffa5a58410 0x100 B type UB
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffa5a58410 0x100 B type UB
+[V] checking wrote queue
+[V] [CHECK_DATA] 0xffffa5a58410 0x100 B type UB
+[V] data matched whole 0xffffa5a58410 0x200 stat 1
+[V] [CHECK_TBUF] 0xffffa5a58410 0x100 B type UB
+[V] allocation buffer match result 0
+
+### set_mask_norm();
+
+[set_mask_norm] unsupported
+[S] [RECV_INST] set_mask_norm type 7
+[S] [EXECUTE] set_mask_norm type 7
+
+### set_vector_mask((uint64_t)18446744073709551615, (uint64_t)18446744073709551615);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [SYNC_DATA] 0xffffa5a58410 0x100 B type UB
+[V] [send event] on set_flag 1 5 0
+[V] -> [MTE3] [GET_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE3] [RECV_EVENT] SRC V DST MTE3 EVENT 0
+[MTE3] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MEMCHEK] Mem[281473460831248]checkNum is 0
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)0);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [send event] on set_flag 1 4 0
+[V] -> [MTE2] [GET_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE2] [RECV_EVENT] SRC V DST MTE2 EVENT 0
+[MTE2] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[ALL] [TBUF_EVENT] FREE 0xffffa5a58010 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x200, Rate: 0.195312%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473460830224]checkNum is 0
+[MEMCHEK] Mem[281473460830224] is FREE
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)1);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [send event] on set_flag 1 4 1
+[V] -> [MTE2] [GET_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE2] [RECV_EVENT] SRC V DST MTE2 EVENT 1
+[MTE2] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[ALL] [TBUF_EVENT] FREE 0xffffa5a58210 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x100, Rate: 0.0976562%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473460830736]checkNum is 0
+[MEMCHEK] Mem[281473460830736] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[MTE3] [RECV_INST] wait_flag type 4
+[MTE3] [EXECUTE] wait_flag type 4
+[MTE3] [no wait] on wait_flag 1 5 0
+[V] [EVENT_CLEAR] send 1 5 0 has been waited
+[MEMCHEK] Mem[281473460831248]checkNum is 0
+
+### copy_ubuf_to_gm((__gm__ void*)0xffffab419c00, (__ubuf__ void*)0xffffa5a58410, (uint8_t)0, (uint16_t)1, (uint16_t)8, (uint16_t)0, (uint16_t)0);
+
+[MTE3] [RECV_INST] copy_ubuf_to_gm type 0
+[MTE3] [EXECUTE] copy_ubuf_to_gm type 0
+[MTE3] read  data 0xffffa5a58410 0x100 B type UB
+[MTE3] checking synced queue
+[MTE3] [CHECK_DATA] 0xffffa5a58410 0x100 B type UB
+[MTE3] data matched whole 0xffffa5a58410 0x200 stat 1
+[MTE3] [DATA_MARK] 0xffffa5a58410 0x100 B type UB mark read
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffffa5a58410 0x100 B type UB
+[MTE3] [CHECK_TBUF] 0xffffa5a58410 0x100 B type UB
+[MTE3] allocation buffer match result 0
+[MTE3] write data 0xffffab419c00 0x100 B type GM
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffffab419c00 0x100 B type GM
+[MTE3] checking wrote queue
+[MTE3] [CHECK_DATA] 0xffffab419c00 0x100 B type GM
+[MTE3] [CHECK_TBUF] 0xffffab419c00 0x100 B type GM
+[MEMCHEK] Mem[281473460831248]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)0);
+
+[MTE3] [RECV_INST] set_flag type 3
+[MTE3] [EXECUTE] set_flag type 3
+[MTE3] [SYNC_DATA] 0xffffab419c00 0x100 B type GM
+[MTE3] [send event] on set_flag 5 1 0
+[MTE3] -> [V] [GET_DATA] 0xffffab419000 0xd00 B stat 1 type GM
+[V] [RECV_EVENT] SRC MTE3 DST V EVENT 0
+[V] [RECV_DATA] 0xffffab419000 0xd00 B stat 1 type GM
+[ALL] [TBUF_EVENT] FREE 0xffffa5a58410 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473460831248]checkNum is 0
+[MEMCHEK] Mem[281473460831248] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)2);
+
+[MTE2] [RECV_INST] wait_flag type 4
+[MTE2] [EXECUTE] wait_flag type 4
+[MTE2] [no wait] on wait_flag 1 4 2
+[V] [EVENT_CLEAR] send 1 4 2 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffffa5a58110 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x100, Rate: 0.0976562%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473460830480len: 256
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)3);
+
+[MTE2] [RECV_INST] wait_flag type 4
+[MTE2] [EXECUTE] wait_flag type 4
+[MTE2] [no wait] on wait_flag 1 4 3
+[V] [EVENT_CLEAR] send 1 4 3 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffffa5a58310 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x200, Rate: 0.195312%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473460830992len: 256
+
+### copy_gm_to_ubuf((__ubuf__ void*)0xffffa5a58110, (__gm__ void*)0xffffac2a9d00, (uint8_t)0, (uint16_t)1, (uint16_t)8, (uint16_t)0, (uint16_t)0);
+
+[MTE2] [RECV_INST] copy_gm_to_ubuf type 0
+[MTE2] [EXECUTE] copy_gm_to_ubuf type 0
+[MTE2] read  data 0xffffac2a9d00 0x100 B type GM
+[MTE2] [DATA_MARK] 0xffffac2a9d00 0x100 B type GM mark read
+[MTE2] write data 0xffffa5a58110 0x100 B type UB
+[MTE2] checking pending queue
+[MTE2] [CHECK_DATA] 0xffffa5a58110 0x100 B type UB
+[MTE2] checking wrote queue
+[MTE2] [CHECK_DATA] 0xffffa5a58110 0x100 B type UB
+[MTE2] data matched whole 0xffffa5a58010 0x400 stat 1
+[MTE2] [CHECK_TBUF] 0xffffa5a58110 0x100 B type UB
+[MTE2] allocation buffer match result 0
+[MEMCHEK] Mem[281473460830480]checkNum is 0
+
+### copy_gm_to_ubuf((__ubuf__ void*)0xffffa5a58310, (__gm__ void*)0xffffabcb9d00, (uint8_t)0, (uint16_t)1, (uint16_t)8, (uint16_t)0, (uint16_t)0);
+
+[MTE2] [RECV_INST] copy_gm_to_ubuf type 0
+[MTE2] [EXECUTE] copy_gm_to_ubuf type 0
+[MTE2] read  data 0xffffabcb9d00 0x100 B type GM
+[MTE2] [DATA_MARK] 0xffffabcb9d00 0x100 B type GM mark read
+[MTE2] write data 0xffffa5a58310 0x100 B type UB
+[MTE2] checking pending queue
+[MTE2] [CHECK_DATA] 0xffffa5a58310 0x100 B type UB
+[MTE2] checking wrote queue
+[MTE2] [CHECK_DATA] 0xffffa5a58310 0x100 B type UB
+[MTE2] data matched whole 0xffffa5a58010 0x400 stat 1
+[MTE2] [CHECK_TBUF] 0xffffa5a58310 0x100 B type UB
+[MTE2] allocation buffer match result 0
+[MEMCHEK] Mem[281473460830992]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[MTE2] [RECV_INST] set_flag type 3
+[MTE2] [EXECUTE] set_flag type 3
+[MTE2] [SYNC_DATA] 0xffffa5a58110 0x100 B type UB
+[MTE2] [SYNC_DATA] 0xffffa5a58310 0x100 B type UB
+[MTE2] [send event] on set_flag 4 1 0
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[V] [RECV_EVENT] SRC MTE2 DST V EVENT 0
+[V] [RECV_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[V] [RECV_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[MEMCHEK] Mem[281473460830480]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)1);
+
+[MTE2] [RECV_INST] set_flag type 3
+[MTE2] [EXECUTE] set_flag type 3
+[MTE2] [send event] on set_flag 4 1 1
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[V] [RECV_EVENT] SRC MTE2 DST V EVENT 1
+[V] [RECV_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[V] [RECV_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[MEMCHEK] Mem[281473460830992]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 4 1 0
+[MTE2] [EVENT_CLEAR] send 4 1 0 has been waited
+[MEMCHEK] Mem[281473460830480]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)1);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 4 1 1
+[MTE2] [EVENT_CLEAR] send 4 1 1 has been waited
+[MEMCHEK] Mem[281473460830992]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)1);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 5 1 1
+[MTE3] [EVENT_CLEAR] send 5 1 1 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffffa5a58510 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x300, Rate: 0.292969%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473460831504len: 256
+
+### set_mask_count();
+
+[set_mask_count] unsupported
+[S] [RECV_INST] set_mask_count type 7
+[S] [EXECUTE] set_mask_count type 7
+
+### set_vector_mask((uint64_t)0, (uint64_t)128);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### vadd((__ubuf__ half*)0xffffa5a58510, (__ubuf__ half*)0xffffa5a58110, (__ubuf__ half*)0xffffa5a58310, (uint8_t)1, (uint8_t)1, (uint8_t)1, (uint8_t)1, (uint8_t)8, (uint8_t)8, (uint8_t)8);
+
+[V] [RECV_INST] vadd type 1
+[V] [EXECUTE] vadd type 1
+[MEMCHEK] Mem[281473460830480]checkNum is 0
+[MEMCHEK] Mem[281473460830992]checkNum is 0
+[MEMCHEK] Mem[281473460831504]checkNum is 0
+DataMergeAllOnceAll dataLen: 256
+[V] read  data 0xffffa5a58110 0x100 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffffa5a58110 0x100 B type UB
+[V] data matched whole 0xffffa5a58010 0x600 stat 1
+[V] [DATA_MARK] 0xffffa5a58110 0x100 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffa5a58110 0x100 B type UB
+[V] [CHECK_TBUF] 0xffffa5a58110 0x100 B type UB
+[V] allocation buffer match result 0
+[V] read  data 0xffffa5a58310 0x100 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffffa5a58310 0x100 B type UB
+[V] data matched whole 0xffffa5a58010 0x600 stat 1
+[V] [DATA_MARK] 0xffffa5a58310 0x100 B type UB mark read
+[V] [DATA_MARK] 0xffffa5a58310 0x100 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffa5a58310 0x100 B type UB
+[V] [CHECK_TBUF] 0xffffa5a58310 0x100 B type UB
+[V] allocation buffer match result 0
+[V] write data 0xffffa5a58510 0x100 B type UB
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffa5a58510 0x100 B type UB
+[V] checking wrote queue
+[V] [CHECK_DATA] 0xffffa5a58510 0x100 B type UB
+[V] data matched whole 0xffffa5a58410 0x200 stat 1
+[V] [CHECK_TBUF] 0xffffa5a58510 0x100 B type UB
+[V] allocation buffer match result 0
+
+### set_mask_norm();
+
+[set_mask_norm] unsupported
+[S] [RECV_INST] set_mask_norm type 7
+[S] [EXECUTE] set_mask_norm type 7
+
+### set_vector_mask((uint64_t)18446744073709551615, (uint64_t)18446744073709551615);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [SYNC_DATA] 0xffffa5a58510 0x100 B type UB
+[V] [send event] on set_flag 1 5 0
+[V] -> [MTE3] [GET_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE3] [RECV_EVENT] SRC V DST MTE3 EVENT 0
+[MTE3] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MEMCHEK] Mem[281473460831504]checkNum is 0
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)2);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [send event] on set_flag 1 4 2
+[V] -> [MTE2] [GET_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE2] [RECV_EVENT] SRC V DST MTE2 EVENT 2
+[MTE2] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[ALL] [TBUF_EVENT] FREE 0xffffa5a58110 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x200, Rate: 0.195312%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473460830480]checkNum is 0
+[MEMCHEK] Mem[281473460830480] is FREE
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)3);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [send event] on set_flag 1 4 3
+[V] -> [MTE2] [GET_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE2] [RECV_EVENT] SRC V DST MTE2 EVENT 3
+[MTE2] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[ALL] [TBUF_EVENT] FREE 0xffffa5a58310 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x100, Rate: 0.0976562%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473460830992]checkNum is 0
+[MEMCHEK] Mem[281473460830992] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[MTE3] [RECV_INST] wait_flag type 4
+[MTE3] [EXECUTE] wait_flag type 4
+[MTE3] [no wait] on wait_flag 1 5 0
+[V] [EVENT_CLEAR] send 1 5 0 has been waited
+[MEMCHEK] Mem[281473460831504]checkNum is 0
+
+### copy_ubuf_to_gm((__gm__ void*)0xffffab419d00, (__ubuf__ void*)0xffffa5a58510, (uint8_t)0, (uint16_t)1, (uint16_t)8, (uint16_t)0, (uint16_t)0);
+
+[MTE3] [RECV_INST] copy_ubuf_to_gm type 0
+[MTE3] [EXECUTE] copy_ubuf_to_gm type 0
+[MTE3] read  data 0xffffa5a58510 0x100 B type UB
+[MTE3] checking synced queue
+[MTE3] [CHECK_DATA] 0xffffa5a58510 0x100 B type UB
+[MTE3] data matched whole 0xffffa5a58410 0x200 stat 1
+[MTE3] [DATA_MARK] 0xffffa5a58510 0x100 B type UB mark read
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffffa5a58510 0x100 B type UB
+[MTE3] [CHECK_TBUF] 0xffffa5a58510 0x100 B type UB
+[MTE3] allocation buffer match result 0
+[MTE3] write data 0xffffab419d00 0x100 B type GM
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffffab419d00 0x100 B type GM
+[MTE3] checking wrote queue
+[MTE3] [CHECK_DATA] 0xffffab419d00 0x100 B type GM
+[MTE3] [CHECK_TBUF] 0xffffab419d00 0x100 B type GM
+[MEMCHEK] Mem[281473460831504]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)1);
+
+[MTE3] [RECV_INST] set_flag type 3
+[MTE3] [EXECUTE] set_flag type 3
+[MTE3] [SYNC_DATA] 0xffffab419d00 0x100 B type GM
+[MTE3] [send event] on set_flag 5 1 1
+[MTE3] -> [V] [GET_DATA] 0xffffab419000 0xe00 B stat 1 type GM
+[V] [RECV_EVENT] SRC MTE3 DST V EVENT 1
+[V] [RECV_DATA] 0xffffab419000 0xe00 B stat 1 type GM
+[ALL] [TBUF_EVENT] FREE 0xffffa5a58510 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473460831504]checkNum is 0
+[MEMCHEK] Mem[281473460831504] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)0);
+
+[MTE2] [RECV_INST] wait_flag type 4
+[MTE2] [EXECUTE] wait_flag type 4
+[MTE2] [no wait] on wait_flag 1 4 0
+[V] [EVENT_CLEAR] send 1 4 0 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffffa5a58010 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x100, Rate: 0.0976562%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473460830224len: 256
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)1);
+
+[MTE2] [RECV_INST] wait_flag type 4
+[MTE2] [EXECUTE] wait_flag type 4
+[MTE2] [no wait] on wait_flag 1 4 1
+[V] [EVENT_CLEAR] send 1 4 1 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffffa5a58210 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x200, Rate: 0.195312%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473460830736len: 256
+
+### copy_gm_to_ubuf((__ubuf__ void*)0xffffa5a58010, (__gm__ void*)0xffffac2a9e00, (uint8_t)0, (uint16_t)1, (uint16_t)8, (uint16_t)0, (uint16_t)0);
+
+[MTE2] [RECV_INST] copy_gm_to_ubuf type 0
+[MTE2] [EXECUTE] copy_gm_to_ubuf type 0
+[MTE2] read  data 0xffffac2a9e00 0x100 B type GM
+[MTE2] [DATA_MARK] 0xffffac2a9e00 0x100 B type GM mark read
+[MTE2] write data 0xffffa5a58010 0x100 B type UB
+[MTE2] checking pending queue
+[MTE2] [CHECK_DATA] 0xffffa5a58010 0x100 B type UB
+[MTE2] checking wrote queue
+[MTE2] [CHECK_DATA] 0xffffa5a58010 0x100 B type UB
+[MTE2] data matched whole 0xffffa5a58010 0x400 stat 1
+[MTE2] [CHECK_TBUF] 0xffffa5a58010 0x100 B type UB
+[MTE2] allocation buffer match result 0
+[MEMCHEK] Mem[281473460830224]checkNum is 0
+
+### copy_gm_to_ubuf((__ubuf__ void*)0xffffa5a58210, (__gm__ void*)0xffffabcb9e00, (uint8_t)0, (uint16_t)1, (uint16_t)8, (uint16_t)0, (uint16_t)0);
+
+[MTE2] [RECV_INST] copy_gm_to_ubuf type 0
+[MTE2] [EXECUTE] copy_gm_to_ubuf type 0
+[MTE2] read  data 0xffffabcb9e00 0x100 B type GM
+[MTE2] [DATA_MARK] 0xffffabcb9e00 0x100 B type GM mark read
+[MTE2] write data 0xffffa5a58210 0x100 B type UB
+[MTE2] checking pending queue
+[MTE2] [CHECK_DATA] 0xffffa5a58210 0x100 B type UB
+[MTE2] checking wrote queue
+[MTE2] [CHECK_DATA] 0xffffa5a58210 0x100 B type UB
+[MTE2] data matched whole 0xffffa5a58010 0x400 stat 1
+[MTE2] [CHECK_TBUF] 0xffffa5a58210 0x100 B type UB
+[MTE2] allocation buffer match result 0
+[MEMCHEK] Mem[281473460830736]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[MTE2] [RECV_INST] set_flag type 3
+[MTE2] [EXECUTE] set_flag type 3
+[MTE2] [SYNC_DATA] 0xffffa5a58010 0x100 B type UB
+[MTE2] [SYNC_DATA] 0xffffa5a58210 0x100 B type UB
+[MTE2] [send event] on set_flag 4 1 0
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[V] [RECV_EVENT] SRC MTE2 DST V EVENT 0
+[V] [RECV_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[V] [RECV_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[MEMCHEK] Mem[281473460830224]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)1);
+
+[MTE2] [RECV_INST] set_flag type 3
+[MTE2] [EXECUTE] set_flag type 3
+[MTE2] [send event] on set_flag 4 1 1
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[V] [RECV_EVENT] SRC MTE2 DST V EVENT 1
+[V] [RECV_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[V] [RECV_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[MEMCHEK] Mem[281473460830736]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 4 1 0
+[MTE2] [EVENT_CLEAR] send 4 1 0 has been waited
+[MEMCHEK] Mem[281473460830224]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)1);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 4 1 1
+[MTE2] [EVENT_CLEAR] send 4 1 1 has been waited
+[MEMCHEK] Mem[281473460830736]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)0);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 5 1 0
+[MTE3] [EVENT_CLEAR] send 5 1 0 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffffa5a58410 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x300, Rate: 0.292969%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473460831248len: 256
+
+### set_mask_count();
+
+[set_mask_count] unsupported
+[S] [RECV_INST] set_mask_count type 7
+[S] [EXECUTE] set_mask_count type 7
+
+### set_vector_mask((uint64_t)0, (uint64_t)128);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### vadd((__ubuf__ half*)0xffffa5a58410, (__ubuf__ half*)0xffffa5a58010, (__ubuf__ half*)0xffffa5a58210, (uint8_t)1, (uint8_t)1, (uint8_t)1, (uint8_t)1, (uint8_t)8, (uint8_t)8, (uint8_t)8);
+
+[V] [RECV_INST] vadd type 1
+[V] [EXECUTE] vadd type 1
+[MEMCHEK] Mem[281473460830224]checkNum is 0
+[MEMCHEK] Mem[281473460830736]checkNum is 0
+[MEMCHEK] Mem[281473460831248]checkNum is 0
+DataMergeAllOnceAll dataLen: 256
+[V] read  data 0xffffa5a58010 0x100 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffffa5a58010 0x100 B type UB
+[V] data matched whole 0xffffa5a58010 0x600 stat 1
+[V] [DATA_MARK] 0xffffa5a58010 0x100 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffa5a58010 0x100 B type UB
+[V] [CHECK_TBUF] 0xffffa5a58010 0x100 B type UB
+[V] allocation buffer match result 0
+[V] read  data 0xffffa5a58210 0x100 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffffa5a58210 0x100 B type UB
+[V] data matched whole 0xffffa5a58010 0x600 stat 1
+[V] [DATA_MARK] 0xffffa5a58210 0x100 B type UB mark read
+[V] [DATA_MARK] 0xffffa5a58210 0x100 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffa5a58210 0x100 B type UB
+[V] [CHECK_TBUF] 0xffffa5a58210 0x100 B type UB
+[V] allocation buffer match result 0
+[V] write data 0xffffa5a58410 0x100 B type UB
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffa5a58410 0x100 B type UB
+[V] checking wrote queue
+[V] [CHECK_DATA] 0xffffa5a58410 0x100 B type UB
+[V] data matched whole 0xffffa5a58410 0x200 stat 1
+[V] [CHECK_TBUF] 0xffffa5a58410 0x100 B type UB
+[V] allocation buffer match result 0
+
+### set_mask_norm();
+
+[set_mask_norm] unsupported
+[S] [RECV_INST] set_mask_norm type 7
+[S] [EXECUTE] set_mask_norm type 7
+
+### set_vector_mask((uint64_t)18446744073709551615, (uint64_t)18446744073709551615);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [SYNC_DATA] 0xffffa5a58410 0x100 B type UB
+[V] [send event] on set_flag 1 5 0
+[V] -> [MTE3] [GET_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE3] [RECV_EVENT] SRC V DST MTE3 EVENT 0
+[MTE3] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MEMCHEK] Mem[281473460831248]checkNum is 0
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)0);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [send event] on set_flag 1 4 0
+[V] -> [MTE2] [GET_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE2] [RECV_EVENT] SRC V DST MTE2 EVENT 0
+[MTE2] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[ALL] [TBUF_EVENT] FREE 0xffffa5a58010 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x200, Rate: 0.195312%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473460830224]checkNum is 0
+[MEMCHEK] Mem[281473460830224] is FREE
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)1);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [send event] on set_flag 1 4 1
+[V] -> [MTE2] [GET_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE2] [RECV_EVENT] SRC V DST MTE2 EVENT 1
+[MTE2] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[ALL] [TBUF_EVENT] FREE 0xffffa5a58210 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x100, Rate: 0.0976562%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473460830736]checkNum is 0
+[MEMCHEK] Mem[281473460830736] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[MTE3] [RECV_INST] wait_flag type 4
+[MTE3] [EXECUTE] wait_flag type 4
+[MTE3] [no wait] on wait_flag 1 5 0
+[V] [EVENT_CLEAR] send 1 5 0 has been waited
+[MEMCHEK] Mem[281473460831248]checkNum is 0
+
+### copy_ubuf_to_gm((__gm__ void*)0xffffab419e00, (__ubuf__ void*)0xffffa5a58410, (uint8_t)0, (uint16_t)1, (uint16_t)8, (uint16_t)0, (uint16_t)0);
+
+[MTE3] [RECV_INST] copy_ubuf_to_gm type 0
+[MTE3] [EXECUTE] copy_ubuf_to_gm type 0
+[MTE3] read  data 0xffffa5a58410 0x100 B type UB
+[MTE3] checking synced queue
+[MTE3] [CHECK_DATA] 0xffffa5a58410 0x100 B type UB
+[MTE3] data matched whole 0xffffa5a58410 0x200 stat 1
+[MTE3] [DATA_MARK] 0xffffa5a58410 0x100 B type UB mark read
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffffa5a58410 0x100 B type UB
+[MTE3] [CHECK_TBUF] 0xffffa5a58410 0x100 B type UB
+[MTE3] allocation buffer match result 0
+[MTE3] write data 0xffffab419e00 0x100 B type GM
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffffab419e00 0x100 B type GM
+[MTE3] checking wrote queue
+[MTE3] [CHECK_DATA] 0xffffab419e00 0x100 B type GM
+[MTE3] [CHECK_TBUF] 0xffffab419e00 0x100 B type GM
+[MEMCHEK] Mem[281473460831248]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)0);
+
+[MTE3] [RECV_INST] set_flag type 3
+[MTE3] [EXECUTE] set_flag type 3
+[MTE3] [SYNC_DATA] 0xffffab419e00 0x100 B type GM
+[MTE3] [send event] on set_flag 5 1 0
+[MTE3] -> [V] [GET_DATA] 0xffffab419000 0xf00 B stat 1 type GM
+[V] [RECV_EVENT] SRC MTE3 DST V EVENT 0
+[V] [RECV_DATA] 0xffffab419000 0xf00 B stat 1 type GM
+[ALL] [TBUF_EVENT] FREE 0xffffa5a58410 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473460831248]checkNum is 0
+[MEMCHEK] Mem[281473460831248] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)2);
+
+[MTE2] [RECV_INST] wait_flag type 4
+[MTE2] [EXECUTE] wait_flag type 4
+[MTE2] [no wait] on wait_flag 1 4 2
+[V] [EVENT_CLEAR] send 1 4 2 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffffa5a58110 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x100, Rate: 0.0976562%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473460830480len: 256
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)3);
+
+[MTE2] [RECV_INST] wait_flag type 4
+[MTE2] [EXECUTE] wait_flag type 4
+[MTE2] [no wait] on wait_flag 1 4 3
+[V] [EVENT_CLEAR] send 1 4 3 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffffa5a58310 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x200, Rate: 0.195312%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473460830992len: 256
+
+### copy_gm_to_ubuf((__ubuf__ void*)0xffffa5a58110, (__gm__ void*)0xffffac2a9f00, (uint8_t)0, (uint16_t)1, (uint16_t)8, (uint16_t)0, (uint16_t)0);
+
+[MTE2] [RECV_INST] copy_gm_to_ubuf type 0
+[MTE2] [EXECUTE] copy_gm_to_ubuf type 0
+[MTE2] read  data 0xffffac2a9f00 0x100 B type GM
+[MTE2] [DATA_MARK] 0xffffac2a9f00 0x100 B type GM mark read
+[MTE2] write data 0xffffa5a58110 0x100 B type UB
+[MTE2] checking pending queue
+[MTE2] [CHECK_DATA] 0xffffa5a58110 0x100 B type UB
+[MTE2] checking wrote queue
+[MTE2] [CHECK_DATA] 0xffffa5a58110 0x100 B type UB
+[MTE2] data matched whole 0xffffa5a58010 0x400 stat 1
+[MTE2] [CHECK_TBUF] 0xffffa5a58110 0x100 B type UB
+[MTE2] allocation buffer match result 0
+[MEMCHEK] Mem[281473460830480]checkNum is 0
+
+### copy_gm_to_ubuf((__ubuf__ void*)0xffffa5a58310, (__gm__ void*)0xffffabcb9f00, (uint8_t)0, (uint16_t)1, (uint16_t)8, (uint16_t)0, (uint16_t)0);
+
+[MTE2] [RECV_INST] copy_gm_to_ubuf type 0
+[MTE2] [EXECUTE] copy_gm_to_ubuf type 0
+[MTE2] read  data 0xffffabcb9f00 0x100 B type GM
+[MTE2] [DATA_MARK] 0xffffabcb9f00 0x100 B type GM mark read
+[MTE2] write data 0xffffa5a58310 0x100 B type UB
+[MTE2] checking pending queue
+[MTE2] [CHECK_DATA] 0xffffa5a58310 0x100 B type UB
+[MTE2] checking wrote queue
+[MTE2] [CHECK_DATA] 0xffffa5a58310 0x100 B type UB
+[MTE2] data matched whole 0xffffa5a58010 0x400 stat 1
+[MTE2] [CHECK_TBUF] 0xffffa5a58310 0x100 B type UB
+[MTE2] allocation buffer match result 0
+[MEMCHEK] Mem[281473460830992]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[MTE2] [RECV_INST] set_flag type 3
+[MTE2] [EXECUTE] set_flag type 3
+[MTE2] [SYNC_DATA] 0xffffa5a58110 0x100 B type UB
+[MTE2] [SYNC_DATA] 0xffffa5a58310 0x100 B type UB
+[MTE2] [send event] on set_flag 4 1 0
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[V] [RECV_EVENT] SRC MTE2 DST V EVENT 0
+[V] [RECV_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[V] [RECV_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[MEMCHEK] Mem[281473460830480]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)1);
+
+[MTE2] [RECV_INST] set_flag type 3
+[MTE2] [EXECUTE] set_flag type 3
+[MTE2] [send event] on set_flag 4 1 1
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[MTE2] -> [V] [GET_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[V] [RECV_EVENT] SRC MTE2 DST V EVENT 1
+[V] [RECV_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[V] [RECV_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[MEMCHEK] Mem[281473460830992]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)0);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 4 1 0
+[MTE2] [EVENT_CLEAR] send 4 1 0 has been waited
+[MEMCHEK] Mem[281473460830480]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE2, (pipe_t)PIPE_V, (event_t)1);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 4 1 1
+[MTE2] [EVENT_CLEAR] send 4 1 1 has been waited
+[MEMCHEK] Mem[281473460830992]checkNum is 0
+
+### wait_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)1);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 5 1 1
+[MTE3] [EVENT_CLEAR] send 5 1 1 has been waited
+[ALL] [TBUF_EVENT] ALLOC 0xffffa5a58510 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x300, Rate: 0.292969%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK][CreateMemRecord] addr: 281473460831504len: 256
+
+### set_mask_count();
+
+[set_mask_count] unsupported
+[S] [RECV_INST] set_mask_count type 7
+[S] [EXECUTE] set_mask_count type 7
+
+### set_vector_mask((uint64_t)0, (uint64_t)128);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### vadd((__ubuf__ half*)0xffffa5a58510, (__ubuf__ half*)0xffffa5a58110, (__ubuf__ half*)0xffffa5a58310, (uint8_t)1, (uint8_t)1, (uint8_t)1, (uint8_t)1, (uint8_t)8, (uint8_t)8, (uint8_t)8);
+
+[V] [RECV_INST] vadd type 1
+[V] [EXECUTE] vadd type 1
+[MEMCHEK] Mem[281473460830480]checkNum is 0
+[MEMCHEK] Mem[281473460830992]checkNum is 0
+[MEMCHEK] Mem[281473460831504]checkNum is 0
+DataMergeAllOnceAll dataLen: 256
+[V] read  data 0xffffa5a58110 0x100 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffffa5a58110 0x100 B type UB
+[V] data matched whole 0xffffa5a58010 0x600 stat 1
+[V] [DATA_MARK] 0xffffa5a58110 0x100 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffa5a58110 0x100 B type UB
+[V] [CHECK_TBUF] 0xffffa5a58110 0x100 B type UB
+[V] allocation buffer match result 0
+[V] read  data 0xffffa5a58310 0x100 B type UB
+[V] checking synced queue
+[V] [CHECK_DATA] 0xffffa5a58310 0x100 B type UB
+[V] data matched whole 0xffffa5a58010 0x600 stat 1
+[V] [DATA_MARK] 0xffffa5a58310 0x100 B type UB mark read
+[V] [DATA_MARK] 0xffffa5a58310 0x100 B type UB mark read
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffa5a58310 0x100 B type UB
+[V] [CHECK_TBUF] 0xffffa5a58310 0x100 B type UB
+[V] allocation buffer match result 0
+[V] write data 0xffffa5a58510 0x100 B type UB
+[V] checking pending queue
+[V] [CHECK_DATA] 0xffffa5a58510 0x100 B type UB
+[V] checking wrote queue
+[V] [CHECK_DATA] 0xffffa5a58510 0x100 B type UB
+[V] data matched whole 0xffffa5a58410 0x200 stat 1
+[V] [CHECK_TBUF] 0xffffa5a58510 0x100 B type UB
+[V] allocation buffer match result 0
+
+### set_mask_norm();
+
+[set_mask_norm] unsupported
+[S] [RECV_INST] set_mask_norm type 7
+[S] [EXECUTE] set_mask_norm type 7
+
+### set_vector_mask((uint64_t)18446744073709551615, (uint64_t)18446744073709551615);
+
+[V] [RECV_INST] set_vector_mask type 6
+[V] [EXECUTE] set_vector_mask type 6
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [SYNC_DATA] 0xffffa5a58510 0x100 B type UB
+[V] [send event] on set_flag 1 5 0
+[V] -> [MTE3] [GET_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE3] [RECV_EVENT] SRC V DST MTE3 EVENT 0
+[MTE3] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MEMCHEK] Mem[281473460831504]checkNum is 0
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)2);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [send event] on set_flag 1 4 2
+[V] -> [MTE2] [GET_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE2] [RECV_EVENT] SRC V DST MTE2 EVENT 2
+[MTE2] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[ALL] [TBUF_EVENT] FREE 0xffffa5a58110 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x200, Rate: 0.195312%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473460830480]checkNum is 0
+[MEMCHEK] Mem[281473460830480] is FREE
+
+### set_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)3);
+
+[V] [RECV_INST] set_flag type 3
+[V] [EXECUTE] set_flag type 3
+[V] [send event] on set_flag 1 4 3
+[V] -> [MTE2] [GET_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE2] [RECV_EVENT] SRC V DST MTE2 EVENT 3
+[MTE2] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[ALL] [TBUF_EVENT] FREE 0xffffa5a58310 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+    UB USED: 0x100, Rate: 0.0976562%
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473460830992]checkNum is 0
+[MEMCHEK] Mem[281473460830992] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE3, (event_t)0);
+
+[MTE3] [RECV_INST] wait_flag type 4
+[MTE3] [EXECUTE] wait_flag type 4
+[MTE3] [no wait] on wait_flag 1 5 0
+[V] [EVENT_CLEAR] send 1 5 0 has been waited
+[MEMCHEK] Mem[281473460831504]checkNum is 0
+
+### copy_ubuf_to_gm((__gm__ void*)0xffffab419f00, (__ubuf__ void*)0xffffa5a58510, (uint8_t)0, (uint16_t)1, (uint16_t)8, (uint16_t)0, (uint16_t)0);
+
+[MTE3] [RECV_INST] copy_ubuf_to_gm type 0
+[MTE3] [EXECUTE] copy_ubuf_to_gm type 0
+[MTE3] read  data 0xffffa5a58510 0x100 B type UB
+[MTE3] checking synced queue
+[MTE3] [CHECK_DATA] 0xffffa5a58510 0x100 B type UB
+[MTE3] data matched whole 0xffffa5a58410 0x200 stat 1
+[MTE3] [DATA_MARK] 0xffffa5a58510 0x100 B type UB mark read
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffffa5a58510 0x100 B type UB
+[MTE3] [CHECK_TBUF] 0xffffa5a58510 0x100 B type UB
+[MTE3] allocation buffer match result 0
+[MTE3] write data 0xffffab419f00 0x100 B type GM
+[MTE3] checking pending queue
+[MTE3] [CHECK_DATA] 0xffffab419f00 0x100 B type GM
+[MTE3] checking wrote queue
+[MTE3] [CHECK_DATA] 0xffffab419f00 0x100 B type GM
+[MTE3] [CHECK_TBUF] 0xffffab419f00 0x100 B type GM
+[MEMCHEK] Mem[281473460831504]checkNum is 0
+
+### set_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)1);
+
+[MTE3] [RECV_INST] set_flag type 3
+[MTE3] [EXECUTE] set_flag type 3
+[MTE3] [SYNC_DATA] 0xffffab419f00 0x100 B type GM
+[MTE3] [send event] on set_flag 5 1 1
+[MTE3] -> [V] [GET_DATA] 0xffffab419000 0x1000 B stat 1 type GM
+[V] [RECV_EVENT] SRC MTE3 DST V EVENT 1
+[V] [RECV_DATA] 0xffffab419000 0x1000 B stat 1 type GM
+[ALL] [TBUF_EVENT] FREE 0xffffa5a58510 0x100 B type UB
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MEMCHEK] Mem[281473460831504]checkNum is 0
+[MEMCHEK] Mem[281473460831504] is FREE
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)0);
+
+[MTE2] [RECV_INST] wait_flag type 4
+[MTE2] [EXECUTE] wait_flag type 4
+[MTE2] [no wait] on wait_flag 1 4 0
+[V] [EVENT_CLEAR] send 1 4 0 has been waited
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)2);
+
+[MTE2] [RECV_INST] wait_flag type 4
+[MTE2] [EXECUTE] wait_flag type 4
+[MTE2] [no wait] on wait_flag 1 4 2
+[V] [EVENT_CLEAR] send 1 4 2 has been waited
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)1);
+
+[MTE2] [RECV_INST] wait_flag type 4
+[MTE2] [EXECUTE] wait_flag type 4
+[MTE2] [no wait] on wait_flag 1 4 1
+[V] [EVENT_CLEAR] send 1 4 1 has been waited
+
+### wait_flag((pipe_t)PIPE_V, (pipe_t)PIPE_MTE2, (event_t)3);
+
+[MTE2] [RECV_INST] wait_flag type 4
+[MTE2] [EXECUTE] wait_flag type 4
+[MTE2] [no wait] on wait_flag 1 4 3
+[V] [EVENT_CLEAR] send 1 4 3 has been waited
+
+### wait_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)0);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 5 1 0
+[MTE3] [EVENT_CLEAR] send 5 1 0 has been waited
+
+### wait_flag((pipe_t)PIPE_MTE3, (pipe_t)PIPE_V, (event_t)1);
+
+[V] [RECV_INST] wait_flag type 4
+[V] [EXECUTE] wait_flag type 4
+[V] [no wait] on wait_flag 5 1 1
+[MTE3] [EVENT_CLEAR] send 5 1 1 has been waited
+
+### pipe_barrier((pipe_t)PIPE_ALL);
+
+[V] -> [ALL] [GET_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[S] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[M] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE1] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE2] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE3] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE4] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE5] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[V2] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[FIX] [RECV_DATA] 0xffffa5a58410 0x200 B stat 1 type UB
+[MTE2] -> [ALL] [GET_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[MTE2] -> [ALL] [GET_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[S] [RECV_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[S] [RECV_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[V] [RECV_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[V] [RECV_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[M] [RECV_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[M] [RECV_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[MTE1] [RECV_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[MTE1] [RECV_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[MTE3] [RECV_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[MTE3] [RECV_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[MTE4] [RECV_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[MTE4] [RECV_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[MTE5] [RECV_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[MTE5] [RECV_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[V2] [RECV_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[V2] [RECV_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[FIX] [RECV_DATA] 0xffffa5a58010 0x400 B stat 1 type UB
+[FIX] [RECV_DATA] 0xffffa5a58210 0x200 B stat 1 type UB
+[MTE3] -> [ALL] [GET_DATA] 0xffffab419000 0x1000 B stat 1 type GM
+[S] [RECV_DATA] 0xffffab419000 0x1000 B stat 1 type GM
+[V] [RECV_DATA] 0xffffab419000 0x1000 B stat 1 type GM
+[M] [RECV_DATA] 0xffffab419000 0x1000 B stat 1 type GM
+[MTE1] [RECV_DATA] 0xffffab419000 0x1000 B stat 1 type GM
+[MTE2] [RECV_DATA] 0xffffab419000 0x1000 B stat 1 type GM
+[MTE4] [RECV_DATA] 0xffffab419000 0x1000 B stat 1 type GM
+[MTE5] [RECV_DATA] 0xffffab419000 0x1000 B stat 1 type GM
+[V2] [RECV_DATA] 0xffffab419000 0x1000 B stat 1 type GM
+[FIX] [RECV_DATA] 0xffffab419000 0x1000 B stat 1 type GM
+[S] [STAT] Recv 34 PC 34
+[V] [STAT] Recv 145 PC 145
+[M] [STAT] Recv 0 PC 0
+[MTE1] [STAT] Recv 0 PC 0
+[MTE2] [STAT] Recv 96 PC 96
+[MTE3] [STAT] Recv 48 PC 48
+[ALL] [STAT] Recv 0 PC 0
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf used stat ----------
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+    UB USED: 0x600, Rate: 0.585938%
+[ALL] [TBUF_STAT] ---------- tbuf init stat ----------
+[MTE4] [STAT] Recv 0 PC 0
+[MTE5] [STAT] Recv 0 PC 0
+[V2] [STAT] Recv 0 PC 0
+[FIX] [STAT] Recv 0 PC 0
+[Executor] [STAT] codes 324
