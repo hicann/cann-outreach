@@ -1,0 +1,102 @@
+#include "kernel_operator.h"
+#include "tanh_custom_tiling.h"
+
+constexpr int32_t BUFFER_NUM = 2; // tensor num for each queue
+
+class KernelTanh {
+public:
+    __aicore__ inline KernelTanh() {}
+    __aicore__ inline void Init(GM_ADDR x, GM_ADDR y, uint32_t totalLength, uint32_t tileNum)
+    {
+        // TODO: 考生自行补齐初始化函数
+	ASSERT(GetBlockNum() != 0 && "block dim can not be zero!");
+        this->blockLength = totalLength / GetBlockNum();
+        this->tileNum = tileNum;
+        ASSERT(tileNum != 0 && "tile num can not be zero!");
+        this->tileLength = this->blockLength / tileNum / BUFFER_NUM;
+
+        xGm.SetGlobalBuffer((__gm__ half*)x + this->blockLength * GetBlockIdx(), this->blockLength);
+        yGm.SetGlobalBuffer((__gm__ half*)y + this->blockLength * GetBlockIdx(), this->blockLength);
+
+        pipe.InitBuffer(inQueueX, BUFFER_NUM, this->tileLength * sizeof(half));
+        pipe.InitBuffer(outQueueY, BUFFER_NUM, this->tileLength * sizeof(half));
+        pipe.InitBuffer(tmpBuf0, this->tileLength * sizeof(half));
+        pipe.InitBuffer(tmpBuf1, this->tileLength * sizeof(half));
+        pipe.InitBuffer(tmpBuf2, this->tileLength * sizeof(half));
+    }
+    __aicore__ inline void Process()
+    {
+        int32_t loopCount = this->tileNum * BUFFER_NUM;
+        for (int32_t i = 0; i < loopCount; i++) {
+            CopyIn(i);
+            Compute(i);
+            CopyOut(i);
+        }
+    }
+
+private:
+    __aicore__ inline void CopyIn(int32_t progress)
+    {
+        // TODO: 考生自行补齐
+	LocalTensor<half> xLocal = inQueueX.AllocTensor<half>();
+        DataCopy(xLocal, xGm[progress * tileLength], tileLength);
+        inQueueX.EnQue(xLocal);
+
+
+    }
+    __aicore__ inline void Compute(int32_t progress)
+    {
+        // TODO: 考生自行补齐
+	LocalTensor<half> xLocal = inQueueX.DeQue<half>();
+        LocalTensor<half> yLocal = outQueueY.AllocTensor<half>();
+
+        LocalTensor<half> expNegX = tmpBuf0.Get<half>();
+        LocalTensor<half> expPosX = tmpBuf1.Get<half>();
+        LocalTensor<half> denominator = tmpBuf2.Get<half>();
+
+        // exp(-x)
+        Muls(expNegX, xLocal, (half)-1.0, tileLength);
+        Exp(expNegX, expNegX, tileLength);
+
+        // exp(x)
+        Exp(expPosX, xLocal, tileLength);
+
+        // numerator = exp(x) - exp(-x)
+        Sub(yLocal, expPosX, expNegX, tileLength);
+
+        // denominator = exp(x) + exp(-x)
+        Add(denominator, expPosX, expNegX, tileLength);
+
+        // tanh = numerator / denominator
+        Div(yLocal, yLocal, denominator, tileLength);
+
+        outQueueY.EnQue<half>(yLocal);
+        inQueueX.FreeTensor(xLocal);
+    }
+    __aicore__ inline void CopyOut(int32_t progress)
+    {
+        // TODO: 考生自行补齐
+    	LocalTensor<half> yLocal = outQueueY.DeQue<half>();
+        DataCopy(yGm[progress * tileLength], yLocal, tileLength);
+        outQueueY.FreeTensor(yLocal);
+    }
+
+private:
+    AscendC::TPipe pipe;
+    AscendC::TQue<AscendC::QuePosition::VECIN, BUFFER_NUM> inQueueX;
+    AscendC::TQue<AscendC::QuePosition::VECOUT, BUFFER_NUM> outQueueY;
+    AscendC::TBuf<AscendC::QuePosition::VECCALC> tmpBuf0,tmpBuf1,tmpBuf2;
+    AscendC::GlobalTensor<DTYPE_X> xGm;
+    AscendC::GlobalTensor<DTYPE_Y> yGm;
+    uint32_t blockLength;
+    uint32_t tileNum;
+    uint32_t tileLength;
+};
+
+extern "C" __global__ __aicore__ void tanh_custom(GM_ADDR x, GM_ADDR y, GM_ADDR workspace, GM_ADDR tiling) {
+    REGISTER_TILING_DEFAULT(TanhCustomTilingData);
+    GET_TILING_DATA(tilingData, tiling);
+    // TODO: 考生自行补齐
+    op.Init(x, y, tilingData->totalLength, tilingData->tileNum);
+    op.Process();
+}
