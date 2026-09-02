@@ -1,0 +1,54 @@
+__OK__
+=== UC003: msagent one-shot (hello/capabilities) ===
+Warning: Input is not a terminal (fd=0).
+● 你好！我是 Profiler，一名专注于 Ascend NPU（昇腾）性能分析的 AI               
+  助手。我基于真实 Profiling 数据工作，不会编造指标或结论，只依据证据下判断。   
+
+  我能帮你做什么                                                                
+
+  1. 性能数据分析（核心能力）                                                   
+
+  你提供 Profiling 数据（如 *_ascend_pt 或 *_ascend_ms 目录），我可以：         
+
+   • 单卡性能分析：Timeline 时序分析 → 算子热点定位 → 通信/调度分析 →           
+     采集配置校验                                                               
+   • 多卡/集群分析：快慢卡识别、负载不均衡、集群瓶颈诊断，再按 Rank 下钻根因    
+   • 三大瓶颈维度：                                                             
+      • 计算侧：AI Core/Vector/AICPU 热点算子、动态 shape 开销、低效            
+        Kernel、Block Dim 问题                                                  
+      • 通信侧：HCCL 通信耗时、带宽利用率、小包/重传、链路瓶颈、Wait 时间、慢   
+        Rank                                                                    
+      • 调度侧：Host 下发延迟、算子调度阻塞、Free 时间、CPU 绑核问题            
+
+  2. 专项分析工具                                                               
+
+   • 算子 MFU 计算：matmul/GEMM/FlashAttention 等算子的计算效率                 
+   • 数据完整性校验：Profiling 数据采集是否正常、配置是否正确                   
+   • msprof-analyze CLI 诊断：基于采集数据的统计、比对、诊断                    
+   • 内存快照分析：PyTorch memory snapshot 的峰值/碎片/泄漏分析                 
+   • 算子调优闭环：msprof op 端到端采集→分析→优化→验证                          
+
+  3. 配套能力                                                                   
+
+   • SQL 查询 Profiling 数据库（ascend_pytorch_profiler*.db 等）                
+   • 读取 GitHub 仓库文档辅助分析                                               
+   • 多卡集群通信/计算深度分析（已有专门技能支撑）                              
+
+  使用方式                                                                      
+
+  你只需要告诉我性能数据所在路径（例如                                          
+  /path/to/xxx_ascend_pt），我会自动完成：数据校验 → 全局诊断 → 瓶颈定位 →      
+  根因解释 → 输出可执行的优化建议（含优先级和验证方法）。                       
+
+  ------------------------------------------------------------------------------
+
+  💡 一个请求：我目前还没有具体的 Profiling                                     
+  数据。你可以把测试时采集的数据目录路径发给我，我立即开始分析。如果是集群多卡场
+  景，也请一并说明训练规模（如 8 卡、跨节点等），这样我能更快定位问题。         
+
+  有什么我可以先帮你确认或准备的吗？                                            
+
+UC003_EXIT=0
+
+__STDERR__
+

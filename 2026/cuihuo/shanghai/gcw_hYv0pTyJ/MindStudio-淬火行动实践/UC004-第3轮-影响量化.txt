@@ -1,0 +1,91 @@
+__OK__
+=== R3 RESULT ===
+Warning: Input is not a terminal (fd=0).
+● 结论：快慢卡问题每个 step 拖慢 441.9 ms（占 step 总耗时 1414.0 ms 的 31.3%）  
+
+  这是一个 DP=4 的 Qwen3-32B 训练 step（非推理：通信为 258 次 80KB allReduce +  
+  17 次 152KB allGather 梯度同步）。慢卡是 Rank 1 与 Rank 2，属 Host            
+  下发瓶颈型"伪快卡"——它们的 NPU 被 Host 饿死（Free                             
+  时间最长），到达集合通信最晚，导致 Rank 0/3 在通信里空等。                    
+
+  ------------------------------------------------------------------------------
+
+  一、量化结果与计算依据                                                        
+
+                                                                                
+   指标                   数值                       计算依据                   
+   ──────────────────────────────────────────────────────────────────────────── 
+   当前 step 耗时         1414.0 ms（各卡 Stage      cluster_time_summary/Clus… 
+                          1413.9~1415.3 ms）         1422.9 ms                  
+   快慢卡导致的拖慢       441.9 ms / step            Σ 全部 275 个集合通信算子  
+                                                     (max_rank elapsed −        
+                                                     min_rank elapsed) = 441.89 
+                                                     ms，平均每个集合通信被拉 … 
+                                                     1.61 ms                    
+   占比                   31.3% of step              441.9 / 1414.0             
+   消除快慢卡后理论 step  ~972.1 ms                  1414.0 −                   
+                                                     441.9（对应吞吐可提升约    
+                                                     1.45×）                    
+   最严重单次             12.45 ms                   hcom_allReduce__503_1_1    
+                                                     被拉伸到 12.47 ms（min 仅  
+                                                     0.02 ms）                  
+                                                                                
+
+  关键交叉验证（证据闭环）：                                                    
+
+   • Rank 0 的通信总耗时 447.9 ms，其中 442.6 ms 是                             
+     idle_time（在通信算子内空等，占 98.8%）；Rank 3 为 445.0 ms。二者 ≈ 441.9  
+     ms skew + ~6.8 ms 真实搬运（SlowLinkSum：allReduce 均值 24.4 µs × 258 +    
+     allGather 30.6 µs × 17）。                                                 
+   • 通信与计算几乎零重叠（overlapped 仅 79.9 µs ~                              
+     0），说明这些空等全部落在关键路径上，直接拉长 step。                       
+   • 275 个算子中 272 个的"最后到达者"是 Rank 1（138 次）或 Rank 2（134         
+     次）；SlowRank 表标记 rank1=137 次、rank2=129 次影响他人。                 
+   • skew 前后半段均摊（224.6 ms / 217.3 ms），不是某一次的偶发，而是贯穿整个   
+     step 的系统性现象。                                                        
+
+  二、为何判定 Rank 1/2 为慢卡（而非快卡）                                      
+
+   • Free 时间：Rank 1 = 877.5 ms（占其 Stage 62.1%）、Rank 2 = 831.4           
+     ms（58.8%），远高于 Rank 0/3 的 632.4/636.1 ms（44.7%/44.9%）。            
+   • Compute 均衡：333.8 / 332.6 / 335.4 / 334.2 ms，极差仅 2.8                 
+     ms（<1%），排除计算负载不均；慢卡集中在 Host 下发。                        
+   • Host 微观证据（compare_api_stats.py，Rank 1 vs Rank 0，调用次数完全相同）：
+      • launch 总耗时 276.8 ms vs 259.5 ms（+17.3 ms）；                        
+      • aclnnInnerFusedInferAttentionScore 130.1 ms vs 83.7 ms（1.55×）；       
+      • aclrtRecordEvent 62.7 ms vs 39.7 ms（1.58×）；                          
+      • aclrtSynchronizeEvent 仅 19.6 ms vs 329.9 ms——Rank 1                    
+        从不阻塞等待同步，正是"始终落后的 straggler"特征；                      
+      • free_analysis 显示 Rank 1 存在 19.66 ms 的 node@launch 下发间隙、Rank 2 
+        存在 8.87 ms 下发间隙。                                                 
+
+  三、外推与建议                                                                
+
+   • 外推公式：全训练周期因快慢卡多花的时间 ≈ 441.9 ms × step                   
+     总数。当前采集只覆盖 1 个 step，如需总时长请提供该次运行的 step 数。       
+   • 注意：消除快慢卡后约 972 ms 的基线里，Rank 0/3 仍有 ~632 ms                
+     Free——这是整机通用的 Host/调度瓶颈（单独问题），与快慢卡失衡不是同一根因。 
+
+  建议（按优先级）：                                                            
+
+   1 [P0] 排查 Rank 1/2 的 Host 下发瓶颈：检查 CPU 绑核/NUMA 亲和性（4          
+     卡进程是否争抢同一批 CPU 核）、launch 间隙 19.66 ms                        
+     的成因、同步点设计；参考 mindstudio-cpu-binding 思路为 4 个 rank 分配独立  
+     CPU 组。                                                                   
+   2 [P0] 收敛 attention/recordEvent 的 Host 侧 1.5× 差异：定位 Rank 1 上       
+     aclnnInnerFusedInferAttentionScore 单次多耗时 42.6 µs × 1088 次的来源（host
+     线程调度抖动/中断）。                                                      
+   3 [P1] 合并 80KB 小包 allReduce（梯度桶合并/减少 bucket 数量），降低 275     
+     次小集合通信被逐次放大的频率。                                             
+   4 [P1] 复测对比：优化后用 msprof-analyze -m cluster_time_summary             
+     重新采集，目标 skew 总和（Σ max−min）< 50 ms，或 step_trace Stage 由 1414  
+     ms 降至 ~1000 ms 以内。                                                    
+
+  验证方法：对本报告的核心数字，可重跑 python3 对 cluster_analysis.db →         
+  ClusterCommunicationTime 执行 SUM(max(elapsed_time) - min(elapsed_time)) GROUP
+  BY hccl_op_name，应复现 441.9 ms；该值与 timing_evidence.csv（avg_wait_ms     
+  4.5~6.2 ms、wait_ratio 0.665）及 SlowRank（137/129 次）三方一致。             
+
+
+__STDERR__
+
