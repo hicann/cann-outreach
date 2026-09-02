@@ -1,0 +1,224 @@
+using ASCEND_HOME_PATH: /usr/local/Ascend/cann-9.0.0
+Preset CMake variables:
+
+  ASCEND_CANN_PACKAGE_PATH:PATH="/usr/local/Ascend/cann-9.0.0"
+  ASCEND_COMPUTE_UNIT:STRING="ascend910b"
+  ASCEND_PACK_SHARED_LIBRARY:BOOL="False"
+  ASCEND_PYTHON_EXECUTABLE:STRING="python3"
+  CMAKE_BUILD_TYPE:STRING="Release"
+  CMAKE_CROSS_PLATFORM_COMPILER:PATH="/usr/bin/aarch64-linux-gnu-g++"
+  CMAKE_INSTALL_PREFIX:PATH="/home/aicc/TanhCustom/TanhCustom/build_out"
+  ENABLE_BINARY_PACKAGE:BOOL="True"
+  ENABLE_CROSS_COMPILE:BOOL="False"
+  ENABLE_SOURCE_PACKAGE:BOOL="True"
+  ENABLE_TEST:BOOL="True"
+  vendor_name:STRING="customize"
+
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- set package config: INSTALL_PATH;/home/aicc/TanhCustom/TanhCustom/build_out/
+INFO target name: cust_tf_parsers
+-- Opbuild generating sources
+-- Opbuild generating sources - done
+INFO target name: cust_optiling
+INFO target name: cust_opapi
+INFO target name: cust_op_proto
+INFO target name: ascendc_kernels
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    ASCEND_PACK_SHARED_LIBRARY
+    CMAKE_CROSS_PLATFORM_COMPILER
+    ENABLE_TEST
+
+
+-- Build files have been written to: /home/aicc/TanhCustom/TanhCustom/build_out
+[ 25%] Generating ../autogen/copy_kernel_src.timestamp
+[ 50%] Building CXX object op_host/CMakeFiles/cust_optiling.dir/tanh_custom.cpp.o
+[ 50%] Built target ascendc_kernels_copy_kernel_srcs
+[ 75%] Generating ascendc_kernels/tbe/op_info_cfg/ai_core/ascend910b/aic-ascend910b-ops-info.json
+
+
+==============check valid for ops info start==============
+==============check valid for ops info end================
+
+
+Compile op info cfg successfully.
+[ 75%] Built target ascendc_kernels_ops_info_gen_ascend910b
+[ 75%] Built target cust_optiling
+[100%] Linking CXX shared library libcust_opmaster_rt2.0.so
+[100%] Built target customize_ascendc_cust_optiling
+[ascend910b] Generating TanhCustom_9d11ee3633f584c6342b586860ca562b ...
+[ERROR] TBE(699,python3):2026-08-29-07:19:55.068.426 [log_utils.py:183][plog_print] [ascend910b]  TanhCustom_9d11ee3633f584c6342b586860ca562b /home/aicc/TanhCustom/TanhCustom/op_kernel/tanh_custom.cpp:15:43: error: use of undeclared identifier 'GetBlockNum'; did you mean 'AscendC::GetBlockNum'?
+        this->blockLength = totalLength / GetBlockNum();
+                                          ^~~~~~~~~~~
+                                          AscendC::GetBlockNum
+/usr/local/Ascend/cann-9.0.0/aarch64-linux/asc/impl/basic_api/dav_c220/core_mng/roc/kernel_operator_group_barrier_impl.h:24:27: note: 'AscendC::GetBlockNum' declared here
+__aicore__ inline int64_t GetBlockNum();
+                          ^
+/home/aicc/TanhCustom/TanhCustom/op_kernel/tanh_custom.cpp:22:37: error: use of undeclared identifier 'GetBlockIdx'; did you mean 'AscendC::GetBlockIdx'?
+                this->blockLength * GetBlockIdx(),
+                                    ^~~~~~~~~~~
+                                    AscendC::GetBlockIdx
+/u
+Opc tool start working now, please wait for a moment.
+[2026-08-29 07:19:55] [ERROR] [ascend910b] TanhCustom_9d11ee3633f584c6342b586860ca562b /home/aicc/TanhCustom/TanhCustom/op_kernel/tanh_custom.cpp:15:43: error: use of undeclared identifier 'GetBlockNum'; did you mean 'AscendC::GetBlockNum'?
+        this->blockLength = totalLength / GetBlockNum();
+                                          ^~~~~~~~~~~
+                                          AscendC::GetBlockNum
+/usr/local/Ascend/cann-9.0.0/aarch64-linux/asc/impl/basic_api/dav_c220/core_mng/roc/kernel_operator_group_barrier_impl.h:24:27: note: 'AscendC::GetBlockNum' declared here
+__aicore__ inline int64_t GetBlockNum();
+                          ^
+/home/aicc/TanhCustom/TanhCustom/op_kernel/tanh_custom.cpp:22:37: error: use of undeclared identifier 'GetBlockIdx'; did you mean 'AscendC::GetBlockIdx'?
+                this->blockLength * GetBlockIdx(),
+                                    ^~~~~~~~~~~
+                                    AscendC::GetBlockIdx
+/usr/local/Ascend/cann-9.0.0/aarch64-linux/asc/include/basic_api/../../impl/basic_api/kernel_operator_sys_var_intf_impl.h:48:27: note: 'AscendC::GetBlockIdx' declared here
+__aicore__ inline int64_t GetBlockIdx()
+                          ^
+/home/aicc/TanhCustom/TanhCustom/op_kernel/tanh_custom.cpp:27:37: error: use of undeclared identifier 'GetBlockIdx'; did you mean 'AscendC::GetBlockIdx'?
+                this->blockLength * GetBlockIdx(),
+                                    ^~~~~~~~~~~
+                                    AscendC::GetBlockIdx
+/usr/local/Ascend/cann-9.0.0/aarch64-linux/asc/include/basic_api/../../impl/basic_api/kernel_operator_sys_var_intf_impl.h:48:27: note: 'AscendC::GetBlockIdx' declared here
+__aicore__ inline int64_t GetBlockIdx()
+                          ^
+3 errors generated.
+
+[ERROR] TBE(699,python3):2026-08-29-07:19:55.068.930 [op_compilation.py:311][__single_op_compile] Exception occured, An error occurred during compile phases of CompileStage.INFERCHANNEL, msg is /home/aicc/TanhCustom/TanhCustom/op_kernel/tanh_custom.cpp:15:43: error: use of undeclared identifier 'GetBlockNum'; did you mean 'AscendC::GetBlockNum'?
+        this->blockLength = totalLength / GetBlockNum();
+                                          ^~~~~~~~~~~
+                                          AscendC::GetBlockNum
+/usr/local/Ascend/cann-9.0.0/aarch64-linux/asc/impl/basic_api/dav_c220/core_mng/roc/kernel_operator_group_barrier_impl.h:24:27: note: 'AscendC::GetBlockNum' declared here
+__aicore__ inline int64_t GetBlockNum();
+                          ^
+/home/aicc/TanhCustom/TanhCustom/op_kernel/tanh_custom.cpp:22:37: error: use of undeclared identifier 'GetBlockIdx'; did you mean 'AscendC::GetBlockIdx'?
+                this->blockLength * GetBlockIdx(),
+                                    ^~~~~~~~~~~
+       
+[ERROR] TBE(699,python3):2026-08-29-07:19:55.074.126 [opc_common.py:227][_log_error] Traceback (most recent call last):
+  File "/usr/local/Ascend/cann-9.0.0/python/site-packages/asc_opc_tool/op_compilation.py", line 303, in __single_op_compile
+    json_file_path = single_op_obj.op_compile()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Ascend/cann-9.0.0/python/site-packages/asc_opc_tool/single_op_compile.py", line 237, in op_compile
+    json_file_path = self.__call_op()
+                     ^^^^^^^^^^^^^^^^
+  File "/usr/local/Ascend/cann-9.0.0/python/site-packages/asc_opc_tool/single_op_compile.py", line 145, in __call_op
+    op_func(*inputs, *outputs, *new_attrs, self.__op_info.get(OpcOptions.KERNEL_NAME), **kwargs)
+[ERROR] TBE(699,python3):2026-08-29-07:19:55.074.184 [opc_common.py:227][_log_error]   File "/usr/local/Ascend/cann-9.0.0/python/site-packages/asc_op_compile_base/common/register/operation_func_mgr.py", line 55, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Ascend/cann-9.0.0/python/site-packages/asc_op_compile_base/common/utils/para_check.py", line 527, in _in_wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aicc/TanhCustom/TanhCustom/build_out/op_kernel/TanhCustom_ascend910b/dynamic/TanhCustom.py", line 248, in tanh_custom
+    compile_op(src, origin_func_name, op_info, options, code_channel, '{}', {'valueDepend': {}})
+[ERROR] TBE(699,python3):2026-08-29-07:19:55.074.206 [opc_common.py:227][_log_error]   File "/usr/local/Ascend/cann-9.0.0/python/site-packages/asc_op_compile_base/asc_op_compiler/compile_op.py", line 1422, in compile_op
+    compile_op_common_part(cce_file, origin_func_name, op_info, compile_option_tuple, infered_info_from_ifile,
+  File "/usr/local/Ascend/cann-9.0.0/python/site-packages/asc_op_compile_base/asc_op_compiler/compile_op.py", line 1257, in compile_op_common_part
+    code_channel, hardware_sync_in_asm = get_code_channel_v220_by_first_tiling_key(
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[ERROR] TBE(699,python3):2026-08-29-07:19:55.074.234 [opc_common.py:227][_log_error]   File "/usr/local/Ascend/cann-9.0.0/python/site-packages/asc_op_compile_base/asc_op_compiler/ascendc_compile_v220.py", line 650, in get_code_channel_v220_by_first_tiling_key
+    CommonUtility.dump_build_log(out.decode(), compile_cmd, CompileStage.INFERCHANNEL, proc.returncode)
+  File "/usr/local/Ascend/cann-9.0.0/python/site-packages/asc_op_compile_base/asc_op_compiler/ascendc_common_utility.py", line 617, in dump_build_log
+    raise Exception("An error occurred during compile phases of {}, msg is {}".\
+[ERROR] TBE(699,python3):2026-08-29-07:19:55.074.264 [opc_common.py:227][_log_error] Exception: An error occurred during compile phases of CompileStage.INFERCHANNEL, msg is /home/aicc/TanhCustom/TanhCustom/op_kernel/tanh_custom.cpp:15:43: error: use of undeclared identifier 'GetBlockNum'; did you mean 'AscendC::GetBlockNum'?
+        this->blockLength = totalLength / GetBlockNum();
+                                          ^~~~~~~~~~~
+                                          AscendC::GetBlockNum
+/usr/local/Ascend/cann-9.0.0/aarch64-linux/asc/impl/basic_api/dav_c220/core_mng/roc/kernel_operator_group_barrier_impl.h:24:27: note: 'AscendC::GetBlockNum' declared here
+__aicore__ inline int64_t GetBlockNum();
+                          ^
+/home/aicc/TanhCustom/TanhCustom/op_kernel/tanh_custom.cpp:22:37: error: use of undeclared identifier 'GetBlockIdx'; did you mean 'AscendC::GetBlockIdx'?
+                this->blockLength * GetBlockIdx(),
+                                    ^~~~~~~~~~~
+                            
+[ERROR] TBE(699,python3):2026-08-29-07:19:55.074.308 [op_compilation.py:190][record_compile_error_info] Op[TanhCustom] of index[0] compile failed, kernelName: TanhCustom_9d11ee3633f584c6342b586860ca562b.
+[ERROR] TBE(699,python3):2026-08-29-07:19:55.074.706 [opc_common.py:520][opc_log_full] [op_compilation.py:192][record_compile_error_info] reason is:[An error occurred during compile phases of CompileStage.INFERCHANNEL, msg is /home/aicc/TanhCustom/TanhCustom/op_kernel/tanh_custom.cpp:15:43: error: use of undeclared identifier 'GetBlockNum'; did you mean 'AscendC::GetBlockNum'?
+        this->blockLength = totalLength / GetBlockNum();
+                                          ^~~~~~~~~~~
+                                          AscendC::GetBlockNum
+/usr/local/Ascend/cann-9.0.0/aarch64-linux/asc/impl/basic_api/dav_c220/core_mng/roc/kernel_operator_group_barrier_impl.h:24:27: note: 'AscendC::GetBlockNum' declared here
+__aicore__ inline int64_t GetBlockNum();
+                          ^
+[ERROR] TBE(699,python3):2026-08-29-07:19:55.074.755 [opc_common.py:520][opc_log_full] /home/aicc/TanhCustom/TanhCustom/op_kernel/tanh_custom.cpp:22:37: error: use of undeclared identifier 'GetBlockIdx'; did you mean 'AscendC::GetBlockIdx'?
+                this->blockLength * GetBlockIdx(),
+                                    ^~~~~~~~~~~
+                                    AscendC::GetBlockIdx
+/usr/local/Ascend/cann-9.0.0/aarch64-linux/asc/include/basic_api/../../impl/basic_api/kernel_operator_sys_var_intf_impl.h:48:27: note: 'AscendC::GetBlockIdx' declared here
+__aicore__ inline int64_t GetBlockIdx()
+                          ^
+/home/aicc/TanhCustom/TanhCustom/op_kernel/tanh_custom.cpp:27:37: error: use of undeclared identifier 'GetBlockIdx'; did you mean 'AscendC::GetBlockIdx'?
+                this->blockLength * GetBlockIdx(),
+[ERROR] TBE(699,python3):2026-08-29-07:19:55.074.785 [opc_common.py:520][opc_log_full]                                     ^~~~~~~~~~~
+                                    AscendC::GetBlockIdx
+/usr/local/Ascend/cann-9.0.0/aarch64-linux/asc/include/basic_api/../../impl/basic_api/kernel_operator_sys_var_intf_impl.h:48:27: note: 'AscendC::GetBlockIdx' declared here
+__aicore__ inline int64_t GetBlockIdx()
+                          ^
+3 errors generated.
+].
+[ERROR] TBE(699,python3):2026-08-29-07:19:55.077.450 [opc.py:688][main] Opc tool compile failed.
+/home/aicc/TanhCustom/TanhCustom/build_out/op_kernel/ascendc_kernels/binary/ascend910b/tanh_custom/TanhCustom_9d11ee3633f584c6342b586860ca562b.json not generated!
+make[4]: *** [/home/aicc/TanhCustom/TanhCustom/build_out/op_kernel/TanhCustom_ascend910b/tanh_custom.make:3: tanh_custom0] Error 1
+Traceback (most recent call last):
+  File "/usr/local/Ascend/cann-9.0.0/compiler/tikcpp/ascendc_kernel_cmake/fwk_modules/util/ascendc_compile_kernel.py", line 277, in <module>
+    kernel_builder.ascendc_build()
+  File "/usr/local/Ascend/cann-9.0.0/compiler/tikcpp/ascendc_kernel_cmake/fwk_modules/util/ascendc_compile_kernel.py", line 214, in ascendc_build
+    raise RuntimeError('Kernel Compilation Error: OpType {} Kernel File {}!'.format(
+RuntimeError: Kernel Compilation Error: OpType TanhCustom Kernel File /home/aicc/TanhCustom/TanhCustom/op_kernel/tanh_custom.cpp!
+gmake[3]: *** [op_kernel/CMakeFiles/TanhCustom_ascend910b.dir/build.make:70: op_kernel/CMakeFiles/TanhCustom_ascend910b] Error 1
+gmake[2]: *** [CMakeFiles/Makefile2:484: op_kernel/CMakeFiles/TanhCustom_ascend910b.dir/all] Error 2
+gmake[1]: *** [CMakeFiles/Makefile2:517: op_kernel/CMakeFiles/binary.dir/rule] Error 2
+gmake: *** [Makefile:358: binary] Error 2
+Consolidate compiler generated dependencies of target cust_optiling
+[ 23%] Generating scripts/install.sh, scripts/upgrade.sh, scripts/uninstall.sh
+[ 23%] Building CXX object framework/tf_plugin/CMakeFiles/cust_tf_parsers.dir/tensorflow_tanh_custom_plugin.cc.o
+[ 23%] Building CXX object op_host/CMakeFiles/cust_opapi.dir/__/autogen/aclnn_tanh_custom.cpp.o
+[ 30%] Built target ascendc_kernels_copy_kernel_srcs
+[ 38%] Generating ascendc_kernels/tbe/op_info_cfg/ai_core/npu_supported_ops.json
+[ 46%] Building CXX object op_host/CMakeFiles/cust_op_proto.dir/tanh_custom.cpp.o
+[ 53%] Building CXX object op_host/CMakeFiles/cust_op_proto.dir/__/autogen/op_proto.cc.o
+[ 61%] Built target cust_optiling
+[ 61%] Built target gen_version_info
+/home/aicc/TanhCustom/TanhCustom/build_out/autogen /home/aicc/TanhCustom/TanhCustom/build_out/op_kernel/ascendc_kernels/tbe/op_info_cfg/ai_core
+[ 76%] Built target ascendc_kernels_ops_info_gen_ascend910b
+[ 76%] Built target customize_ascendc_cust_optiling
+[ 76%] Built target modify_vendor
+[INFO] Succeeded generated /home/aicc/TanhCustom/TanhCustom/build_out/op_kernel/ascendc_kernels/tbe/op_info_cfg/ai_core/npu_supported_ops.json
+[ 76%] Built target customize_npu_supported_ops
+[ 76%] Built target optiling_compat
+[ 76%] Built target cust_opapi
+[ 84%] Linking CXX shared library libcust_opapi.so
+[ 84%] Built target customize_ascendc_cust_opapi
+[ 92%] Linking CXX shared library libcust_tf_parsers.so
+[ 92%] Built target cust_tf_parsers
+[ 92%] Built target cust_op_proto
+[100%] Linking CXX shared library libcust_opsproto_rt2.0.so
+[100%] Built target customize_ascendc_cust_op_proto
+Run CPack packaging tool...
+CPack: Create package using External
+CPack: Install projects
+CPack: - Run preinstall target for: opp
+CPack: - Install project: opp []
+CMake Error at /home/aicc/TanhCustom/TanhCustom/build_out/op_kernel/cmake_install.cmake:54 (file):
+  file INSTALL cannot find
+  "/home/aicc/TanhCustom/TanhCustom/build_out/op_kernel/ascendc_kernels/binary/config":
+  No such file or directory.
+Call Stack (most recent call first):
+  /home/aicc/TanhCustom/TanhCustom/build_out/cmake_install.cmake:69 (include)
+
+
+CPack Error: Error when generating package: opp
+gmake: *** [Makefile:71: package] Error 1
