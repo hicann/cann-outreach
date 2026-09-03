@@ -1,0 +1,49 @@
+aclblasIcamax 算子社区任务代码导出包
+========================================
+
+本包包含 aclblasIcamax 算子的全部代码改动，按 ops-blas 仓目录结构组织，
+可直接覆盖到 ops-blas 仓库根目录，或通过 git patch 应用。
+
+【文件清单】
+算子实现（blas/iamax/arch35/）：
+  - icamax_tiling_data.h   IcamaxTilingData 结构体
+  - icamax_kernel.h         kernel 入口声明
+  - icamax_kernel.cpp       SIMT 归约 kernel + reduce kernel
+  - icamax_host.cpp         host API + 参数校验 + tiling + kernel 启动
+
+头文件声明：
+  - include/cann_ops_blas.h  新增 aclblasIcamax 声明（与 aclblasIsamax 对齐）
+
+算子文档：
+  - blas/iamax/README.md     新增 icamax 接口章节（支持表标注 Ascend 950PR）
+
+测试工程（test/iamax/icamax/）：
+  - CMakeLists.txt
+  - README.md                 测试复现步骤
+  - icamax_param.h            CSV 参数解析 + 复数填充辅助
+  - icamax_golden.h           cblas_icamax +1 转 1-based golden
+  - icamax_npu_wrapper.h      NPU 包装（含 result 空指针负向入口）
+  - arch35/icamax_test.cpp    GTest 用例
+  - arch35/icamax_test.csv    1200 条用例（1000 精度 + 200 性能）
+
+【应用方式一：直接覆盖】
+将本包内文件按目录结构复制到 ops-blas 仓库根目录即可。
+
+【应用方式二：git patch】
+  cd ops-blas
+  git apply aclblasIcamax_feature.patch
+
+【接口签名】
+  aclblasStatus_t aclblasIcamax(
+      aclblasHandle_t handle,
+      int n,
+      const aclblasComplex* x,
+      int incx,
+      int* result);
+
+【关键语义】
+  - 复数"模"为 1-范数 |Re| + |Im|（Netlib SCABS1），非欧氏模
+  - 输出 1-based 索引，相同最大值取最小索引
+  - n=0 或 incx<=0 时 quick return，result=0
+  - n<0 返回 ACLBLAS_STATUS_INVALID_VALUE
+  - 精度判定为精确相等（bit-exact）
