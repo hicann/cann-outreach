@@ -10,6 +10,6 @@
 
 - baopeihu (baopeihu): 提交者
 
-## 算子: op_01_sub
+## 算子: mul
 
-矢量减法
+矢量乘法
