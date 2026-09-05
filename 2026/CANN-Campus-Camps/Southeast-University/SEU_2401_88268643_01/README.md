@@ -12,4 +12,4 @@
 
 ## 算子: op_01_sub
 
-tileNum = 4
+TPipe 应在 Kernel 类之外创建，使它与 Kernel 类对象的内存空间独立，从而促进类内 Scalar 的常量折叠和常量传播
