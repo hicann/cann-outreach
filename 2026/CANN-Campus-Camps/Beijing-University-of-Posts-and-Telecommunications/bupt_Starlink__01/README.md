@@ -10,6 +10,6 @@
 
 - Starlink_ (Starlink_): 提交者
 
-## 算子: op_02_mul
+## 算子: op_01_sub
 
 
