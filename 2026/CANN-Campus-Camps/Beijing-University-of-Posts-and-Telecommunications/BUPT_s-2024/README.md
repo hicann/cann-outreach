@@ -10,6 +10,6 @@
 
 - 邵文天 (s-2024): 提交者
 
-## 算子: op_01_sub
+## 算子: op_02_mul
 
-双缓冲：BUFFER_NUM = 2，每个核的数据被切成 tileNum * BUFFER_NUM 次搬运，tileLength = blockLength / tileNum / BUFFER_NUM，与官方 Add 样例的切分方式一致
+
