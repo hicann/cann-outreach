@@ -10,6 +10,6 @@
 
 - zhujianwei (zhujianwei): 提交者
 
-## 算子: op_01_sub
+## 算子: op_02_mul
 
-sub算子
+mul自定义算子开发
