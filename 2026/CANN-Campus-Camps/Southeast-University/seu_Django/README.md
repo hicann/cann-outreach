@@ -2,14 +2,14 @@
 
 ## 团队信息
 
-- 提交者: Djangooo
+- 提交者: 梁瀚文61524E15
 - 身份: 学生
 - 单位: 东南大学
 
 ## 成员
 
-- Djangooo (Djangooo): 提交者
+- 梁瀚文61524E15 (Djangooo): 提交者
 
-## 算子: op_02_mul
+## 算子: op_10_gelu
 
-Lesson 2 mul 自定义算子工程
+Gelu
