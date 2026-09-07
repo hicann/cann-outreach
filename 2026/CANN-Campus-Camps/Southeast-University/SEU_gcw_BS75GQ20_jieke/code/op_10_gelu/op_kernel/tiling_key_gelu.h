@@ -1,0 +1,23 @@
+#ifndef TILING_KEY_GELU_H
+#define TILING_KEY_GELU_H
+
+#include "ascendc/host_api/tiling/template_argument.h"
+
+ASCENDC_TPL_ARGS_DECL(
+    Gelu,
+    ASCENDC_TPL_DATATYPE_DECL(
+        DT_INPUT_X,
+        C_DT_FLOAT,
+        C_DT_FLOAT16),
+);
+
+ASCENDC_TPL_SEL(
+    ASCENDC_TPL_ARGS_SEL(
+        ASCENDC_TPL_DATATYPE_SEL(
+            DT_INPUT_X,
+            C_DT_FLOAT,
+            C_DT_FLOAT16),
+    ),
+);
+
+#endif  // TILING_KEY_GELU_H
