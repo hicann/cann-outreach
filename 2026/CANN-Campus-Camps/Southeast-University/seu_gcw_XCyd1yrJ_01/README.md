@@ -10,6 +10,6 @@
 
 - gcw_XCyd1yrJ (gcw_XCyd1yrJ): 提交者
 
-## 算子: op_01_sub
+## 算子: op_02_mul
 
-本算子实现矢量逐元素减法，采用 8 核并行 + 单核 Tiling 切分策略，每个核按 tileNum = 8 分块、双缓冲流水线搬运计算，支持 half 和 float 两种数据类型，tileLength 计算保证 UB 访问 32B 对齐
+
