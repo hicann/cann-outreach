@@ -10,6 +10,6 @@
 
 - Djangooo (Djangooo): 提交者
 
-## 算子: op_01_sub
+## 算子: op_02_mul
 
-CANN-lesson 1 sub 算子核函数工程
+Lesson 2 mul 自定义算子工程
