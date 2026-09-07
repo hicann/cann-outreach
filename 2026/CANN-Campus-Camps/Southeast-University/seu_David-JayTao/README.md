@@ -2,14 +2,14 @@
 
 ## 团队信息
 
-- 提交者: 刘酝潇_09024211
+- 提交者: David-JayTao
 - 身份: 学生
 - 单位: 东南大学
 
 ## 成员
 
-- 刘酝潇_09024211 (David-JayTao): 提交者
+- David-JayTao (David-JayTao): 提交者
 
-## 算子: op_10_gelu
+## 算子: op_03_relu
 
-gelu
+relu开发捏
