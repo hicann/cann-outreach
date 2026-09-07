@@ -1,0 +1,10 @@
+// Tiling结构体定义的头文件
+#pragma once
+
+#include <cstdint>
+
+struct MulTilingData {
+    // TODO: 考生自行补齐
+    uint32_t totalLength;
+    uint32_t tileNum;
+};
