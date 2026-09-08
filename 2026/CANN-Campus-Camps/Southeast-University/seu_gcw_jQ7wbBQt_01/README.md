@@ -2,14 +2,14 @@
 
 ## 团队信息
 
-- 提交者: 谷泽楷
+- 提交者: gcw_jQ7wbBQt
 - 身份: 学生
 - 单位: 东南大学
 
 ## 成员
 
-- 谷泽楷 (gcw_jQ7wbBQt): 提交者
+- gcw_jQ7wbBQt (gcw_jQ7wbBQt): 提交者
 
-## 算子: op_03_relu
+## 算子: op_04_square
 
 
