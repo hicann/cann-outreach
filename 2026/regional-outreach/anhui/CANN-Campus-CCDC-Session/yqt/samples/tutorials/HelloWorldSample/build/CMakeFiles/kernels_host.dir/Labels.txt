@@ -1,0 +1,13 @@
+# Target labels
+ kernels_host
+# Source files and their labels
+/mnt/class/26EAIHFSIC001/samples/tutorials/HelloWorldSample/build/CMakeFiles/kernels_host
+/mnt/class/26EAIHFSIC001/samples/tutorials/HelloWorldSample/build/CMakeFiles/kernels_host.rule
+/mnt/class/26EAIHFSIC001/samples/tutorials/HelloWorldSample/build/CMakeFiles/kernels_host-complete.rule
+/mnt/class/26EAIHFSIC001/samples/tutorials/HelloWorldSample/build/kernels_host-prefix/src/kernels_host-stamp/kernels_host-build.rule
+/mnt/class/26EAIHFSIC001/samples/tutorials/HelloWorldSample/build/kernels_host-prefix/src/kernels_host-stamp/kernels_host-configure.rule
+/mnt/class/26EAIHFSIC001/samples/tutorials/HelloWorldSample/build/kernels_host-prefix/src/kernels_host-stamp/kernels_host-download.rule
+/mnt/class/26EAIHFSIC001/samples/tutorials/HelloWorldSample/build/kernels_host-prefix/src/kernels_host-stamp/kernels_host-install.rule
+/mnt/class/26EAIHFSIC001/samples/tutorials/HelloWorldSample/build/kernels_host-prefix/src/kernels_host-stamp/kernels_host-mkdir.rule
+/mnt/class/26EAIHFSIC001/samples/tutorials/HelloWorldSample/build/kernels_host-prefix/src/kernels_host-stamp/kernels_host-patch.rule
+/mnt/class/26EAIHFSIC001/samples/tutorials/HelloWorldSample/build/kernels_host-prefix/src/kernels_host-stamp/kernels_host-update.rule
