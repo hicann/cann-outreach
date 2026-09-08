@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/mnt/class/26EAIHFSIC001/wmt/samples/tutorials/HelloWorldSample/build/CMakeFiles/kernels_aiv_device"
+		},
+		{
+			"file" : "/mnt/class/26EAIHFSIC001/wmt/samples/tutorials/HelloWorldSample/build/CMakeFiles/kernels_aiv_device.rule"
+		},
+		{
+			"file" : "/mnt/class/26EAIHFSIC001/wmt/samples/tutorials/HelloWorldSample/build/CMakeFiles/kernels_aiv_device-complete.rule"
+		},
+		{
+			"file" : "/mnt/class/26EAIHFSIC001/wmt/samples/tutorials/HelloWorldSample/build/kernels_aiv_device-prefix/src/kernels_aiv_device-stamp/kernels_aiv_device-build.rule"
+		},
+		{
+			"file" : "/mnt/class/26EAIHFSIC001/wmt/samples/tutorials/HelloWorldSample/build/kernels_aiv_device-prefix/src/kernels_aiv_device-stamp/kernels_aiv_device-configure.rule"
+		},
+		{
+			"file" : "/mnt/class/26EAIHFSIC001/wmt/samples/tutorials/HelloWorldSample/build/kernels_aiv_device-prefix/src/kernels_aiv_device-stamp/kernels_aiv_device-download.rule"
+		},
+		{
+			"file" : "/mnt/class/26EAIHFSIC001/wmt/samples/tutorials/HelloWorldSample/build/kernels_aiv_device-prefix/src/kernels_aiv_device-stamp/kernels_aiv_device-install.rule"
+		},
+		{
+			"file" : "/mnt/class/26EAIHFSIC001/wmt/samples/tutorials/HelloWorldSample/build/kernels_aiv_device-prefix/src/kernels_aiv_device-stamp/kernels_aiv_device-mkdir.rule"
+		},
+		{
+			"file" : "/mnt/class/26EAIHFSIC001/wmt/samples/tutorials/HelloWorldSample/build/kernels_aiv_device-prefix/src/kernels_aiv_device-stamp/kernels_aiv_device-patch.rule"
+		},
+		{
+			"file" : "/mnt/class/26EAIHFSIC001/wmt/samples/tutorials/HelloWorldSample/build/kernels_aiv_device-prefix/src/kernels_aiv_device-stamp/kernels_aiv_device-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"kernels_aiv_device"
+		],
+		"name" : "kernels_aiv_device"
+	}
+}

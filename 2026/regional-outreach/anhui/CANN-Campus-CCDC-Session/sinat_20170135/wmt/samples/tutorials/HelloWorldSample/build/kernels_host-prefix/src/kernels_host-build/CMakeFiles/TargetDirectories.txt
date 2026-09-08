@@ -1,0 +1,7 @@
+/mnt/class/26EAIHFSIC001/wmt/samples/tutorials/HelloWorldSample/build/kernels_host-prefix/src/kernels_host-build/CMakeFiles/host_bisheng_obj.dir
+/mnt/class/26EAIHFSIC001/wmt/samples/tutorials/HelloWorldSample/build/kernels_host-prefix/src/kernels_host-build/CMakeFiles/edit_cache.dir
+/mnt/class/26EAIHFSIC001/wmt/samples/tutorials/HelloWorldSample/build/kernels_host-prefix/src/kernels_host-build/CMakeFiles/rebuild_cache.dir
+/mnt/class/26EAIHFSIC001/wmt/samples/tutorials/HelloWorldSample/build/kernels_host-prefix/src/kernels_host-build/CMakeFiles/list_install_components.dir
+/mnt/class/26EAIHFSIC001/wmt/samples/tutorials/HelloWorldSample/build/kernels_host-prefix/src/kernels_host-build/CMakeFiles/install.dir
+/mnt/class/26EAIHFSIC001/wmt/samples/tutorials/HelloWorldSample/build/kernels_host-prefix/src/kernels_host-build/CMakeFiles/install/local.dir
+/mnt/class/26EAIHFSIC001/wmt/samples/tutorials/HelloWorldSample/build/kernels_host-prefix/src/kernels_host-build/CMakeFiles/install/strip.dir

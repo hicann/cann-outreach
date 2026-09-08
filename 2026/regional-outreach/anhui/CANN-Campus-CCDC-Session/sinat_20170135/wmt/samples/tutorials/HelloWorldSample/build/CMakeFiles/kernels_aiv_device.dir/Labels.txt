@@ -1,0 +1,13 @@
+# Target labels
+ kernels_aiv_device
+# Source files and their labels
+/mnt/class/26EAIHFSIC001/wmt/samples/tutorials/HelloWorldSample/build/CMakeFiles/kernels_aiv_device
+/mnt/class/26EAIHFSIC001/wmt/samples/tutorials/HelloWorldSample/build/CMakeFiles/kernels_aiv_device.rule
+/mnt/class/26EAIHFSIC001/wmt/samples/tutorials/HelloWorldSample/build/CMakeFiles/kernels_aiv_device-complete.rule
+/mnt/class/26EAIHFSIC001/wmt/samples/tutorials/HelloWorldSample/build/kernels_aiv_device-prefix/src/kernels_aiv_device-stamp/kernels_aiv_device-build.rule
+/mnt/class/26EAIHFSIC001/wmt/samples/tutorials/HelloWorldSample/build/kernels_aiv_device-prefix/src/kernels_aiv_device-stamp/kernels_aiv_device-configure.rule
+/mnt/class/26EAIHFSIC001/wmt/samples/tutorials/HelloWorldSample/build/kernels_aiv_device-prefix/src/kernels_aiv_device-stamp/kernels_aiv_device-download.rule
+/mnt/class/26EAIHFSIC001/wmt/samples/tutorials/HelloWorldSample/build/kernels_aiv_device-prefix/src/kernels_aiv_device-stamp/kernels_aiv_device-install.rule
+/mnt/class/26EAIHFSIC001/wmt/samples/tutorials/HelloWorldSample/build/kernels_aiv_device-prefix/src/kernels_aiv_device-stamp/kernels_aiv_device-mkdir.rule
+/mnt/class/26EAIHFSIC001/wmt/samples/tutorials/HelloWorldSample/build/kernels_aiv_device-prefix/src/kernels_aiv_device-stamp/kernels_aiv_device-patch.rule
+/mnt/class/26EAIHFSIC001/wmt/samples/tutorials/HelloWorldSample/build/kernels_aiv_device-prefix/src/kernels_aiv_device-stamp/kernels_aiv_device-update.rule
