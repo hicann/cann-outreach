@@ -1,0 +1,357 @@
+#ifndef SQUARE_H
+#define SQUARE_H
+
+#include "kernel_operator.h"
+#include "kernel_tiling/kernel_tiling.h"
+#include "square_tiling_data.h"
+#include "square_tiling_key.h"
+
+
+
+namespace NsSquare {
+
+
+using namespace AscendC;
+
+
+
+constexpr int32_t BUFFER_NUM=2;
+
+
+
+template<typename T>
+class Square
+{
+
+public:
+
+
+__aicore__ inline Square(){}
+
+
+__aicore__ inline void Init(
+    GM_ADDR x,
+    GM_ADDR y,
+    const SquareTilingData* tilingData);
+
+
+
+__aicore__ inline void Process();
+
+
+
+private:
+
+
+__aicore__ inline void CopyIn(
+    int64_t offset,
+    int64_t len);
+
+
+
+__aicore__ inline void Compute(
+    int64_t len);
+
+
+
+__aicore__ inline void CopyOut(
+    int64_t offset,
+    int64_t len);
+
+
+
+private:
+
+
+TPipe pipe;
+
+
+
+TQue<
+QuePosition::VECIN,
+BUFFER_NUM>
+inputQueueX;
+
+
+
+TQue<
+QuePosition::VECOUT,
+BUFFER_NUM>
+outputQueueY;
+
+
+
+GlobalTensor<T> inputGMX;
+
+GlobalTensor<T> outputGMY;
+
+
+
+int64_t blockLength_=0;
+
+int64_t ubLength_=0;
+
+int64_t currentLength_=0;
+
+
+};
+
+
+
+template<typename T>
+__aicore__ inline void Square<T>::Init(
+    GM_ADDR x,
+    GM_ADDR y,
+    const SquareTilingData* tilingData)
+{
+
+
+    blockLength_ =
+        tilingData->blockFactor;
+
+
+
+    ubLength_ =
+        tilingData->ubFactor;
+
+
+
+    int64_t blockIdx =
+        GetBlockIdx();
+
+
+
+    int64_t start =
+        blockIdx *
+        blockLength_;
+
+
+
+    int64_t remain =
+        tilingData->totalNum
+        -
+        start;
+
+
+
+    if(remain<=0)
+    {
+        currentLength_=0;
+        return;
+    }
+
+
+
+    currentLength_ =
+        remain < blockLength_
+        ?
+        remain
+        :
+        blockLength_;
+
+
+
+
+    inputGMX.SetGlobalBuffer(
+        (__gm__ T*)x+start,
+        currentLength_);
+
+
+
+    outputGMY.SetGlobalBuffer(
+        (__gm__ T*)y+start,
+        currentLength_);
+
+
+
+
+    pipe.InitBuffer(
+        inputQueueX,
+        BUFFER_NUM,
+        ubLength_*sizeof(T));
+
+
+
+    pipe.InitBuffer(
+        outputQueueY,
+        BUFFER_NUM,
+        ubLength_*sizeof(T));
+
+
+
+}
+
+
+
+template<typename T>
+__aicore__ inline void Square<T>::CopyIn(
+    int64_t offset,
+    int64_t len)
+{
+    LocalTensor<T> xLocal =
+        inputQueueX.AllocTensor<T>();
+
+    // 32B 对齐时走普通 DataCopy 快路径
+    if (len * static_cast<int64_t>(sizeof(T)) % 32 == 0) {
+
+        DataCopy(
+            xLocal,
+            inputGMX[offset],
+            len);
+
+    } else {
+
+        // 尾块：使用 DataCopyPad，避免非 32B 对齐访问问题
+        DataCopyExtParams copyParams{
+            1,
+            static_cast<uint32_t>(len * sizeof(T)),
+            0,
+            0,
+            0
+        };
+
+        // 右侧补 0
+        DataCopyPadExtParams<T> padParams{
+            true,
+            0,
+            0,
+            0
+        };
+
+        DataCopyPad(
+            xLocal,
+            inputGMX[offset],
+            copyParams,
+            padParams);
+    }
+
+    inputQueueX.EnQue(xLocal);
+}
+
+
+
+template<typename T>
+__aicore__ inline void Square<T>::Compute(int64_t len)
+{
+    // 从输入队列取出数据
+    auto xLocal = inputQueueX.DeQue<T>();
+
+    // 分配输出队列的本地张量
+    auto yLocal = outputQueueY.AllocTensor<T>();
+
+    // 平方计算：y = x * x
+    Mul(yLocal, xLocal, xLocal, len);
+
+    // 将结果放入输出队列
+    outputQueueY.EnQue(yLocal);
+
+    // 释放输入队列的本地张量
+    inputQueueX.FreeTensor(xLocal);
+}
+
+
+
+template<typename T>
+__aicore__ inline void Square<T>::CopyOut(
+    int64_t offset,
+    int64_t len)
+{
+    auto yLocal =
+        outputQueueY.DeQue<T>();
+
+    // 32B 对齐时走普通 DataCopy 快路径
+    if (len * static_cast<int64_t>(sizeof(T)) % 32 == 0) {
+
+        DataCopy(
+            outputGMY[offset],
+            yLocal,
+            len);
+
+    } else {
+
+        // 尾块：只写回有效字节
+        DataCopyExtParams copyParams{
+            1,
+            static_cast<uint32_t>(len * sizeof(T)),
+            0,
+            0,
+            0
+        };
+
+        DataCopyPad(
+            outputGMY[offset],
+            yLocal,
+            copyParams);
+    }
+
+    outputQueueY.FreeTensor(yLocal);
+}
+
+
+
+template<typename T>
+__aicore__ inline void Square<T>::Process()
+{
+
+
+    if(currentLength_<=0)
+    {
+        return;
+    }
+
+
+
+    int64_t loop =
+        (currentLength_
+        +
+        ubLength_
+        -
+        1)
+        /
+        ubLength_;
+
+
+
+    for(int64_t i=0;i<loop;i++)
+    {
+
+
+        int64_t offset =
+            i*ubLength_;
+
+
+
+        int64_t len =
+            (offset+ubLength_
+            >
+            currentLength_)
+            ?
+            currentLength_-offset
+            :
+            ubLength_;
+
+
+
+        CopyIn(
+            offset,
+            len);
+
+
+
+        Compute(
+            len);
+
+
+
+        CopyOut(
+            offset,
+            len);
+
+    }
+
+}
+
+
+
+}
+#endif
