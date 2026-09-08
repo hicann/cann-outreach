@@ -1,0 +1,13 @@
+# Target labels
+ kernels_aic_device
+# Source files and their labels
+/mnt/class/26EAIHFSIC001/zhaihaisheng/samples/tutorials/HelloWorldSample/build/CMakeFiles/kernels_aic_device
+/mnt/class/26EAIHFSIC001/zhaihaisheng/samples/tutorials/HelloWorldSample/build/CMakeFiles/kernels_aic_device.rule
+/mnt/class/26EAIHFSIC001/zhaihaisheng/samples/tutorials/HelloWorldSample/build/CMakeFiles/kernels_aic_device-complete.rule
+/mnt/class/26EAIHFSIC001/zhaihaisheng/samples/tutorials/HelloWorldSample/build/kernels_aic_device-prefix/src/kernels_aic_device-stamp/kernels_aic_device-build.rule
+/mnt/class/26EAIHFSIC001/zhaihaisheng/samples/tutorials/HelloWorldSample/build/kernels_aic_device-prefix/src/kernels_aic_device-stamp/kernels_aic_device-configure.rule
+/mnt/class/26EAIHFSIC001/zhaihaisheng/samples/tutorials/HelloWorldSample/build/kernels_aic_device-prefix/src/kernels_aic_device-stamp/kernels_aic_device-download.rule
+/mnt/class/26EAIHFSIC001/zhaihaisheng/samples/tutorials/HelloWorldSample/build/kernels_aic_device-prefix/src/kernels_aic_device-stamp/kernels_aic_device-install.rule
+/mnt/class/26EAIHFSIC001/zhaihaisheng/samples/tutorials/HelloWorldSample/build/kernels_aic_device-prefix/src/kernels_aic_device-stamp/kernels_aic_device-mkdir.rule
+/mnt/class/26EAIHFSIC001/zhaihaisheng/samples/tutorials/HelloWorldSample/build/kernels_aic_device-prefix/src/kernels_aic_device-stamp/kernels_aic_device-patch.rule
+/mnt/class/26EAIHFSIC001/zhaihaisheng/samples/tutorials/HelloWorldSample/build/kernels_aic_device-prefix/src/kernels_aic_device-stamp/kernels_aic_device-update.rule
