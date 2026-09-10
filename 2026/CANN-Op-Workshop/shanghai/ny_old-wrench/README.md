@@ -10,6 +10,6 @@
 
 - old-wrench (old-wrench): 提交者
 
-## 算子: op_02_mul
+## 算子: op_03_relu
 
-【上海站】算子实操- 矢量乘法：z = x * y
+【上海站】算子实操-  relu 算子
