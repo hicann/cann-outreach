@@ -1,2 +1,0 @@
-/mnt/class/26EAIHFSIC001/wmt/samples/tutorials/HelloWorldSample/build/kernels_aic_device-prefix/src/kernels_aic_device-build/CMakeFiles/edit_cache.dir
-/mnt/class/26EAIHFSIC001/wmt/samples/tutorials/HelloWorldSample/build/kernels_aic_device-prefix/src/kernels_aic_device-build/CMakeFiles/rebuild_cache.dir

@@ -1,3 +1,0 @@
-/mnt/class/26EAIHFSIC001/samples/tutorials/HelloWorldSample/out/lib/libkernels.a
-/mnt/class/26EAIHFSIC001/samples/tutorials/HelloWorldSample/out/include/kernels/aclrtlaunch_triple_chevrons_func.h
-/mnt/class/26EAIHFSIC001/samples/tutorials/HelloWorldSample/out/include/kernels/aclrtlaunch_hello_world.h

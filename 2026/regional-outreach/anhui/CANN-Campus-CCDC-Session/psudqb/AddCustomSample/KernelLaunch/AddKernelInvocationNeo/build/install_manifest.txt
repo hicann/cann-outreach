@@ -1,2 +1,0 @@
-/mnt/class/26EAIHFSIC001/sk_test/samples/tutorials/AddCustomSample/KernelLaunch/AddKernelInvocationNeo/out/lib/libascendc_kernels_cpu.so
-/mnt/class/26EAIHFSIC001/sk_test/samples/tutorials/AddCustomSample/KernelLaunch/AddKernelInvocationNeo/out/bin/ascendc_kernels_bbit
