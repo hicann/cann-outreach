@@ -20,23 +20,6 @@
 
 using namespace std;
 
-static uint16_t FloatToHalf(float f) {
-    uint32_t bits;
-    memcpy(&bits, &f, sizeof(float));
-    uint32_t sign = (bits >> 16) & 0x8000;
-    int32_t exp = ((bits >> 23) & 0xff) - 127 + 15;
-    uint32_t mant = (bits >> 13) & 0x3ff;
-    if (exp <= 0) return sign;
-    if (exp >= 31) return sign | 0x7c00;
-    return sign | (exp << 10) | mant;
-}
-
-static uint16_t FloatToBFloat16(float f) {
-    uint32_t bits;
-    memcpy(&bits, &f, sizeof(float));
-    return (uint16_t)(bits >> 16);
-}
-
 class AddKernelTest : public testing::Test {
 protected:
     static void SetUpTestCase()

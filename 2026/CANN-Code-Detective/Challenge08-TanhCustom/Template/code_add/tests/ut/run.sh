@@ -15,7 +15,9 @@ if [ -z "$ASCEND_HOME_PATH" ]; then
     export ASCEND_HOME_PATH=/home/developer/Ascend/cann
 fi
 
-export LD_LIBRARY_PATH=${ASCEND_HOME_PATH}/lib64:${LD_LIBRARY_PATH}
+# tikicpulib（CPU 仿真）运行依赖的库路径：
+#   libpem_davinci.so 等仿真库在 9.0 x86 布局下位于 x86_64-linux/simulator/dav_2201（910B）/dav_1001（310）
+export LD_LIBRARY_PATH=${ASCEND_HOME_PATH}/lib64:${ASCEND_HOME_PATH}/compiler/lib64:${ASCEND_HOME_PATH}/tools/tikicpulib/lib:${ASCEND_HOME_PATH}/tools/tikicpulib/lib/Ascend910B1:${ASCEND_HOME_PATH}/x86_64-linux/simulator/dav_2201/lib:${ASCEND_HOME_PATH}/x86_64-linux/simulator/dav_1001/lib:${ASCEND_HOME_PATH}/aarch64-linux/simulator/Ascend910B1/lib:${ASCEND_HOME_PATH}/x86_64-linux/lib64:${ASCEND_HOME_PATH}/aarch64-linux/lib64:${LD_LIBRARY_PATH}
 
 if [ "$CLEAN_BUILD" = true ]; then
     rm -rf "${BUILD_DIR}"

@@ -4,9 +4,6 @@
  */
 
 #include "register/op_def_registry.h"
-#include "op_common/log/log.h"
-#include "op_common/op_host/util/math_util.h"
-#include "op_common/op_host/util/platform_util.h"
 #include "../op_kernel/add_tiling_data.h"
 #include "../op_kernel/add_tiling_key.h"
 
@@ -25,7 +22,7 @@ static ge::graphStatus AddTilingFunc(gert::TilingContext* context)
     AddTilingData* tiling = context->GetTilingData<AddTilingData>();
     const gert::StorageShape* x1_shape = context->GetInputShape(0);
     int32_t data_sz = 1;
-    for (int i = 0; i < x1_shape->GetStorageShape().GetDimNum(); i++) {
+    for (size_t i = 0; i < x1_shape->GetStorageShape().GetDimNum(); i++) {
         data_sz *= x1_shape->GetStorageShape().GetDim(i);
     }
     tiling->totalLength = data_sz;

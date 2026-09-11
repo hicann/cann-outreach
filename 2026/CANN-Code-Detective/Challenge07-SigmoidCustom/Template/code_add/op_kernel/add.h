@@ -15,6 +15,8 @@ namespace NsAdd {
 
 using namespace AscendC;
 
+constexpr int32_t BUFFER_NUM = 2; // 每队列 buffer 块数（双缓冲）
+
 template <typename DT_X>
 class Add {
 public:
@@ -26,20 +28,21 @@ public:
         this->blockLength = tilingData->totalLength / AscendC::GetBlockNum();
         this->tileNum = tilingData->tileNum;
         // 单次处理的元素数（每块长度）
-        this->tileLength = this->blockLength / tileNum ;
+        this->tileLength = this->blockLength / tileNum / BUFFER_NUM;
         // 设置每个核的 Global Memory 起始地址（关键的多核切分逻辑）
         inputGMX.SetGlobalBuffer((__gm__ DT_X*)x + this->blockLength * AscendC::GetBlockIdx(), this->blockLength);
         inputGMY.SetGlobalBuffer((__gm__ DT_X*)y + this->blockLength * AscendC::GetBlockIdx(), this->blockLength);
         outputGMZ.SetGlobalBuffer((__gm__ DT_X*)z + this->blockLength * AscendC::GetBlockIdx(), this->blockLength);
         // 为队列分配 UB 内存
-        pipe.InitBuffer(inputQueueX, 1, this->tileLength * sizeof(DT_X));
-        pipe.InitBuffer(inputQueueY, 1, this->tileLength * sizeof(DT_X));
-        pipe.InitBuffer(outputQueueZ, 1, this->tileLength * sizeof(DT_X));
+        pipe.InitBuffer(inputQueueX, BUFFER_NUM, this->tileLength * sizeof(DT_X));
+        pipe.InitBuffer(inputQueueY, BUFFER_NUM, this->tileLength * sizeof(DT_X));
+        pipe.InitBuffer(outputQueueZ, BUFFER_NUM, this->tileLength * sizeof(DT_X));
     }
 
     __aicore__ inline void Process()
     {
-        int32_t loopCount = this->tileNum;
+        // 循环次数 = tileNum × BUFFER_NUM（tileLength 已按 BUFFER_NUM 折半）
+        int32_t loopCount = this->tileNum * BUFFER_NUM;
         for (int32_t i = 0; i < loopCount; i++) {
             CopyIn(i);
             Compute();

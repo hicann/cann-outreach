@@ -19,6 +19,15 @@ add_definitions(
     -DDTYPE_Y=float
 )
 
+# 按实际存在的目录自动适配 host 侧路径：aarch64-linux / x86_64-linux（8.x 及部分 9.x 布局）/ host-libs（9.x 新布局）
+if(EXISTS $ENV{ASCEND_HOME_PATH}/aarch64-linux)
+    set(OP_HOST_LIB_PATH $ENV{ASCEND_HOME_PATH}/aarch64-linux)
+elseif(EXISTS $ENV{ASCEND_HOME_PATH}/x86_64-linux)
+    set(OP_HOST_LIB_PATH $ENV{ASCEND_HOME_PATH}/x86_64-linux)
+else()
+    set(OP_HOST_LIB_PATH $ENV{ASCEND_HOME_PATH}/host-libs)
+endif()
+
 set(UT_COMMON_DIR ${CMAKE_CURRENT_SOURCE_DIR}/common)
 set(UT_COMMON_SRCS
     ${UT_COMMON_DIR}/infershape_case_executor.cpp
@@ -30,21 +39,24 @@ set(UT_COMMON_SRCS
 set(UT_COMMON_INCLUDE_DIRS
     ${UT_COMMON_DIR}
     $ENV{ASCEND_HOME_PATH}/include
-    $ENV{ASCEND_HOME_PATH}/aarch64-linux/include
-    $ENV{ASCEND_HOME_PATH}/aarch64-linux/include/base
-    $ENV{ASCEND_HOME_PATH}/aarch64-linux/include/base/context_builder
-    $ENV{ASCEND_HOME_PATH}/aarch64-linux/asc/include
-    $ENV{ASCEND_HOME_PATH}/aarch64-linux/asc/include/tiling
-    $ENV{ASCEND_HOME_PATH}/aarch64-linux/pkg_inc
-    $ENV{ASCEND_HOME_PATH}/aarch64-linux/pkg_inc/op_common
-    $ENV{ASCEND_HOME_PATH}/aarch64-linux/pkg_inc/base
-    $ENV{ASCEND_HOME_PATH}/aarch64-linux/pkg_inc/exe_graph
-    $ENV{ASCEND_HOME_PATH}/aarch64-linux/pkg_inc/graph
+    ${OP_HOST_LIB_PATH}/include
+    ${OP_HOST_LIB_PATH}/include/base
+    ${OP_HOST_LIB_PATH}/include/base/context_builder
+    # CANN 9.x 中 context_builder 头文件位于 CANN 根目录的顶层 include 下
+    $ENV{ASCEND_HOME_PATH}/include/base
+    $ENV{ASCEND_HOME_PATH}/include/base/context_builder
+    ${OP_HOST_LIB_PATH}/asc/include
+    ${OP_HOST_LIB_PATH}/asc/include/tiling
+    ${OP_HOST_LIB_PATH}/pkg_inc
+    ${OP_HOST_LIB_PATH}/pkg_inc/op_common
+    ${OP_HOST_LIB_PATH}/pkg_inc/base
+    ${OP_HOST_LIB_PATH}/pkg_inc/exe_graph
+    ${OP_HOST_LIB_PATH}/pkg_inc/graph
 )
 
 set(UT_COMMON_LIB_DIRS
     $ENV{ASCEND_HOME_PATH}/lib64
-    $ENV{ASCEND_HOME_PATH}/aarch64-linux/lib64
+    ${OP_HOST_LIB_PATH}/lib64
 )
 
 add_compile_options(

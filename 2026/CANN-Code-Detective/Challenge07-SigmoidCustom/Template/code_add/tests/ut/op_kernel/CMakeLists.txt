@@ -88,7 +88,8 @@ target_link_libraries(${UT_EXE} PRIVATE
 )
 
 set_target_properties(${UT_EXE} PROPERTIES
-    INSTALL_RPATH "$ORIGIN;${CANN_HOME}/lib64;${CANN_HOME}/tools/tikicpulib/lib;${CANN_HOME}/tools/tikicpulib/lib/Ascend910B1;${CANN_HOME}/aarch64-linux/simulator/Ascend910B1/lib"
+    # 8.x：aarch64-linux/simulator/Ascend910B1/lib；9.x x86：x86_64-linux/simulator/dav_2201（910B 架构 2201）/dav_1001（310）
+    INSTALL_RPATH "$ORIGIN;${CANN_HOME}/lib64;${CANN_HOME}/tools/tikicpulib/lib;${CANN_HOME}/tools/tikicpulib/lib/Ascend910B1;${CANN_HOME}/aarch64-linux/simulator/Ascend910B1/lib;${CANN_HOME}/x86_64-linux/simulator/dav_2201/lib;${CANN_HOME}/x86_64-linux/simulator/dav_1001/lib;${CANN_HOME}/x86_64-linux/lib64;${CANN_HOME}/aarch64-linux/lib64"
     BUILD_WITH_INSTALL_RPATH TRUE
 )
 
