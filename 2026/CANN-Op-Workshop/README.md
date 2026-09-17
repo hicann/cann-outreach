@@ -7,6 +7,7 @@
 ```
 CANN-Op-Workshop/
 ├── README.md                             # 本文档
+├── slides/                               # 活动slide
 ├── shanghai/                             # 上海地域活动
 │   └── {gitcode用户名}/                  # 开发者gitcode账号
 │       └── {任务名称}/                    # 贡献内容
