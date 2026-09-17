@@ -1,0 +1,22 @@
+[
+  {
+    "op": "InplaceRsqrt",
+    "input_desc": [
+      {
+        "name": "self",
+        "param_type": "required",
+        "format": ["ND"],
+        "type": ["float16"]
+      }
+    ],
+    "output_desc": [
+      {
+        "name": "self",
+        "param_type": "required",
+        "format": ["ND"],
+        "type": ["float16"]
+      }
+    ],
+    "attr": []
+  }
+]
