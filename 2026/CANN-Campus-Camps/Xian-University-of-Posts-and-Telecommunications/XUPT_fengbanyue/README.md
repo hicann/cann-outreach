@@ -2,14 +2,14 @@
 
 ## 团队信息
 
-- 提交者: 方邦玉
+- 提交者: fengbanyue
 - 身份: 学生
 - 单位: 西安邮电大学
 
 ## 成员
 
-- 方邦玉 (fengbanyue): 提交者
+- fengbanyue (fengbanyue): 提交者
 
-## 算子: op_03_relu
+## 算子: op_01_sub
 
 
