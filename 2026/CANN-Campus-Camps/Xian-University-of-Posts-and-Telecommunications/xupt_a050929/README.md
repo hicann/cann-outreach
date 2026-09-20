@@ -10,6 +10,6 @@
 
 - a050929 (a050929): 提交者
 
-## 算子: op_10_add
+## 算子: op_02_gelu
 
-本算子基于Ascend C语言开发，在昇腾NPU上实现矢量加法运算，计算公式为$\(z=x+y\)$。算子分为Host侧与Device侧，Host侧完成Tiling分块计算、输出张量形状与数据类型推导；Device侧通过Init、CopyIn、Compute、CopyOut、Process接口，将全局内存中的输入张量搬运至片上存储，调用矢量加法指令完成计算，再将结果写回全局内存，最终在CANNTJudge平台完成算子功能验证。
+本算子基于Ascend C语言开发，在昇腾NPU上实现GELU激活函数运算，算子分为Host侧与Device侧；Host侧完成Tiling分块计算、输出形状与数据类型推导，Device侧负责将全局内存的输入张量搬运至片上存储，调用矢量指令完成GELU公式计算，再将结果写回全局内存，并在CANNTJudge平台完成功能验证。
