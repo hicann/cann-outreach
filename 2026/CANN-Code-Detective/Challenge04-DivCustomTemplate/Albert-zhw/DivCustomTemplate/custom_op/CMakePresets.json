@@ -1,0 +1,28 @@
+{
+    "version": 3,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 14,
+        "patch": 1
+    },
+    "configurePresets": [
+        {
+            "name": "ascend910b1",
+            "cacheVariables": {
+                "COMPILE_MODE": "x86_64",
+                "PLATFORM": "ascend910b1",
+                "CMAKE_INSTALL_PREFIX": "",
+                "ENABLE_BINARY": "ON"
+            }
+        },
+        {
+            "name": "ascend910b3",
+            "cacheVariables": {
+                "COMPILE_MODE": "x86_64",
+                "PLATFORM": "ascend910b3",
+                "CMAKE_INSTALL_PREFIX": "",
+                "ENABLE_BINARY": "ON"
+            }
+        }
+    ]
+}
