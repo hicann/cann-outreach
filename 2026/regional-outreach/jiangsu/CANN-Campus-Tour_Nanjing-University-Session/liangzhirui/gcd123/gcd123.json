@@ -1,0 +1,40 @@
+[
+    {
+        "op": "Gcd123",
+        "language": "cpp",
+        "input_desc": [
+            {
+                "name": "self",
+                "param_type": "required",
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "fp16"
+                ]
+            },
+            {
+                "name": "other",
+                "param_type": "required",
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "fp16"
+                ]
+            }
+        ],
+        "output_desc": [
+            {
+                "name": "out",
+                "param_type": "required",
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "fp16"
+                ]
+            }
+        ]
+    }
+]

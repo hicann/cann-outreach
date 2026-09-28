@@ -1,0 +1,28 @@
+{
+    "case_name": "Test_Gcd123_broadcast_001",
+    "input": [
+        {
+            "name": "self",
+            "shape": [1, 3, 4, 1],
+            "format": "ND",
+            "dtype": "float16",
+            "fileName": "./test_data/self.bin"
+        },
+        {
+            "name": "other",
+            "shape": [2, 1, 4, 8],
+            "format": "ND",
+            "dtype": "float16",
+            "fileName": "./test_data/other.bin"
+        }
+    ],
+    "output": [
+        {
+            "name": "out",
+            "shape": [2, 3, 4, 8],
+            "format": "ND",
+            "dtype": "float16",
+            "fileName": "./test_data/out.bin"
+        }
+    ]
+}

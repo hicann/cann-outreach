@@ -1,0 +1,3 @@
+self_shape=[2, 2, 2, 16]
+other_shape=[2, 2, 2, 16]
+out_shape=[2, 2, 2, 16]
