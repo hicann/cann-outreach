@@ -1,0 +1,30 @@
+[
+  {
+    "op": "Atanh",
+    "language": "cpp",
+    "input": [
+      {
+        "name": "x",
+        "paramType": "required",
+        "format": ["ND"],
+        "type": ["float16"]
+      }
+    ],
+    "output": [
+      {
+        "name": "y",
+        "paramType": "required",
+        "format": ["ND"],
+        "type": ["float16"]
+      }
+    ],
+    "impl": {
+      "ascendc": {
+        "op_name": "atanh",
+        "kernel_name": "atanh_kernel",
+        "tiling": "AtanhTilingFunc",
+        "tiling_data": "AtanhTilingData"
+      }
+    }
+  }
+]
