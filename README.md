@@ -2,7 +2,7 @@
 
 欢迎来到 CANN 社区！
 
-## cann-outreach简介
+## cann-outreach 简介
 本仓库用于 CANN 昇腾产业各类活动与会议的客户体验作品提交和展示。
 
 ## 目录结构
@@ -47,7 +47,7 @@
         └── ...任务代码
 ```
 
-## 提交Issue/处理Issue任务
+## 提交 Issue / 处理 Issue 任务
 CANN 社区基于 GitCode 的 Issue 管理功能，完整记录[用户行为准则](https://gitcode.com/cann/community/blob/master/contributor/code-of-conduct.md)。参与社区贡献前，请仔细阅读并遵守社区用户行为准则。您在 CANN 社区的所有活动（包括但不限于发表评论、提交 Issue/PR/文档等）均需遵循此准则。
 
 ## 签署 CLA

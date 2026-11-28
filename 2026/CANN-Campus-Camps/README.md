@@ -1,20 +1,20 @@
-# CANN训练营2026（高校专场）
+# CANN 训练营 2026（高校专场）
 
 ## 活动介绍
-为支撑高校开发者更好地学习和使用昇腾AI平台，CANN社区联合各高校开展CANN训练营（高校专场）活动，面向不同学期、不同场景的高校开发者，覆盖各类学校，助力开发者快速成长。
+为支撑高校开发者更好地学习和使用昇腾 AI 平台，CANN 社区联合各高校开展 CANN 训练营（高校专场）活动，面向不同学期、不同场景的高校开发者，覆盖各类学校，助力开发者快速成长。
 
 ## 目录结构
 ```
 CANN-Campus-Camps/
 ├── README.md                                                 # 本文档
 ├── Southeast-University/                                     # 东南大学
-│       └── {gitcode用户名}/                                   # 开发者gitcode账号
+│       └── {gitcode用户名}/                                   # 开发者 gitcode 账号
 │           └── {任务名称}/                                    # 贡献内容
 ├── Xian-University-of-Posts-and-Telecommunications/          # 西安邮电大学
-│       └── {gitcode用户名}/                                   # 开发者gitcode账号
+│       └── {gitcode用户名}/                                   # 开发者 gitcode 账号
 │           └── {任务名称}/                                    # 贡献内容
 └── Beijing-University-of-Posts-and-Telecommunications/       # 北京邮电大学
-        └── {gitcode用户名}/                                   # 开发者gitcode账号
+        └── {gitcode用户名}/                                   # 开发者 gitcode 账号
             └── {任务名称}/                                    # 贡献内容
 ```
 

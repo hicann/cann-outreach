@@ -20,11 +20,11 @@ Y = ReLU(A @ B + X)
 | 核函数 | `matmul_add_relu_kernel(gm_a, gm_b, gm_x, gm_y)` |
 | 启动参数 | `block_num=1` |
 
-因为256x256x256的矩阵乘规模较小，使用`block_num=1` 启动一个计算核心(AICORE)处理。
+因为 256×256×256 的矩阵乘规模较小，使用`block_num=1` 启动一个计算核心(AICORE)处理。
 
 ## 答题准备
 
-进入https://hidevlab.huawei.com/home，按下面步骤获取环境：
+进入 https://hidevlab.huawei.com/home，按下面步骤获取环境：
 
 ![image.png](https://raw.gitcode.com/weixin_42818618/picture0/raw/main/20260928173518453.png)
 
@@ -65,15 +65,15 @@ L1 装入完整的 A/B；L0 按 K=64 分成四次搬运和累加。L0C 的 `256�
 
 接口参考：
 
-- 数据搬运与分片：[tla.copy](https://catlass.readthedocs.io/zh-cn/latest/4_CATLASS_DSL/api/kernel_api_reference/#copy)、[tla.tile_view](https://catlass.readthedocs.io/zh-cn/latest/4_CATLASS_DSL/api/kernel_api_reference/#tile_view)。
-- 矩阵乘累加：[tla.mmad](https://catlass.readthedocs.io/zh-cn/latest/4_CATLASS_DSL/api/kernel_api_reference/#mmad)。
+- 数据搬运与分片：[tla.copy](https://catlass.readthedocs.io/zh-cn/latest/4_CATLASS_Python/api/language/data_movement/#tlacopy)、[tla.tile_view](https://catlass.readthedocs.io/zh-cn/latest/4_CATLASS_Python/api/language/layout_tensor/#tlatile_view)。
+- 矩阵乘累加：[tla.mmad](https://catlass.readthedocs.io/zh-cn/latest/4_CATLASS_Python/api/language/matrix/#tlammad)。
 - L0C→UB 分发：[CopyL0C2DstParams 与 L0C2UBMode.SPLIT_M](https://gitcode.com/cann/catlass/blob/v2.1.0/python/tla_dsl/catlass/params.py)。
-- Vector 后处理：[Tensor.load](https://catlass.readthedocs.io/zh-cn/latest/4_CATLASS_DSL/api/kernel_api_reference/#tensorload)、[tla.add](https://catlass.readthedocs.io/zh-cn/latest/4_CATLASS_DSL/api/kernel_api_reference/#add)、[tla.max](https://catlass.readthedocs.io/zh-cn/latest/4_CATLASS_DSL/api/kernel_api_reference/#max)、[Tensor.store](https://catlass.readthedocs.io/zh-cn/latest/4_CATLASS_DSL/api/kernel_api_reference/#tensorstore)。
-- 核内同步：[tla.mutex](https://catlass.readthedocs.io/zh-cn/latest/4_CATLASS_DSL/api/kernel_api_reference/#mutex)、[mutex.lock](https://catlass.readthedocs.io/zh-cn/latest/4_CATLASS_DSL/api/kernel_api_reference/#mutex_lock)、[mutex.unlock](https://catlass.readthedocs.io/zh-cn/latest/4_CATLASS_DSL/api/kernel_api_reference/#mutex_unlock)。
+- Vector 后处理：[Tensor.load](https://catlass.readthedocs.io/zh-cn/latest/4_CATLASS_Python/api/language/data_movement/#tlatensorload)、[tla.add](https://catlass.readthedocs.io/zh-cn/latest/4_CATLASS_Python/api/language/simd/arithmetic/#tlaadd)、[tla.max](https://catlass.readthedocs.io/zh-cn/latest/4_CATLASS_Python/api/language/simd/arithmetic/#tlamax)、[Tensor.store](https://catlass.readthedocs.io/zh-cn/latest/4_CATLASS_Python/api/language/data_movement/#tlatensorstore)。
+- 核内同步：[tla.mutex](https://catlass.readthedocs.io/zh-cn/latest/4_CATLASS_Python/api/language/sync/#tlamutex)、[mutex.lock](https://catlass.readthedocs.io/zh-cn/latest/4_CATLASS_Python/api/language/sync/#tlamutex_lock)、[mutex.unlock](https://catlass.readthedocs.io/zh-cn/latest/4_CATLASS_Python/api/language/sync/#tlamutex_unlock)。
 
 每处 `TODO` 的上下边界均为独立一行 `# --------------------------------`。请按其中文注释，在两条分隔线之间用代码替换 `pass`；分块、同步和最终 GM 写回框架已给出。ReLU 不能在加 `X` 之前执行。
 
-核内缓冲的访问顺序统一由 `tla.mutex` 的 `lock` / `unlock` 管理。v2.1.0 中 AIC 与 AIV 使用独立的 mutex ID 空间，因此 Cube→Vector 仍通过 `cross_flag` 通知数据就绪，参见[核内与跨核同步的范围说明](https://catlass.readthedocs.io/zh-cn/latest/4_CATLASS_DSL/dsl_development/feature_development/auto_sync_design/)。验证脚本中的 `torch.npu.synchronize()` 用于让主机等待整个核函数执行完成。
+核内缓冲的访问顺序统一由 `tla.mutex` 的 `lock` / `unlock` 管理。v2.1.0 中 AIC 与 AIV 使用独立的 mutex ID 空间，因此 Cube→Vector 仍通过 `cross_flag` 通知数据就绪，参见[核内与跨核同步的范围说明](https://catlass.readthedocs.io/zh-cn/latest/4_CATLASS_Python/dsl_development/feature_development/auto_sync_design/)。验证脚本中的 `torch.npu.synchronize()` 用于让主机等待整个核函数执行完成。
 
 每个 AIV 的 UB 使用 128 KiB 存放累加结果、64 KiB 存放 X 分片，合计 192 KiB。
 
@@ -93,7 +93,7 @@ L1 装入完整的 A/B；L0 按 K=64 分成四次搬运和累加。L0C 的 `256�
 source /usr/local/Ascend/cann/set_env.sh
 ```
 
-可以用`uname -a`看下机器CPU架构，下面两个步骤选符合的一个执行(hidevlab环境应该为x86)：
+可以用 `uname -a` 看下机器 CPU 架构，下面两个步骤选符合的一个执行（hidevlab 环境应该为 x86）：
 
 **x86_64：**安装 `torch==2.9.0+cpu`。这里通过[阿里云 PyTorch CPU wheel 镜像](https://mirrors.aliyun.com/pytorch-wheels/cpu/)获取该 wheel；也可使用[PyTorch 官方 CPU wheel 源](https://download.pytorch.org/whl/cpu/torch/)（需能访问该站点）。
 
@@ -117,7 +117,7 @@ python -c "import torch, torch_npu, catlass; print(torch.__version__, torch_npu.
 python -m catlass.bc_compile
 ```
 
-本题验证脚本用 `torch` 生成输入和计算参考结果，用 `torch-npu` 提供 NPU 后端。x86_64 版 `torch-npu 2.9.0.post6` 要求 `torch==2.9.0+cpu`；`+cpu` 表示 PyTorch 包不附带 CUDA 组件，NPU 后端仍由 `torch-npu` 提供。`PyYAML` 提供 `torch_npu` 导入时需要的 `yaml` 模块。`catlass.bc_compile` 会生成 BC（LLVM bitcode）文件，其中包含数据搬运、矩阵乘等底层实现，学员无需修改。如需自行构建 wheel，参见[Catlass Python 官方环境准备与构建](https://catlass.readthedocs.io/zh-cn/latest/4_CATLASS_DSL/dsl_development/build_guide/)。
+本题验证脚本用 `torch` 生成输入和计算参考结果，用 `torch-npu` 提供 NPU 后端。x86_64 版 `torch-npu 2.9.0.post6` 要求 `torch==2.9.0+cpu`；`+cpu` 表示 PyTorch 包不附带 CUDA 组件，NPU 后端仍由 `torch-npu` 提供。`PyYAML` 提供 `torch_npu` 导入时需要的 `yaml` 模块。`catlass.bc_compile` 会生成 BC（LLVM bitcode）文件，其中包含数据搬运、矩阵乘等底层实现，学员无需修改。如需自行构建 wheel，参见[Catlass Python 官方环境准备与构建](https://catlass.readthedocs.io/zh-cn/latest/4_CATLASS_Python/dsl_development/build_guide/)。
 
 
 

@@ -28,7 +28,7 @@ cp -r Template/DivCustom <你的用户名>/DivCustom
 
 - [div_custom.asc](./Template/DivCustom/div_custom.asc) —— 算子实现骨架，按照代码中的 `// 请补充……` 注释提示完成实现
 - [CMakeLists.txt](./Template/DivCustom/CMakeLists.txt) —— 构建脚本，无需修改
-- [run.sh](./Template/DivCustom/run.sh) —— 编译运行脚本，可不用修改，如有修改CANN路径等特殊需求可根据实际情况修改
+- [run.sh](./Template/DivCustom/run.sh) —— 编译运行脚本，可不用修改，如有修改 CANN 路径等特殊需求可根据实际情况修改
 
 ## 你需要完成的内容
 
@@ -41,7 +41,7 @@ cp -r Template/DivCustom <你的用户名>/DivCustom
 5. **`KernelDiv::CopyOut`** —— 出队，将结果从 UB 搬回 GM。
 6. **私有成员变量** —— 定义 `TPipe`、`TQue`、`TBuf` 等。
 7. **`div_custom` kernel 函数** —— 实例化 `KernelDiv` 并调用 `Init` + `Process`。
-8. **`kernel_div` host 函数** —— 申请 GM 内存、搬运数据、调用kernel函数、回拷结果。
+8. **`kernel_div` host 函数** —— 申请 GM 内存、搬运数据、调用 kernel 函数、回拷结果。
 9. **`main` 函数** —— 调用 `kernel_div` 并验证结果。
 
 ## 编程范式提示
@@ -62,7 +62,7 @@ GM (x, y) ──CopyIn──► UB (xLocal, yLocal) ──Compute──► UB (z
 
 ```bash
 # 在根目录下编译运行
-# 注意：在线环境一般不用修改脚本，可根据实际情况修改脚本中激活cann环境的路径，source $ASCEND_TOOLKIT_HOME/set_env.sh
+# 注意：在线环境一般不用修改脚本，可根据实际情况修改脚本中激活 cann 环境的路径，source $ASCEND_TOOLKIT_HOME/set_env.sh
 
 bash run.sh
 ```
@@ -76,12 +76,12 @@ Golden: 0.521739 0.521739 0.521739 0.521739 0.521739 0.521739 0.521739 0.521739 
 
 ## 评分标准
 
-- ✅ 通过精度验证（输出 `[Success]`），在PR描述中提供通过截图
+- ✅ 通过精度验证（输出 `[Success]`），在 PR 描述中提供通过截图
 - ✅ 代码风格规范，注释清晰
 
 ## 参考学习资料
 
-如果对 Ascend C算子开发还不熟悉，建议先学习以下课程：
+如果对 Ascend C 算子开发还不熟悉，建议先学习以下课程：
 
 - [AscendC 算子开发基础概览](https://gitcode.com/cann/cann-learning-hub/blob/master/tutorials/ascendc_operator_development/01_basic_overview/01.01_chapter_intro.ipynb)
 - [AscendC 算子基础编程](https://gitcode.com/cann/cann-learning-hub/blob/master/tutorials/ascendc_operator_development/02_AscendC_basic/02.01_chapter_intro.ipynb)
